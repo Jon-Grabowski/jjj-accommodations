@@ -1,5 +1,5 @@
 #logo-wrapper {
-    max-width: 350px;
+    max-width: 280px;
 }
 
 img {
@@ -7,6 +7,9 @@ img {
 
 @media screen and (max-width: 700px) {
     #logo-wrapper {
-        max-width: 250px;
+        max-width: 220px;
     }
+}
+
+.reservation-btn{
 }
