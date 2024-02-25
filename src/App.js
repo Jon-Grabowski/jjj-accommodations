@@ -9,15 +9,17 @@ import Contact from './components/Contact/Contact';
 
 function App() {
   return (
-    <div className="App container-lg text-light">
+    <div className="App text-light">
       <NavBar />
-      <Routes>
-        <Route exact path="/" element={<Home />}/>
-        <Route path='/rentals' element={<Rentals/>}/>
-        <Route path='/services' element={<Services/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-      </Routes>
+    <div className='container-lg'>
+        <Routes>
+          <Route exact path="/" element={<Home />}/>
+          <Route path='/rentals' element={<Rentals/>}/>
+          <Route path='/services' element={<Services/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+        </Routes>
+      </div>
     </div>
   );
 }

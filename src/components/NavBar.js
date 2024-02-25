@@ -9,7 +9,7 @@ function NavBar() {
     const links = ['rentals', 'services', 'about', 'contact']
     const listLinks = links.map((link)=>{
         return(
-            <li class="nav-item fs-6">
+            <li class="nav-item">
                             <NavLink 
                                 to={`/${link}`}
                                 className='nav-link text-light'
@@ -24,8 +24,8 @@ function NavBar() {
     }
     
     return (
-        <nav className='navbar navbar-expand-md d-flex justify-content-between align-items-center border-bottom'>
-            <div className='container-fluid'>
+        <nav className='navbar navbar-expand-md sticky-top border-bottom '>
+            <div id='nav-wrapper' className='container-fluid'>
                 <div id='logo-wrapper' className='text-start'>
                     <Link to='/'>
                         <img src='../images/JJJ-LOGO.png' alt='logo' className='w-100 navbar-brand'/>
@@ -44,7 +44,7 @@ function NavBar() {
                             target="_blank"
                             type="button" 
                             onClick={()=>{setNavExpanded(false)}}
-                            className='btn btn-sm btn-dark btn-outline-light p-2'
+                            className='btn btn-sm btn-dark btn-outline-light p-2 reservation-btn'
                             >Reservation
                         </Link>
                     </div>
