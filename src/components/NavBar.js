@@ -5,13 +5,24 @@ import './navbar.css'
 
 function NavBar() {
     const [navExpanded, setNavExpanded] = useState(false)
+
+    const links = ['rentals', 'services', 'about', 'contact']
+    const listLinks = links.map((link)=>{
+        return(
+            <li class="nav-item fs-6">
+                            <NavLink 
+                                to={`/${link}`}
+                                className='nav-link text-light'
+                                onClick={()=>{setNavExpanded(false)}}
+                                >{link.toUpperCase()}
+                            </NavLink>
+            </li>
+        )
+    })
     function handleNavToggler() {
         setNavExpanded(!navExpanded)
     }
-
-    function handleResClick(){
-        window.location.href = 'https://www.airbnb.com/users/show/192864989';
-    }
+    
     return (
         <nav className='navbar navbar-expand-md d-flex justify-content-between align-items-center border-bottom'>
             <div className='container-fluid'>
@@ -23,21 +34,11 @@ function NavBar() {
                 <button class={`navbar-toggler bg-light ${navExpanded ? '': 'collapsed'}`} type="button" onClick={handleNavToggler} data-bs-toggle="collapse" data-bs-target="#nav-links-wrapper" aria-controls="nav-links-wrapper" aria-expanded={navExpanded? 'true': "false"} aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div id="nav-links-wrapper" className={`navbar-collapse ${navExpanded ? 'collapse': 'show'}`}>
+                <div id="nav-links-wrapper" className={`navbar-collapse ${navExpanded ? 'show' :'collapse' }`} >
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <NavLink to='/rentals' className='nav-link text-light'>Rentals</NavLink>
-                        </li>
-                        <li class="nav-item">
-                            <NavLink to='/services' className='nav-link text-light'>Services</NavLink>
-                        </li>
-                        <li class="nav-item">
-                        <NavLink to='/about' className='nav-link text-light'>About</NavLink>
-                        </li>
-                        
-                        <li class="nav-item"></li>
-                        <NavLink to='/contact' className='nav-link text-light'>Contact</NavLink>
-                        <li class="nav-item text-light"></li>
+                        {listLinks}
+                    </ul>
+                    <div>
                         <Link 
                             to='https://www.airbnb.com/users/show/192864989'
                             target="_blank"
@@ -45,7 +46,7 @@ function NavBar() {
                             className='btn btn-sm btn-dark btn-outline-light p-2'
                             >Reservation
                         </Link>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </nav>

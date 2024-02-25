@@ -1,13 +1,60 @@
 #logo-wrapper {
-    max-width: 280px;
+    max-width: 290px;
+    
+}
+
+
+#nav-links-wrapper{
+
+}
+nav{
+    
 }
 
 img {
+}
+.show {
+    animation: slideDown 1s ease none 1;  
+}
+
+.collapse{
+    animation: slideUp 1s ease none 1; 
+}
+
+@keyframes slideDown{
+    0% {
+        transform: translateY(-100%);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes slideUp{
+    0% {
+        transform: translateY(0%);
+        opacity: 100%;
+        display: inline;
+        }
+    60% {
+        display: none;
+        }
+    100%{
+        transform: translateY(-100%);
+        opacity: 0%;
+    }
 }
 
 @media screen and (max-width: 700px) {
     #logo-wrapper {
         max-width: 220px;
+    }
+
+    #nav-links-wrapper{
+        z-index: 0; 
+        overflow: hidden;
     }
 }
 
