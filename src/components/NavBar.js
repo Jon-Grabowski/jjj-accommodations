@@ -43,6 +43,7 @@ function NavBar() {
                             to='https://www.airbnb.com/users/show/192864989'
                             target="_blank"
                             type="button" 
+                            onClick={()=>{setNavExpanded(false)}}
                             className='btn btn-sm btn-dark btn-outline-light p-2'
                             >Reservation
                         </Link>
