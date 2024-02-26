@@ -1,0 +1,42 @@
+#home-section-1{
+    position: relative;
+    text-align: center;
+}
+
+.home-image{
+    animation: slideRight 1s ease-out;
+}
+
+.home-text-wrapper{
+    top:24%;
+    Left:17%;
+    border-radius: 20px;
+    border-style: outset;
+    padding: 3rem;
+    animation: slideLeft 1s ease-out;
+    
+}
+
+@keyframes slideLeft {
+    0%{
+        transform: translateX(25%);
+        opacity: 0%;
+    }
+    50%{opacity: 100%;}
+    100%{transform: translateX(0%);}
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-25%);
+        opacity: 0%;
+    }
+    50%{opacity: 100%;}
+    100%{transform: translateX(0%);}
+}
+
+.home-text{
+    /* -webkit-text-stroke-width: 2.4px;
+    -webkit-text-stroke-color: black; */
+    top:50%
+}
