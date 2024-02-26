@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App text-light">
       <NavBar />
-    <div className='container-lg'>
+    <div className=''>
         <Routes>
           <Route exact path="/" element={<Home />}/>
           <Route path='/rentals' element={<Rentals/>}/>
