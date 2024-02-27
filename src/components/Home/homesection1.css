@@ -11,14 +11,14 @@
 }
 
 .home-text-wrapper{
-    animation: slideLeft 1s ease-out;
+    animation: slideLeft 1s ease-in-out;
 }
 
 
 
 @keyframes slideLeft {
     0%{
-        transform: translateX(25%);
+        transform: translateX(15%);
         opacity: 0%;
     }
     50%{opacity: 100%;}
