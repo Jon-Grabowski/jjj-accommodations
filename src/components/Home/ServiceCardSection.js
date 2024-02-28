@@ -1,4 +1,5 @@
 import React from 'react'
+import './servicecardsection.css'
 import ServiceCard from './ServiceCard'
 import { serviceCardData } from './utilitiesHome';
 
@@ -8,7 +9,7 @@ function ServiceCardSection() {
     })
 
     return (
-        <div className='container-lg mt-5 d-flex justify-content-center flex-wrap'>
+        <div id='section-cards-wrapper' className='container-lg mt-5 d-flex justify-content-center flex-wrap'>
             {cards}
         </div>
     )
