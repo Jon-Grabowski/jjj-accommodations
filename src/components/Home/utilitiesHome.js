@@ -1,15 +1,22 @@
 const serviceCardData = [
     {
         name:'Rentals',
-        headline: 'Short Term Rentals & Property Management',
-        body: "Want to own a home in the lovely Catskill Mountains either to utilize for yourself or to use as a rental property, but don’t want the stress of maintaining it while you aren’t around? We have the expertise and experience to maintain and care for your home like its our own.",
+        headline: 'Stay With Us',
+        body: "Check out our current listing of rental properties and plan your relaxing getaway in the beautiful Catskill Mountains!",
         image:'../images/rentals/rental-card-image-1.jpeg',
         link: '/rentals'
     },
     {
+        name:'Property Management',
+        headline: 'Property Management',
+        body: "Want to own a home in the lovely Catskill Mountains either to utilize for yourself or to use as a rental property, but don’t want the stress of maintaining it while you aren’t around? We have the expertise and experience to maintain and care for your home like its our own.",
+        image:'../images/rentals/rental-card-image-1.jpeg',
+        link: '/propertymanagement'
+    },
+    {
         name:'Services',
         headline: 'Cleaning Services',
-        body: 'Designed to cater specifically to the needs of each and every client. Choose from our detailed lists for a Routine Clean, Deep Clean or Move-In / Move-Out. We also offer Handyman services la carte.',
+        body: 'Find the service that\'s right for you and choose from our detailed lists for a Routine Clean, Deep Clean or Move-In / Move-Out.',
         image:'../images/services/services-card-image-1.jpg',
         link: '/services'
     },

@@ -6,12 +6,12 @@ import './navbar.css'
 function NavBar() {
     const [navExpanded, setNavExpanded] = useState(false)
 
-    const links = ['rentals', 'services', 'about', 'contact']
+    const links = ['rentals', 'property management', 'services', 'about', 'contact']
     const listLinks = links.map((link)=>{
         return(
             <li class="nav-item">
                             <NavLink 
-                                to={`/${link}`}
+                                to={`/${link.replace(/\s+/g, '')}`}
                                 className='nav-link text-light'
                                 onClick={()=>{setNavExpanded(false)}}
                                 >{link.toUpperCase()}
