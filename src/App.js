@@ -14,15 +14,15 @@ function App() {
     <div className="App text-light">
       <NavBar />
     <div className=''>
-        <Routes>
-          <Route exact path="/" element={<Home />}/>
-          <Route path='/rentals' element={<Rentals/>}/>
-          <Route path='/propertymanagement' element={<PropertyManagement />}/>
-          <Route path='/services' element={<Services/>}/>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-        </Routes>
-      </div>
+      <Routes>
+        <Route exact path="/" element={<Home />}/>
+        <Route path='/rentals' element={<Rentals/>}/>
+        <Route path='/propertymanagement' element={<PropertyManagement />}/>
+        <Route path='/services' element={<Services/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+      </Routes>
+    </div>
       <Footer />
     </div>
   );
