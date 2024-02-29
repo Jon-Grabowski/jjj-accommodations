@@ -1,18 +1,21 @@
 import React from 'react'
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import './navbar.css'
 
 function NavBar() {
     const [navExpanded, setNavExpanded] = useState(false)
-
+    const location = useLocation()
+    console.log(location.pathname)
     const links = ['rentals', 'property management', 'services', 'about', 'contact']
     const listLinks = links.map((link)=>{
+        let path = '/' + link.replace(/\s+/g, '')
+        console.log(path)
         return(
             <li class="nav-item">
                             <NavLink 
-                                to={`/${link.replace(/\s+/g, '')}`}
-                                className='nav-link text-light'
+                                to={path}
+                                className={`nav-link text-light ${location.pathname === path ? 'text-decoration-underline fw-bolder' : '' }`}
                                 onClick={()=>{setNavExpanded(false)}}
                                 >{link.toUpperCase()}
                             </NavLink>
