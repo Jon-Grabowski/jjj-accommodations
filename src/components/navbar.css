@@ -1,10 +1,26 @@
+nav {
+    /* background-color: rgb(9, 9, 39); */
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+#nav-wrapper{
+    width: 90%;
+}
 #logo-wrapper {
-    max-width: 290px;
-    
+    max-width: 270px;
 }
 
 .show {
     animation: slideDown 1s ease none 1;  
+}
+
+.nav-item {
+    font-size: 13px;
+}
+
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 @keyframes slideDown{
@@ -23,8 +39,7 @@
         max-width: 220px;
     }
 
-    #nav-links-wrapper{
-        z-index: 0; 
-        overflow: hidden;
+    .reservation-btn {
+        margin-bottom: 10px;
     }
 }

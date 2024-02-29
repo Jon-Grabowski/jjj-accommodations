@@ -1,0 +1,12 @@
+#home-res-banner{
+    background-image: url('./../../../public/images/stock-images/nature-stock-1.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.25);
+    min-height: 20rem;
+}
+
+#home-res-banner-text{
+    text-shadow: 4px 4px 1px rgba(0, 0, 0, 1);
+    font-weight: bold;
+}
