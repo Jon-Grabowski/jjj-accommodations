@@ -7,21 +7,23 @@ import PropertyManagement from './components/PropertyManagement/PropertyManageme
 import Services from './components/Services/Services';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App text-light">
       <NavBar />
     <div className=''>
-        <Routes>
-          <Route exact path="/" element={<Home />}/>
-          <Route path='/rentals' element={<Rentals/>}/>
-          <Route path='/propertymanagement' element={<PropertyManagement />}/>
-          <Route path='/services' element={<Services/>}/>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-        </Routes>
-      </div>
+      <Routes>
+        <Route exact path="/" element={<Home />}/>
+        <Route path='/rentals' element={<Rentals/>}/>
+        <Route path='/propertymanagement' element={<PropertyManagement />}/>
+        <Route path='/services' element={<Services/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+      </Routes>
+    </div>
+      <Footer />
     </div>
   );
 }
