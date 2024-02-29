@@ -1,14 +1,14 @@
 #footer-wrapper {
     margin-top: 8rem;
     background-color: rgba(255, 255, 255, 0.10);
-    gap: 10rem;
     flex-wrap: wrap;
 }
 
 #footer-img-wrapper{
-    max-width: 18rem;
+    max-width: 20rem;
 }
 
 #footer-contact-wrapper{
-    max-width: 18rem;
+    width: 20rem;
+    font-size: 13px;
 }
