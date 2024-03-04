@@ -10,7 +10,7 @@ function ServiceCardSection() {
     })
 
     return (
-        <div id='section-cards-wrapper' className=' mt-5 d-flex justify-content-center flex-wrap'> 
+        <div id='section-cards-wrapper' className='mt-5 d-flex justify-content-center flex-wrap'> 
             {cards}
         </div>
     )
