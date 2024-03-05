@@ -14,12 +14,12 @@ function RentalSection() {
 
 
     return (    
-        <div id='rental-section-wrapper' className='d-flex justify-content-center align-items-center'>
+        <div id='rental-section-wrapper' className='d-flex flex-wrap justify-content-center align-items-center'>
             <div id='rentals-text'>
                 <h1>Rentals</h1>
-                <p>Check out our current listing of rental properties and plan your relaxing getaway in the beautiful Catskill Mountains!</p>
+                <p className=''>Check out our current listing of rental properties and plan your relaxing getaway in the beautiful Catskill Mountains!</p>
             </div>  
-            <div id='carousel-section' className='w-50'>
+            <div id='carousel-section' className='w-lg-50 w-100'>
                 <ImageGallery items={images} autoPlay={true} slideInterval={5000} onClick={handleClick} showFullscreenButton={false} showThumbnails={false} showPlayButton={false} />
             </div>
         </div>  

@@ -33,18 +33,15 @@ const images = [
     {
         original: "../images/rentals/rental-card-image-1.jpeg",
         thumbnail: "../images/rentals/rental-card-image-1.jpeg",
-        id: 'car-image-1'
     },
     {
         original: "https://picsum.photos/id/1015/1000/600/",
         thumbnail: "https://picsum.photos/id/1015/250/150/",
-        id: 'car-image-1'
     },
     {
         original: "https://picsum.photos/id/1019/1000/600/",
         thumbnail: "https://picsum.photos/id/1019/250/150/",
-        id: 'car-image-1'
     },
-  ];
+];
 
 export {serviceCardData, images}
