@@ -1,1 +1,13 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
+
+#rental-section-wrapper{
+    gap: 5rem;
+}
+
+#rentals-text{
+    max-width: 40rem;
+}
+
+#carousel-section {
+    max-width: 40rem;
+}
