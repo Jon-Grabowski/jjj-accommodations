@@ -1,12 +1,5 @@
 const serviceCardData = [
     {
-        name:'Rentals',
-        headline: 'Stay With Us',
-        body: "Check out our current listing of rental properties and plan your relaxing getaway in the beautiful Catskill Mountains!",
-        image:'../images/rentals/rental-card-image-1.jpeg',
-        link: '/rentals'
-    },
-    {
         name:'Property Management',
         headline: 'Property Management',
         body: "Want to own a home in the lovely Catskill Mountains either to utilize for yourself or to use as a rental property, but don’t want the stress of maintaining it while you aren’t around? We have the expertise and experience to maintain and care for your home like its our own.",
@@ -31,17 +24,26 @@ const serviceCardData = [
 
 const images = [
     {
-        original: "../images/rentals/rental-card-image-1.jpeg",
-        thumbnail: "../images/rentals/rental-card-image-1.jpeg",
+        path: "../images/rentals/rental-card-image-1.jpeg",
     },
     {
-        original: "https://picsum.photos/id/1015/1000/600/",
-        thumbnail: "https://picsum.photos/id/1015/250/150/",
+        path: "https://picsum.photos/id/1015/1000/600/",
     },
     {
-        original: "https://picsum.photos/id/1019/1000/600/",
-        thumbnail: "https://picsum.photos/id/1019/250/150/",
+        path: "https://picsum.photos/id/1019/1000/600/",
     },
 ];
+
+// const images = [
+//     {
+//         original: "../images/rentals/rental-card-image-1.jpeg",
+//     },
+//     {
+//         original: "https://picsum.photos/id/1015/1000/600/",
+//     },
+//     {
+//         original: "https://picsum.photos/id/1019/1000/600/",
+//     },
+// ];
 
 export {serviceCardData, images}
