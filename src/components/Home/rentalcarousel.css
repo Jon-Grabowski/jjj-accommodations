@@ -1,12 +1,9 @@
-#home-carousel-wrapper {
-
-}
-
 .carousel-btn{
     all: unset;
     top: 0;
     bottom:0;
     padding: 1rem;
+    transition: background-color 200ms ease-in-out;
 }
 
 .carousel-btn > * {

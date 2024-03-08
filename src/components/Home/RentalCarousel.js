@@ -18,11 +18,18 @@ function RentalCarousel() {
         }
     }
 
+    const imgElementArr = images.map(img => {
+        return <img src={img.path} alt='house' className='w-100 d-block rounded'/>
+    })
+
     return (
-        <div id='home-carousel-wrapper' className='w-lg-50 w-100 position-relative'>
-            <img src={images[imgIndex].path} alt='house' className='w-100 d-block'/>
-            <button onClick={()=>{handleClick(-1)}} className='carousel-btn position-absolute' style={{left: '0'}}><ArrowBigLeft/></button>
-            <button onClick={()=>{handleClick(1)}} className='carousel-btn position-absolute' style={{right: '0'}}><ArrowBigRight/></button>
+        <div id='home-carousel-wrapper' className='w-lg-50 w-100 position-relative rounded'>
+            <div>
+                {imgElementArr}
+            </div>
+            
+            <button onClick={()=>{handleClick(-1)}} className='carousel-btn position-absolute rounded-start' style={{left: '0'}}><ArrowBigLeft/></button>
+            <button onClick={()=>{handleClick(1)}} className='carousel-btn position-absolute rounded-end' style={{right: '0'}}><ArrowBigRight/></button>
         </div>
     )
 }
