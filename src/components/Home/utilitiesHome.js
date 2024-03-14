@@ -24,7 +24,7 @@ const serviceCardData = [
 
 const images = [
     {
-        path: "../images/rentals/rental-card-image-1.jpeg",
+        path: "../images/rentals/vibes-studio/vibes-1.jpeg",
     },
     {
         path: "https://picsum.photos/id/1015/1000/600/",
@@ -33,17 +33,5 @@ const images = [
         path: "https://picsum.photos/id/1019/1000/600/",
     },
 ];
-
-// const images = [
-//     {
-//         original: "../images/rentals/rental-card-image-1.jpeg",
-//     },
-//     {
-//         original: "https://picsum.photos/id/1015/1000/600/",
-//     },
-//     {
-//         original: "https://picsum.photos/id/1019/1000/600/",
-//     },
-// ];
 
 export {serviceCardData, images}
