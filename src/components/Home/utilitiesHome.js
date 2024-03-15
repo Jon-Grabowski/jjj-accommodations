@@ -3,7 +3,7 @@ const serviceCardData = [
         name:'Property Management',
         headline: 'Property Management',
         body: "Want to own a home in the lovely Catskill Mountains either to utilize for yourself or to use as a rental property, but don’t want the stress of maintaining it while you aren’t around? We have the expertise and experience to maintain and care for your home like its our own.",
-        image:'../images/rentals/rental-card-image-1.jpeg',
+        image:'../images/rentals/vibes-studio/vibes-1.jpeg',
         link: '/propertymanagement'
     },
     {
@@ -24,7 +24,7 @@ const serviceCardData = [
 
 const images = [
     {
-        path: "../images/rentals/vibes-studio/vibes-1.jpeg",
+        path: '../images/rentals/vibes-studio/vibes-1.jpeg', 
     },
     {
         path: "https://picsum.photos/id/1015/1000/600/",
