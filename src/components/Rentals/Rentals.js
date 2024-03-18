@@ -10,10 +10,10 @@ function Rentals() {
         <div className='mt-5 border container-lg'>
             <h1>Rentals Page</h1>
             <div className='row'>
-                <div className='col-9'>
+                <div className='col-md-8'>
                     <FeaturedRental rental={featureRental}/>
                 </div>
-                <div className='col-3'>
+                <div className='col-md-4'>
 
                 </div>
 
