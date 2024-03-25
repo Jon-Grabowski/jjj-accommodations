@@ -22,14 +22,14 @@ function FeaturedRentalCarousel({images}) {
                     key={img}
                     src={img} 
                     alt='house' 
-                    className='carousel-img w-100 d-block'
+                    className='carousel-img w-100 d-block rounded'
                     style={{translate: `${-100 * imgIndex}%`}}
                 />
     })
 
     return (
         <div id='home-carousel-wrapper' className='w-lg-50 w-100 position-relative rounded'>
-            <div className='w-100 h-100 d-flex overflow-hidden'>
+            <div className='w-100 h-100 d-flex overflow-hidden rounded'>
                 {imgElementArr}
             </div>
             

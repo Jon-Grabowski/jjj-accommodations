@@ -7,8 +7,11 @@ function Rentals() {
     const [featureRental, setFeatureRental] = useState(rentalProperties[0])
     const { name, description, details, type, location, amenities } = featureRental
 
-    const amenitiesList = amenities.map((amenity) => {
-        return <li>{amenity}</li>
+    const amenitiesListRight = amenities.map((amenity, index) => {
+        if (index%2 === 0) return <li>{amenity}</li>
+    })
+    const amenitiesListLeft = amenities.map((amenity, index) => {
+        if (index%2 !== 0) return <li>{amenity}</li>
     })
 
     // const detailsList = details.map((detail) => {
@@ -38,10 +41,16 @@ function Rentals() {
                     </div>
                     <p className="card-text text-start">{description}</p>
                     <div className=''>
-                        <h3 className='border-bottom pb-1 fs-3'>Amenities</h3>
-                        <ul className='text-start'>
-                            {amenitiesList}
-                        </ul>
+                        <h3 className='d-inline border-bottom px-5 fs-4'>Amenities</h3>
+                        <div className='row m-auto ps-3 mt-3'>
+                            <ul className='text-start col-6 mb-0'>
+                                {amenitiesListRight}
+                            </ul>
+                            <ul className='text-start col-6'>
+                                {amenitiesListLeft}
+                            </ul>
+
+                        </div>
                     </div>
                 </div>
 
