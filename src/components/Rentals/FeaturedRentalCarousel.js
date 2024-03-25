@@ -22,7 +22,7 @@ function FeaturedRentalCarousel({images}) {
                     key={img}
                     src={img} 
                     alt='house' 
-                    className='carousel-img w-100 d-block rounded'
+                    className='carousel-img w-100 d-block'
                     style={{translate: `${-100 * imgIndex}%`}}
                 />
     })
