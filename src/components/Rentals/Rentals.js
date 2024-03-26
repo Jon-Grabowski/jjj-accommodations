@@ -1,11 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import FeaturedRental from './FeaturedRental';
 import { rentalProperties } from './utilitiesRental';
 
 function Rentals() {
     const [featureRental, setFeatureRental] = useState(rentalProperties[0])
-    const { name, description, details, type, location, amenities } = featureRental
+    const { name, description, details, type, location, amenities, bnbLink } = featureRental
 
     const amenitiesListLeft = []
     const amenitiesListRight = []
@@ -38,8 +39,8 @@ function Rentals() {
                     </div>
                     <p className="card-text text-start">{description}</p>
                     <div className=''>
-                        <h3 className='d-inline border-bottom px-5 fs-4'>Amenities</h3>
-                        <div className='row m-auto ps-3 mt-3'>
+                        <h3 className='d-inline border-bottom px-3 fs-4'>Amenities</h3>
+                        <div className='row m-auto ps-5 mt-3'>
                             <ul className='text-start col-6 mb-0'>
                                 {amenitiesListRight}
                             </ul>
@@ -48,8 +49,16 @@ function Rentals() {
                             </ul>
 
                         </div>
+                        <Link 
+                                to={bnbLink}
+                                target="_blank"
+                                type="button"
+                                className='btn btn-dark fs-5 border w-50 m-auto mt-4' 
+                                style={{backgroundColor:'#FF5A5F'}}
+                            ><img style={{width:'40px'}} className='me-2' src='../images/social icons/airbnb-2-logo-white.png'/>Book Now</Link>
                     </div>
                 </div>
+                
             </div>
 
             <div className='d-flex justify-content-center gap-3'>
