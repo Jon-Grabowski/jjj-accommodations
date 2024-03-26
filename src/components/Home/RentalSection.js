@@ -2,6 +2,7 @@ import React from 'react'
 import RentalCarousel from './RentalCarousel';
 import './rentalsection.css'
 import { Link } from 'react-router-dom';
+import { images } from './utilitiesHome';
 
 
 
@@ -16,7 +17,7 @@ function RentalSection() {
                 <Link to='/rentals'><button className='btn btn-primary mb-2 px-4'>See Listings</button></Link>
             </div>  
             <div id='carousel-section' className='w-lg-50 w-100'>
-                <RentalCarousel />
+                <RentalCarousel images={images}/>
             </div>
         </div>  
     )

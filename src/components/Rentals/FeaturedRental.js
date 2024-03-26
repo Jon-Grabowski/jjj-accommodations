@@ -1,23 +1,24 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import FeaturedRentalCarousel from './FeaturedRentalCarousel'
+import RentalCarousel from '../Home/RentalCarousel'
+import FeatureRentalInfo from './FeatureRentalInfo'
 
 
 function FeaturedRental({rental}) {
-    const {images, bnbLink} = rental
+    const {images} = rental
 
     return (
-        <div className="text-center m-auto" style={{maxWidth:'40rem'}}>
+        <div className='row align-items-center m-auto'>
 
-            <div className="">
-                <div className='flex '>
-                    <FeaturedRentalCarousel images={images} />
+            <div className='col-md-6'>  
+                <div className="text-center m-auto" style={{maxWidth:'40rem'}}>
+                    <RentalCarousel images={images} />
+                    <div className="card-footer text-body-secondary">
+                    </div>
                 </div>
-                
             </div>
-            <div className="card-footer text-body-secondary mt-3">
-                
-            </div>
+
+            <FeatureRentalInfo rental={rental} />
+
         </div>
     )
 }

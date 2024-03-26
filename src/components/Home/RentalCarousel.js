@@ -1,10 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { images } from './utilitiesHome';
 import './rentalcarousel.css'
 import { ArrowBigLeft, ArrowBigRight } from 'lucide-react';
 
-function RentalCarousel() {
+function RentalCarousel({images}) {
     const [imgIndex, setImageIndex] = useState(0)
 
     function handleClick(interval){
@@ -20,8 +19,8 @@ function RentalCarousel() {
 
     const imgElementArr = images.map(img => {
         return <img 
-                    key={img.path}
-                    src={img.path} 
+                    key={img}
+                    src={img} 
                     alt='house' 
                     className='carousel-img w-100 d-block rounded'
                     style={{translate: `${-100 * imgIndex}%`}}
@@ -38,7 +37,7 @@ function RentalCarousel() {
 
     return (
         <div id='home-carousel-wrapper' className='w-lg-50 w-100 position-relative rounded'>
-            <div className='w-100 h-100 d-flex overflow-hidden'>
+            <div className='w-100 h-100 d-flex overflow-hidden rounded'>
                 {imgElementArr}
             </div>
             
