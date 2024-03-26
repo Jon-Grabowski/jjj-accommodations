@@ -7,16 +7,13 @@ function Rentals() {
     const [featureRental, setFeatureRental] = useState(rentalProperties[0])
     const { name, description, details, type, location, amenities } = featureRental
 
-    const amenitiesListRight = amenities.map((amenity, index) => {
-        if (index%2 === 0) return <li>{amenity}</li>
-    })
-    const amenitiesListLeft = amenities.map((amenity, index) => {
-        if (index%2 !== 0) return <li>{amenity}</li>
-    })
+    const amenitiesListLeft = []
+    const amenitiesListRight = []
 
-    // const detailsList = details.map((detail) => {
-    //     return <li className='list-group-item'>{detail}</li>
-    // })
+    amenities.forEach((amenity, index)=>{
+        if (index%2 === 0) amenitiesListLeft.push(<li>{amenity}</li>)
+        else amenitiesListRight.push(<li>{amenity}</li>)
+    })
 
     const detailsList = details.map((detail, index) => {
         if (index === details.length-1) return <span className='ms-1 fst-italic'>{detail}</span>
@@ -25,7 +22,7 @@ function Rentals() {
 
     return (
         <div className='mt-5 container-lg'>
-            <h1>Rentals Page</h1>
+            <h1 className='display-5'>Current Rental Listings</h1>
 
             <div className='row align-items-center'>
                 <div className='col-md-7'>
@@ -53,21 +50,7 @@ function Rentals() {
                         </div>
                     </div>
                 </div>
-
             </div>
-
-            {/* <div className='row'>
-                <div className='col-md-6'>
-                    <h3 className='border-bottom pb-1 fs-3'>Amenities</h3>
-                    <ul className='text-start'>
-                        {amenitiesList}
-                    </ul>
-                </div>
-                <div className="col-md-6">
-                    <h3 className='border-bottom pb-1 fs-3'>Details</h3>
-                    <p>{detailsList}</p>
-                </div>  
-            </div> */}
 
             <div className='d-flex justify-content-center gap-3'>
                 

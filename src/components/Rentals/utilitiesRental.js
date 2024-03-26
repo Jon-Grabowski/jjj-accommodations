@@ -6,7 +6,8 @@ const rentalProperties = [
         type: 'Entire Guesthouse',
         location: 'Mongaup Valley, NY',
         amenities: ['Kitchen', 'Wifi', 'Free parking on premises', 'TV with standard cable', 'Washer', 'Dryer', 'Air conditioning', 'Bathtub', 'Patio or balcony',  'Security cameras on property'],
-        images: ['../images/rentals/vibes-studio/vibes-1.jpeg', '../images/rentals/vibes-studio/vibes-2.webp', '../images/rentals/vibes-studio/vibes-3.webp', '../images/rentals/vibes-studio/vibes-4.webp', '../images/rentals/vibes-studio/vibes-5.webp', '../images/rentals/vibes-studio/vibes-6.webp', '../images/rentals/vibes-studio/vibes-7.webp', '../images/rentals/vibes-studio/vibes-8.webp']
+        images: ['../images/rentals/vibes-studio/vibes-1.jpeg', '../images/rentals/vibes-studio/vibes-2.webp', '../images/rentals/vibes-studio/vibes-3.webp', '../images/rentals/vibes-studio/vibes-4.webp', '../images/rentals/vibes-studio/vibes-5.webp', '../images/rentals/vibes-studio/vibes-6.webp', '../images/rentals/vibes-studio/vibes-7.webp', '../images/rentals/vibes-studio/vibes-8.webp'],
+        bnbLink: 'https://www.airbnb.com/rooms/25569768?source_impression_id=p3_1711472795_5lKsDaCfrv7cwE%2B6'
     }
 ]
 
