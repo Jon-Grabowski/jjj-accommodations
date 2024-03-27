@@ -43,8 +43,8 @@ function FeatureRentalInfo({rental}) {
                         type="button"
                         className='btn btn-dark fs-5 border w-50 m-auto mt-4' 
                         style={{backgroundColor:'#FF5A5F'}}
-                    ><img style={{width:'80px'}} className='me-2 pb-1' src='../images/social icons/airbnb-2-logo-white.png'
-                    alt='AirBnB Logo'/>Book Now</Link>
+                    >Book on<img style={{width:'80px'}} className='ms-2 pb-1' src='../images/social icons/airbnb-2-logo-white.png'
+                    alt='AirBnB Logo'/></Link>
             </div>
         </div>
     )

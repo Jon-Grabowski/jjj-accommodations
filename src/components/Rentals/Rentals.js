@@ -3,6 +3,7 @@ import { useState } from 'react';
 import FeaturedRental from './FeaturedRental';
 import { rentalProperties } from './utilitiesRental';
 import RentalCard from './RentalCard';
+import './rentals.css'
 
 
 function Rentals() {
@@ -16,9 +17,8 @@ function Rentals() {
         <div className='mt-3 container-lg'>
             <h1 className='display-5'>Current Rental Listings</h1>
 
-            <div className='w-full'>
+            <div id='rental-cards-wrapper'className='w-full d-flex gap-2 overflow-auto rounded'>
                 {rentalCards}
-                <p>RENTAL CARDS</p>
             </div>
 
             <div className='row align-items-center'>
