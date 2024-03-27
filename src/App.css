@@ -3,3 +3,18 @@
   background-color: rgb(9, 9, 39);
 }
 
+::-webkit-scrollbar {
+  margin-top:2rem;
+  height: 8px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(18, 18, 18, 0%);
+
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(86, 82, 82);
+  border-radius: 100vw;
+}
