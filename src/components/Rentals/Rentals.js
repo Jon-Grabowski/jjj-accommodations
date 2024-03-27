@@ -15,6 +15,7 @@ function Rentals() {
 
     function handleClick(index){
         setFeatureRental(rentalProperties[index])
+        window.scrollTo(0, 0);
     }
 
     const rentalCards = rentalProperties.map((rental, index) => {
@@ -28,14 +29,17 @@ function Rentals() {
 
     return (
         <div className='mt-3 container-lg'>
-            <h1 className='display-5'>Current Rental Listings</h1>
-
-            <div id='rental-cards-wrapper'className='w-full d-flex gap-2 overflow-auto mb-3'>
-                {rentalCards}
-            </div>
+            <p className='fs-1 fw-bold my-5'>{featureRental.name}</p>
 
             <div className='row align-items-center'>
                 <FeaturedRental rental={featureRental} />
+            </div>
+
+            <div>
+                <h3 className='text-start mt-5'>Explore Our Properties:</h3>
+                <div id='rental-cards-wrapper'className='w-full d-flex gap-2 overflow-auto my-3'>
+                    {rentalCards}
+                </div>
             </div>
 
             <div className='d-flex justify-content-center gap-3'>

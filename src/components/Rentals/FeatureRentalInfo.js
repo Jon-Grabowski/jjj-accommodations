@@ -20,7 +20,6 @@ function FeatureRentalInfo({rental}) {
     return (
         <div className='col-md-6 d-flex flex-column' style={{height:'100%'}}>
             <div className="mb-4 text-white">
-                <p className='fs-2 fw-bold mb-1'>{name}</p>
                 <p className='fst-italic mb-0'>{location} - {type}</p>
                 <div className='d-flex justify-content-center' style={{fontSize: '14px'}}>
                     {detailsList}
