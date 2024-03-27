@@ -1,10 +1,10 @@
 import React from 'react'
 
-function RentalCard({rental}) {
+function RentalCard({rental, style, handleClick, index}) {
     const { name, details, type, location, images } = rental
 
     return (
-        <div className="card text-bg-dark flex-shrink-0" style={{maxWidth: '15rem'}}>
+        <div className="card text-bg-dark flex-shrink-0" style={style} onClick={()=>handleClick(index)}>
             <img src={images[0]} className="card-img" alt={name}/>
             <div className="card-img-overlay">
                 <h5 className="card-title">{name}</h5>

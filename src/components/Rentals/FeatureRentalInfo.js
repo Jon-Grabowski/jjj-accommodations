@@ -8,13 +8,13 @@ function FeatureRentalInfo({rental}) {
     const amenitiesListRight = []
 
     amenities.forEach((amenity, index)=>{
-        if (index%2 === 0) amenitiesListLeft.push(<li>{amenity}</li>)
-        else amenitiesListRight.push(<li>{amenity}</li>)
+        if (index%2 === 0) amenitiesListLeft.push(<li key={index}>{amenity}</li>)
+        else amenitiesListRight.push(<li key={index}>{amenity}</li>)
     })
 
     const detailsList = details.map((detail, index) => {
-        if (index === details.length-1) return <span className='ms-1 fst-italic'>{detail}</span>
-        else return <span className='ms-1 fst-italic'>{`${detail} •`}</span>
+        if (index === details.length-1) return <span key={index} className='ms-1 fst-italic'>{detail}</span>
+        else return <span key={index} className='ms-1 fst-italic'>{`${detail} •`}</span>
     })
 
     return (
