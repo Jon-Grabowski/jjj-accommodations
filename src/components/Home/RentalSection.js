@@ -2,12 +2,15 @@ import React from 'react'
 import RentalCarousel from './RentalCarousel';
 import './rentalsection.css'
 import { Link } from 'react-router-dom';
-import { images } from './utilitiesHome';
+import { rentalProperties } from '../Rentals/utilitiesRental';
 
 
 
 function RentalSection() {
 
+    const images = rentalProperties.map(rental=>{
+        return rental.images[0]
+    })
 
     return (    
         <div id='rental-section-wrapper' className='d-flex flex-wrap flex-md-nowrap justify-content-center align-items-center'>

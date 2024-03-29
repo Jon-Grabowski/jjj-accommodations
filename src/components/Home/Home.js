@@ -7,7 +7,7 @@ import './home.css';
 
 function Home() {
     return (
-        <div id='home-page-wrapper'>
+        <div id='home-page-wrapper m-auto'>
             <HomeSection1 />
             <RentalSection />
             <ServiceCardSection />

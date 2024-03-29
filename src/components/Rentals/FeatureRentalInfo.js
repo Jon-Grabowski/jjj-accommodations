@@ -8,7 +8,7 @@ function FeatureRentalInfo({rental}) {
     const amenitiesListRight = []
 
     amenities.forEach((amenity, index)=>{
-        if (index%2 === 0) amenitiesListLeft.push(<li key={index}>{amenity}</li>)
+        if (index%2 !== 0) amenitiesListLeft.push(<li key={index}>{amenity}</li>)
         else amenitiesListRight.push(<li key={index}>{amenity}</li>)
     })
 
@@ -25,7 +25,7 @@ function FeatureRentalInfo({rental}) {
                     {detailsList}
                 </div>
             </div>
-            <p className="card-text text-start">{description}</p>
+            <p className="feature-description card-text text-start text-wrap">{description}</p>
             <div className=''>
                 <h3 className='d-inline border-bottom px-3 fs-4'>Amenities</h3>
                 <div className='row m-auto ps-5 mt-3'>

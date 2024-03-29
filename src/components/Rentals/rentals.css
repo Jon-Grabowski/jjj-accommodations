@@ -1,4 +1,13 @@
+.feature-title{
+    background-position: center;
+    background-size: 100%;
+    background-repeat: none;
+    
+}
 
+.feature-title > p{
+    -webkit-text-stroke: 1px black;
+}
 
 
 #rental-cards-wrapper{
