@@ -5,7 +5,7 @@ function PropertyManagement() {
     return (
         <div className='container-lg mt-5'>
             <p className='display-5 fw-bold text-start text-decoration-underline'>Property Management</p>
-            <div className='d-flex flex-wrap justify-content-evenly align-items-center mt-5'>
+            <div className='d-flex flex-wrap justify-content-evenly align-items-center mt-5 bg-dark p-4 rounded'>
                 <div className='border-black'>
                     <img src='../images/services/namaste-sign.jpeg' alt='namaste' className=''/>
                 </div>
