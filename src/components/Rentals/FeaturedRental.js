@@ -5,7 +5,7 @@ import FeatureRentalInfo from './FeatureRentalInfo'
 
 function FeaturedRental({rental}) {
     const {images} = rental
-
+    //TODO: ADD PLAY/PAUSE BUTTON TO IMAGE CAROUSEL & CROP IMAGES TO BE SAME SIZE.
     return (
         <div className='row align-items-center m-auto'>
 

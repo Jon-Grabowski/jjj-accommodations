@@ -1,9 +1,14 @@
 import React from 'react'
 
+
 function ShortTermRental() {
+    
+
     return (
-        <div >
-            
+        <div className=''>
+            <div className='bg-dark'>
+                <p>Short Term Rental Management</p>
+            </div>
         </div>
     )
 }
