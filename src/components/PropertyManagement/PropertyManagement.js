@@ -13,8 +13,8 @@ function PropertyManagement() {
             <PropertyTopSection />
             <div className='container-lg'>
                 <div className='d-flex justify-content-between align-items-center mt-5'>
-                    <p className={`px-5 py-3 mb-0 rounded-top fs-4 ${shortTermTab? 'bg-dark' : 'bg-secondary'}`} onClick={()=>setShortTermTab(true)}>Short Term Rentals</p>
-                    <p className={`px-5 py-3 mb-0 rounded-top fs-4 ${shortTermTab? 'bg-secondary' : 'bg-dark'}`} onClick={()=>setShortTermTab(false)}>Residential Properties</p>
+                    <p className={`px-5 py-3 mb-0 rounded-top fs-4 ${shortTermTab? 'bg-dark text-decoration-underline fw-bold' : 'bg-secondary'}`} onClick={()=>setShortTermTab(true)}>Short Term Rentals</p>
+                    <p className={`px-5 py-3 mb-0 rounded-top fs-4 ${shortTermTab? 'bg-secondary' : 'bg-dark text-decoration-underline fw-bold'}`} onClick={()=>setShortTermTab(false)}>Residential Properties</p>
                 </div>
                 {shortTermTab ? <ShortTermRental /> : <ResidentialProperty />}
             </div>
