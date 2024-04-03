@@ -8,13 +8,16 @@ import './propertymanagement.css'
 function PropertyManagement() {
     const [shortTermTab, setShortTermTab] = useState(true)
 
+    const selectedTab = 'bg-dark text-decoration-underline fw-bold border border-bottom-0'
+    const unselectedTab= 'bg-secondary border-bottom'
+
     return (
         <div className=''>
             <PropertyTopSection />
             <div className='container-lg'>
-                <div className='d-flex justify-content-between align-items-center mt-5'>
-                    <p className={`px-5 py-3 mb-0 rounded-top fs-4 ${shortTermTab? 'bg-dark text-decoration-underline fw-bold' : 'bg-secondary'}`} onClick={()=>setShortTermTab(true)}>Short Term Rentals</p>
-                    <p className={`px-5 py-3 mb-0 rounded-top fs-4 ${shortTermTab? 'bg-secondary' : 'bg-dark text-decoration-underline fw-bold'}`} onClick={()=>setShortTermTab(false)}>Residential Properties</p>
+                <div className='d-flex justify-content-between fs-4 mt-5'>
+                    <p className={`flex-fill p-4 mb-0 rounded-top h-100 ${shortTermTab? selectedTab : unselectedTab}`} onClick={()=>setShortTermTab(true)}>Short Term Rentals</p>
+                    <p className={`flex-fill p-4 mb-0 rounded-top h-100 ${shortTermTab? unselectedTab : selectedTab}`} onClick={()=>setShortTermTab(false)}>Residential Properties</p>
                 </div>
                 {shortTermTab ? <ShortTermRental /> : <ResidentialProperty />}
             </div>
