@@ -1,6 +1,6 @@
 const rentalCardData = [
     {
-        title: 'AirBnb Listings',
+        title: 'Manage AirBnb Listings',
         subTitle:'Let us manage your AirBnb listing to enjoy the follow benefits:',
         details: ['Create listing for property', 'Use of Our Super Host Status', 'Write Titles and Description', 'Take and Upload Pictures', 'Updating of Calendar and Pricing']
     },
@@ -16,4 +16,17 @@ const rentalCardData = [
     }
 ]
 
-export {rentalCardData}
+const propManagementTypeData = [
+    {
+        title:'Rental Property Management',
+        body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem et tortor consequat id porta nibh venenatis cras sed. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Ut etiam sit amet nisl purus in mollis nunc sed. Erat pellentesque adipiscing commodo elit at.',
+        serviceList: ['Manage AirBnb Listings', 'Handle All Guest Communication', 'Décor & Environmental Aesthetic', 'Cleaning & Maintenance Services']
+    },
+    {
+        title:'Residential Property Management',
+        body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem et tortor consequat id porta nibh venenatis cras sed. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Ut etiam sit amet nisl purus in mollis nunc sed. Erat pellentesque adipiscing commodo elit at.',
+        serviceList: ['Routine Cleans', 'Deep Cleans', 'Move-In/Move-Out', 'Handyman Services']
+
+    }
+]
+export { rentalCardData, propManagementTypeData }
