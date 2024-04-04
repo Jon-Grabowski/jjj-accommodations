@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function FeatureRentalInfo({rental}) {
-    const { name, description, details, type, location, amenities, bnbLink } = rental
+    const { description, amenities, bnbLink } = rental
 
     const amenitiesListLeft = []
     const amenitiesListRight = []
@@ -12,19 +12,9 @@ function FeatureRentalInfo({rental}) {
         else amenitiesListRight.push(<li key={index}>{amenity}</li>)
     })
 
-    const detailsList = details.map((detail, index) => {
-        if (index === details.length-1) return <span key={index} className='ms-1 fst-italic'>{detail}</span>
-        else return <span key={index} className='ms-1 fst-italic'>{`${detail} •`}</span>
-    })
 
     return (
-        <div className='col-md-6 d-flex flex-column' style={{height:'100%'}}>
-            <div className="mb-4 text-white">
-                <p className='fst-italic mb-0'>{location} - {type}</p>
-                <div className='d-flex justify-content-center' style={{fontSize: '14px'}}>
-                    {detailsList}
-                </div>
-            </div>
+        <div className='col-lg-6 d-flex flex-column' style={{height:'100%'}}>
             <p className="feature-description card-text text-start text-wrap">{description}</p>
             <div className=''>
                 <h3 className='d-inline border-bottom px-3 fs-4'>Amenities</h3>
