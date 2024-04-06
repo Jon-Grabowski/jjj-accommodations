@@ -12,15 +12,16 @@ function PropertyManagement() {
     const selectedTab = 'bg-dark text-decoration-underline fw-bold border border-bottom-0'
     const unselectedTab= 'bg-secondary border-bottom'
 
-    const serviceCards = propManagementTypeData.map(data => {
-        return <PropManagementTypeCard key={data.title} data={data} />
+    const serviceCards = propManagementTypeData.map((data, index) => {
+        if (index%2===0) return <PropManagementTypeCard key={data.title} data={data} reverse={false}/>
+        else return <PropManagementTypeCard key={data.title} data={data} reverse={true}/>
     })
 
     return (
         <div className=''>
             <PropertyTopSection />
             <div className=''>
-                <div className='container-lg text-dark'>
+                <div className='container-lg text-dark mt-5'>
                     {serviceCards}
                 </div>
             </div>
