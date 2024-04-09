@@ -3,34 +3,42 @@ import { useState } from 'react'
 
 function PropManagementTypeCard({data, reverse}) {
     const [cardFlipped, setCardFlipped] = useState(false)
-    const { title, body, serviceList} = data
+    const { title, body, imageURL, serviceObj} = data
 
     function handleClick(){
         setCardFlipped(!cardFlipped)
     }
 
-    const services = serviceList.map(service=>{
-        return <span className='mx-3 mb-1 fw-bold'>{`◊ ${service}`}</span>
-    })
+    const services = [];
+    const servicesDescriptions = [];
+    for (const key in serviceObj){
+        services.push(
+            <span key={key} className='mx-3 mb-1 fw-bold'>{`◊ ${key}`}</span>
+        );
+        servicesDescriptions.push(
+            <div key={key}>
+                <h5 className='text-decoration-underline'>{key}</h5>
+                <p>{serviceObj[key]}</p>
+            </div>
+        )
+    }
 
     return (
 
         <div className={`py-4 d-flex flex-wrap ${reverse? 'flex-row-reverse' : null} justify-content-evenly align-items-center`} style={{marginBottom: '11rem'}}>
-            <div className='rounded-circle border' style={{width: '300px', height:'300px', backgroundColor:'red'}}>
-
+            <div className='rounded-circle border border-black border-3 overflow-hidden mb-3' style={{width: '400px', height:'400px'}}>
+                <img src={imageURL} alt={title} className='h-100'/>
             </div>
 
             {cardFlipped ? 
                 <div className='border bg-white bg-opacity-75 p-3 rounded'>
-                    <div className='text-start'>
-                        <h1 className='display-4 d-inline text-start fst-italic border-bottom pb-1'>{title}</h1>
+                    <div className='text-start mb-2 border-bottom pb-1'>
+                        <h1 className='display-6 d-inline text-start fst-italic'>{title}</h1>
                     </div>
                     <div className='text-start m-auto' style={{maxWidth:'50rem'}}>
-                        <p className='p-3 fs-5'>BACK OF CARD</p>
+                        {servicesDescriptions}
                     </div>
-                    <div className='d-flex justify-content-center flex-wrap mb-3 border-top border-bottom border-black py-2' style={{maxWidth:'50rem'}}>
-                            {services}
-                    </div>
+                    
                     <button 
                         className='text-light rounded border-secondary py-2 px-4' 
                         style={{backgroundColor: 'rgb(9, 9, 39)'}}
@@ -39,8 +47,8 @@ function PropManagementTypeCard({data, reverse}) {
                 </div>
             :
                 <div className='border bg-white bg-opacity-75 p-3 rounded'>
-                    <div className='text-start'>
-                        <h1 className='display-4 d-inline text-start fst-italic border-bottom pb-1'>{title}</h1>
+                    <div className='text-start border-bottom pb-1'>
+                        <h1 className='display-4 d-inline text-start fst-italic'>{title}</h1>
                     </div>
                     <div className='text-start m-auto' style={{maxWidth:'50rem'}}>
                         <p className='p-3 fs-5'>{body}</p>
@@ -52,7 +60,7 @@ function PropManagementTypeCard({data, reverse}) {
                         className='text-light rounded border-secondary py-2 px-4' 
                         style={{backgroundColor: 'rgb(9, 9, 39)'}}
                         onClick={handleClick}
-                    >Learn More →</button>
+                    >More Details →</button>
                 </div>}
 
         </div>
