@@ -8,6 +8,7 @@ import './rentals.css'
 
 function Rentals() {
     const [featureRental, setFeatureRental] = useState(rentalProperties[0])
+    const {details, location, type} = featureRental
 
     const cardStyle = {
         maxWidth: '15rem',
@@ -27,10 +28,21 @@ function Rentals() {
         
     })
 
+    const detailsList = details.map((detail, index) => {
+        if (index === details.length-1) return <span key={index} className='ms-1 fst-italic'>{detail}</span>
+        else return <span key={index} className='ms-1 fst-italic'>{`${detail} •`}</span>
+    })
+
     return (
         <div className='mt-3 container-lg'>
             <div className='feature-title rounded my-5' style={{backgroundImage: `url(${featureRental.images[0]})`}}>
-                <p className='display-5 fw-bold bg-black bg-opacity-50 p-3 rounded border-top border-bottom' style={{fontStyle: 'oblique'}}>{featureRental.name}</p>
+                <p className='display-5 fw-bold bg-black bg-opacity-50 pt-3 mb-0 rounded-top border-top' style={{fontStyle: 'oblique'}}>{featureRental.name}</p>
+                <div className="mb-4 text-white  bg-black bg-opacity-50 pb-4 rounded-bottom border-bottom">
+                    <p className='fst-italic fs-5 mb-0'>{location} - {type}</p>
+                    <div className='d-flex justify-content-center' style={{fontSize: '16px'}}>
+                        {detailsList}
+                    </div>
+                </div>
             </div>
 
             <div className='row align-items-center'>

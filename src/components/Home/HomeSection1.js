@@ -7,7 +7,6 @@ function HomeSection1() {
             <div className='home-text-wrapper my-5'>
                         <img src='../images/JJJ-LOGO.png' alt='logo' className='home-image'/>
                         <h5 className='home-text my-0'><i>Exceeding Expectations, Extraordinary Service.</i></h5>
-                        {/* <p className='home-text display-6'><i>Extraordinary Service.</i></p> */}
             </div>
         </div>
     )
