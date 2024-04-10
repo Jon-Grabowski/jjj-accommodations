@@ -26,8 +26,8 @@ function PropManagementTypeCard({data, reverse}) {
     return (
 
         <div className={`py-4 d-flex flex-wrap ${reverse? 'flex-row-reverse' : null} justify-content-evenly align-items-center`} style={{marginBottom: '11rem'}}>
-            <div className='rounded-circle border border-black border-3 overflow-hidden mb-3' style={{width: '400px', height:'400px'}}>
-                <img src={imageURL} alt={title} className='h-100'/>
+            <div className='rounded-circle border border-black border-3 overflow-hidden mb-3' style={{maxWidth: '400px', maxHeight:'400px'}}>
+                <img src={imageURL} alt={title} className='h-100 w-100'/>
             </div>
 
             {cardFlipped ? 

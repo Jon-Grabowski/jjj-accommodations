@@ -37,7 +37,7 @@ function RentalCarousel({images}) {
 
     return (
         <div id='home-carousel-wrapper' className='w-lg-50 w-100 position-relative rounded'>
-            <div className='w-100 h-100 d-flex overflow-hidden rounded'>
+            <div className='w-100 h-100 d-flex align-items-center overflow-hidden rounded'>
                 {imgElementArr}
             </div>
             
