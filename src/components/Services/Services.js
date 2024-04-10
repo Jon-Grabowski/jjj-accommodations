@@ -1,9 +1,10 @@
 import React from 'react'
+import ServiceTopSection from './ServiceTopSection'
 
 function Services() {
     return (
         <div>
-            <h1>Services Page</h1>
+            <ServiceTopSection />
         </div>
     )
 }
