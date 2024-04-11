@@ -20,16 +20,6 @@ const rentalProperties = [
         bnbLink: 'https://www.airbnb.com/rooms/647692435259519247?source_impression_id=p3_1711733619_osO26riup1SD1pGg'
     },
     {
-        name: 'Charming Catskills Lakefront Home',
-        description: `This beautiful lakefront cabin is located at the end of a peaceful road adorned with tire swings and wildflowers. It is situated in a private community on a small and serene lake, offering the perfect setting to enjoy morning coffee on the dock, taking refreshing afternoon swims in the lake, going for evening kayaking rides, and stargazing. You can unwind in our hammock nestled amidst the ferns next to a tranquil stream. We offer 2 kayaks and 1 SUP for your enjoyment. Best of all, 2 hrs from NYC!`,
-        details:['6 guests', '3 bedrooms', '4 beds', '2 baths'],
-        type: 'Entire Cabin',
-        location: 'Ferndale, NY',
-        amenities: ['Lake view', 'Waterfront', 'Kitchen', 'Fast Wifi', 'Dedicated workspace', 'Free Parking on Premises', 'TV with streaming services', 'Free washer', 'Free dryer', 'Bathtub', 'Security Cameras on Property'],
-        images: ['../images/rentals/lakefront/lakefront-1.webp', '../images/rentals/lakefront/lakefront-2.webp', '../images/rentals/lakefront/lakefront-3.webp', '../images/rentals/lakefront/lakefront-4.webp', '../images/rentals/lakefront/lakefront-5.webp', '../images/rentals/lakefront/lakefront-6.webp', '../images/rentals/lakefront/lakefront-7.webp', '../images/rentals/lakefront/lakefront-8.webp'],
-        bnbLink: 'https://www.airbnb.com/rooms/44995054?source_impression_id=p3_1711734236_zpzObVw52q8gWVV5'
-    },
-    {
         name: 'Zen Sanctuary',
         description: "Relax with the whole family at this Zen Sanctuary nestled in the small, friendly community of Smallwood. Less than 15 minutes from Bethel Woods, Monticello Motor Club, Resorts World Casino, The Kartrite Indoor Water Park, The Forestburgh Playhouse, restaurants galore, plus so much more! Guests have access to the whole home and side yard with a fire pit. Total privacy but the hosts are less than 10 min away if anything is needed.",
         details:['6 guests', '3 bedrooms', '3 beds', '1 bath'],
@@ -40,14 +30,14 @@ const rentalProperties = [
         bnbLink: 'https://www.airbnb.com/rooms/1005075602563122864?source_impression_id=p3_1711742527_DD2oFh6GYOW8wliK'
     },
     {
-        name: 'Cozy Cottage with Wood-burning Stove',
-        description: "The Dairyland Cottage itself has lots of vintage/antique charm and decor, while also providing many modern conveniences. A new, well-equipped kitchen for cooking up tasty meals and two new heat and A/C units for staying cozy and/or cool. The heart of the cottage is centered around a wood-burning stove that sits between the main dining and living room areas. The charm continues with lots of natural light, a clawfoot tub, an adorable sleeping loft, and a record player and collection to enjoy. Kick back and relax in this newly listed, calm, stylish cottage retreat in the heart of the Catskill Mountains. It's located on a gorgeous private 33-acre plot with hiking trails and a creek.",
-        details:['4 Guests', '2 bedrooms', '3 beds', '1 bath'],
-        type: 'Entire Cottage',
-        location: 'Ellenville, NY',
-        amenities: ['Garden View', 'Valley View', 'Kitchen', 'Fast Wifi', 'Pets Allowed', 'Free Parking on Premises', '42" HDTV', 'AC - Spilt Unit', 'Bathtub', 'Private Patio or Balcony',  'Security Cameras on Property'],
-        images: ['../images/rentals/cozy-cottage/cozy-cottage-1.webp', '../images/rentals/cozy-cottage/cozy-cottage-2.webp', '../images/rentals/cozy-cottage/cozy-cottage-3.webp', '../images/rentals/cozy-cottage/cozy-cottage-4.webp', '../images/rentals/cozy-cottage/cozy-cottage-5.webp', '../images/rentals/cozy-cottage/cozy-cottage-6.webp', '../images/rentals/cozy-cottage/cozy-cottage-7.webp', '../images/rentals/cozy-cottage/cozy-cottage-8.webp'],
-        bnbLink: 'https://www.airbnb.com/rooms/53203765?source_impression_id=p3_1711744523_9CBKz1rrLtzJsUaT'
+        name: 'Scenic Mountain Escape',
+        description: "Relax with the whole family or all by yourself at this tranquil retreat. Nestled up in the mountains away from the hustle and bustle of the city but close to grocery stores, restaurants, Bethel Woods, The Kartrite Indoor Water Park, Resorts World Catskills, Holiday Mountain, farmers markets galore and so much more!!",
+        details:['4 Guests', '1 bedroom', '2 beds', '1 bath'],
+        type: 'Enitre Home',
+        location: 'Callicoon, NY',
+        amenities: ['Kitchen', 'Wifi', 'Dedicated Workspace', 'Free Parking on Premises', 'TV', 'Washer', 'Indoor Fireplace', 'Fire Pit', 'Refrigerator',  'Exterior Security Cameras on Property'],
+        images: ['../images/rentals/scenic/scenic-1.jpeg', '../images/rentals/scenic/scenic-2.jpeg', '../images/rentals/scenic/scenic-3.webp', '../images/rentals/scenic/scenic-4.jpeg', '../images/rentals/scenic/scenic-5.jpeg', '../images/rentals/scenic/scenic-6.jpeg', '../images/rentals/scenic/scenic-7.jpeg', '../images/rentals/scenic/scenic-8.webp'],
+        bnbLink: 'https://www.airbnb.com/rooms/1126041542442734816?source_impression_id=p3_1712776239_aq2rzybwZrPTGUov'
     },
     {
         name: 'Zen Terrarium',
