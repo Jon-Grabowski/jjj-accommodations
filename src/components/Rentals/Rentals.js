@@ -1,56 +1,42 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import RentalTopSection from './RentalTopSection';
+import RentalManagement from './RentalManagement';
 import FeaturedRental from './FeaturedRental';
-import { rentalProperties } from './utilitiesRental';
+import { rentalManagementData, rentalProperties } from './utilitiesRental';
 import RentalCard from './RentalCard';
 import './rentals.css'
 
 
 function Rentals() {
     const [featureRental, setFeatureRental] = useState(rentalProperties[0])
-    const {details, location, type} = featureRental
-
+    const featuredRef = useRef()
     const cardStyle = {
         maxWidth: '15rem',
     }
 
-    function handleClick(index){
+    function handleRentalCardClick(index){
         setFeatureRental(rentalProperties[index])
-        window.scrollTo(0, 0);
+        featuredRef.current.scrollIntoView()
+
     }
 
     const rentalCards = rentalProperties.map((rental, index) => {
         if (rental === featureRental) {
             const selectedStyle = {...cardStyle, borderColor: 'white'}
-            return <RentalCard key={index} rental={rental} index={index} style={selectedStyle} handleClick={handleClick}/>
+            return <RentalCard key={index} rental={rental} index={index} style={selectedStyle} handleClick={handleRentalCardClick}/>
         }
-        else return <RentalCard key={index} rental={rental} index={index} style={cardStyle} handleClick={handleClick}/> 
+        else return <RentalCard key={index} rental={rental} index={index} style={cardStyle} handleClick={handleRentalCardClick}/> 
         
-    })
-
-    const detailsList = details.map((detail, index) => {
-        if (index === details.length-1) return <span key={index} className='ms-1 fst-italic'>{detail}</span>
-        else return <span key={index} className='ms-1 fst-italic'>{`${detail} •`}</span>
     })
 
     return (
         <div>
             <RentalTopSection />
             <div className='mt-3 container-lg'>
-                <div className='feature-title rounded my-5' style={{backgroundImage: `url(${featureRental.images[0]})`}}>
-                    <p className='display-5 fw-bold bg-black bg-opacity-50 pt-3 mb-0 rounded-top border-top' style={{fontStyle: 'oblique'}}>{featureRental.name}</p>
-                    <div className="mb-4 text-white  bg-black bg-opacity-50 pb-4 rounded-bottom border-bottom">
-                        <p className='fst-italic fs-5 mb-0'>{location} - {type}</p>
-                        <div className='d-flex justify-content-center' style={{fontSize: '16px'}}>
-                            {detailsList}
-                        </div>
-                    </div>
-                </div>
+                <RentalManagement data={rentalManagementData} />
 
-                <div className='row align-items-center'>
-                    <FeaturedRental rental={featureRental} />
-                </div>
+                <FeaturedRental rental={featureRental} featuredRef={featuredRef}/>
 
                 <div>
                     <h3 className='text-start mt-5'>Explore Our Properties:</h3>

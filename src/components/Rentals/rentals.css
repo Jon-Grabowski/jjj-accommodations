@@ -4,11 +4,9 @@
     background-repeat: none;
     
 }
-
-.feature-title > p{
-    -webkit-text-stroke: 1px black;
+.feature-rental-wrapper{
+    scroll-margin-top: 55px;
 }
-
 
 #rental-cards-wrapper{
     padding-bottom: 5px;

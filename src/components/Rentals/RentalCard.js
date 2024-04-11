@@ -1,7 +1,7 @@
 import React from 'react'
 
 function RentalCard({rental, style, handleClick, index}) {
-    const { name, details, type, location, images } = rental
+    const { name, type, location, images } = rental
 
     return (
         <div className="card text-bg-dark flex-shrink-0" style={style} onClick={()=>handleClick(index)}>

@@ -1,3 +1,16 @@
+const rentalManagementData = {
+    title:'Rental Properties',
+    body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem et tortor consequat id porta nibh venenatis cras sed. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Ut etiam sit amet nisl purus in mollis nunc sed. Erat pellentesque adipiscing commodo elit at.',
+    imageURL: '../images/stock-images/superhost-logo.jpg',
+    serviceObj:{
+        'Manage AirBnb Listings': 'Description Goes Here',
+        'Use of Superhost Status': 'Description Goes Here',
+        'Handle All Guest Communication': 'Description Goes Here',
+        'Décor & Environmental Aesthetic': 'Description Goes Here',
+        'Cleaning & Maintenance Services': 'Description Goes Here'
+    }
+}
+
 const rentalProperties = [
     {
         name: 'Good Vibes Studio in the Woods',
@@ -72,4 +85,4 @@ const rentalProperties = [
     //TODO:KEEP ADDING RENTAL DATA
 ]
 
-export {rentalProperties}
+export {rentalManagementData, rentalProperties}
