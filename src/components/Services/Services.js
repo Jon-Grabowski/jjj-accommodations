@@ -1,9 +1,16 @@
 import React from 'react'
+import ServiceTopSection from './ServiceTopSection'
+import CleaningSection from './CleaningSection'
+import MaintenanceSection from './MaintenanceSection'
+import SeasonalSection from './SeasonalSection'
 
 function Services() {
     return (
         <div>
-            <h1>Services Page</h1>
+            <ServiceTopSection />
+            <CleaningSection />
+            <SeasonalSection />
+            <MaintenanceSection />
         </div>
     )
 }

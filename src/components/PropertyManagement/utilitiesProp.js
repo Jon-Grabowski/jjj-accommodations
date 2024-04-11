@@ -34,10 +34,11 @@ const propManagementTypeData = [
         body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem et tortor consequat id porta nibh venenatis cras sed. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Ut etiam sit amet nisl purus in mollis nunc sed. Erat pellentesque adipiscing commodo elit at.',
         imageURL: '../images/stock-images/hands-holding-house.jpg',
         serviceObj:{
-            'Routine Cleans': 'Description Goes Here',
-            'Deep Cleans': 'Description Goes Here',
+            'Routine & Deep Cleans': 'Description Goes Here',
             'Move-In/Move-Out': 'Description Goes Here',
-            'Handyman Services': 'Description Goes Here'
+            'Property Maintenance': 'Description Goes Here',
+            'Handyman Services': 'Description Goes Here',
+            'Routine Check-ins': 'Description Goes Here'
         }
 
     }
