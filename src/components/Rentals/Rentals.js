@@ -36,7 +36,7 @@ function Rentals() {
             <div className='mt-3 container-lg'>
                 <RentalManagement data={rentalManagementData} />
                 
-                <h1 className='display-2 text-end fw-bold'>Current Listings</h1>
+                <h1 className='display-2 fw-bold'>Current Listings</h1>
                 <FeaturedRental rental={featureRental} featuredRef={featuredRef}/>
 
                 <div>
