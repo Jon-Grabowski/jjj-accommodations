@@ -14,6 +14,7 @@ function RentalManagement({data}) {
     for (const key in serviceObj){
         services.push(
             <span key={key} className='mx-3 mb-1 fw-bold'>{`◊ ${key}`}</span>
+            // <button className='mx-3 mb-3 fw-bold rounded-pill'>{key}</button>
         );
         servicesDescriptions.push(
             <div key={key}>
@@ -25,11 +26,27 @@ function RentalManagement({data}) {
 
     return (
         <div className='pt-4 mt-5 d-flex gap-5 flex-wrap justify-content-evenly align-items-center text-black' style={{marginBottom: '11rem'}}>
-            <div className='rounded-circle border border-black border-3 overflow-hidden mb-3' style={{maxWidth: '400px', maxHeight:'400px'}}>
-                <img src={imageURL} alt={title} className='h-100 w-100'/>
+            <div className='border bg-white bg-opacity-75 p-3 rounded'>
+                <div className='d-flex align-items-center gap-3'>
+                    <div className='rounded-circle border border-black border-3 overflow-hidden' style={{maxWidth: '150px', maxHeight:'150px'}}>
+                        <img src={imageURL} alt={title} className='h-100 w-100'/>
+                    </div>
+                    <h1 className='display-4 fw-bold border-bottom pb-2 border-black'>Rental Property Management</h1>
+                </div>
+                <div className='text-start m-auto' style={{maxWidth:'50rem'}}>
+                        <p className='p-3 fs-5'>{body}</p>
+                </div>
+                <div className='d-flex m-auto justify-content-center flex-wrap mb-3 border-top border-bottom border-black py-2' style={{maxWidth:'50rem'}}>
+                            {services}
+                </div>
+                <button 
+                        className='text-light rounded border-secondary py-2 px-4' 
+                        style={{backgroundColor: 'rgb(9, 9, 39)'}}
+                        onClick={handleClick}
+                    >More Details ▾</button>
             </div>
 
-            {cardFlipped ? 
+            {/* {cardFlipped ? 
                 <div className='border bg-white bg-opacity-75 p-3 rounded'>
                     <div className='text-start mb-2 border-bottom pb-1'>
                         <h1 className='display-6 d-inline text-start fst-italic'>{title}</h1>
@@ -60,7 +77,7 @@ function RentalManagement({data}) {
                         style={{backgroundColor: 'rgb(9, 9, 39)'}}
                         onClick={handleClick}
                     >More Details →</button>
-                </div>}
+                </div>} */}
 
         </div>
     )
