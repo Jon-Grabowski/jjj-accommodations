@@ -14,7 +14,7 @@ function RentalManagement({data}) {
     const servicesDescriptions = [];
     for (const key in serviceObj){
         services.push(
-            <span key={key} className='mx-3 mb-1 fw-bold'>{`◊ ${key}`}</span>
+            <span key={key} className='fs-5 mx-3 mb-1 fw-bold'>{`◊ ${key}`}</span>
         );
         servicesDescriptions.push(
             <div key={key}>
@@ -48,7 +48,7 @@ function RentalManagement({data}) {
                         className='text-light rounded border-secondary py-2 px-4' 
                         style={{backgroundColor: 'rgb(9, 9, 39)'}}
                         onClick={handleClick}
-                    >{moreDetails ? 'Less Details ▴' :'More Details ▾'}</button>
+                    >{moreDetails ? 'Less Details ▴' : 'More Details ▾'}</button>
             </div>
         </div>
     )

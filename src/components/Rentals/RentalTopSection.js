@@ -11,7 +11,7 @@ function RentalTopSection() {
                         {/* <p className='text-wrap fs-5 m-auto py-2' style={{maxWidth:'30rem'}}>Whether you're looking for Short Term Rental Management or Residential Property Management, we've got you covered!</p> */}
                         <p className='fs-6 fst-italic pt-3' >"Trust us to care for your property with professionalism and a friendly touch!"</p>
                     </div>
-                    <div className='d-flex justify-content-center align-items-center gap-4 mt-4 pb-3'>
+                    <div className='py-4'>
                         <img src='../images/services/namaste-sign.jpeg' alt='namaste' className='rounded'/>
                     </div>
                 </div>

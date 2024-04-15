@@ -6,8 +6,8 @@ const rentalManagementData = {
         'Manage AirBnb Listings': 'Description Goes Here',
         'Use of Superhost Status': 'Description Goes Here',
         'Guest Communications': 'Description Goes Here',
-        'Décor & Aesthetic': 'Description Goes Here',
-        'Cleaning & Maintenance': 'Description Goes Here'
+        'Cleaning & Maintenance': 'Description Goes Here',
+        'Décor & Aesthetic': 'Description Goes Here'
     }
 }
 
