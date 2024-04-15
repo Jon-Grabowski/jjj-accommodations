@@ -17,7 +17,7 @@ function RentalSection() {
             <div id='rentals-text' className='d-flex flex-column justify-content-between align-items-center'>
                 <h1 className='display-3 fw-bold'>Rentals</h1>
                 <p className='w-100 fs-3'>Explore our current listing of rental properties and plan your relaxing getaway in the beautiful Catskill Mountains!</p>
-                <Link to='/rentals'><button className='btn btn-primary mb-2 px-4'>See Listings</button></Link>
+                <Link to='/rentalmanagement'><button className='btn btn-primary mb-2 px-4'>See Listings</button></Link>
             </div>  
             <div id='carousel-section' className='w-lg-50 w-100'>
                 <RentalCarousel images={images}/>
