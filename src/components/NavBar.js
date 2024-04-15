@@ -7,7 +7,7 @@ function NavBar() {
     const [navExpanded, setNavExpanded] = useState(false)
     const location = useLocation()
 
-    const links = ['rentals', 'property management', 'services', 'about', 'contact']
+    const links = ['rental management', 'services', 'about', 'contact']
 
     const listLinks = links.map((link)=>{
         let path = '/' + link.replace(/\s+/g, '')
@@ -39,7 +39,7 @@ function NavBar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div id="nav-links-wrapper" className={`navbar-collapse ${navExpanded ? 'show' :'collapse' }`} >
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul className="navbar-nav d-flex align-items-center me-auto mb-2 mb-lg-0">
                         {listLinks}
                     </ul>
                     <div>
