@@ -2,18 +2,21 @@
     background-image: url('./../../../public/images/services/cleaning-stock-2.jpg');
     background-size: cover;
     background-position: center;
+    padding: 7rem 0rem;
 }
 
 #maintenance-services-banner{
     background-image: url('./../../../public/images/services/maintenance-stock-1.jpg');
     background-size: cover;
     background-position: center;
+    padding: 7rem 0rem;
 }
 
 #seasonal-services-banner{
     background-image: url('./../../../public/images/services/seasonal-stock-1.jpg');
     background-size: cover;
     background-position: center;
+    padding: 7rem 0rem;
 }
 
 #cleaning-services-header{
