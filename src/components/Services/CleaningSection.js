@@ -1,5 +1,6 @@
 import React from 'react'
 import './cleaningsection.css'
+import { Link } from 'react-router-dom'
 
 function CleaningSection() {
     return (
@@ -28,16 +29,18 @@ function CleaningSection() {
                         </p>
                     </div>
                 </div>
-                <img src='../images/services/cleaning-stock-3.jpg' alt='cleaning sink' className='rounded' style={{maxWidth: '30rem'}}/>
+                <img src='../images/services/cleaning-stock-3.jpg' alt='cleaning sink' className='rounded overflow-hidden' style={{maxWidth: '30rem'}}/>
             </div>
-            <div className='my-5'>
-                <h2 className='display-5'>Residential Cleaning Checklist</h2>
-                <p>View all services included in each of our cleaning packages!</p>
+            
                 <div>
-                    <button>View</button>
-                    <button>Download</button>
+                    <h2 className='display-5'>Residential Cleaning Checklist</h2>
+                    <button>
+                        <Link to='../pdfs/JJJ-Accomodations-Cleaning-Checklist.pdf' target='_blank' className='my-5'>View</Link>
+                    </button>
+                    <button>
+                        <a href='../pdfs/JJJ-Accomodations-Cleaning-Checklist.pdf' download={'JJJ Accomodations Cleaning Checklist'} className='my-5'>Download</a>
+                    </button>
                 </div>
-            </div>
         </div>
     )
 }
