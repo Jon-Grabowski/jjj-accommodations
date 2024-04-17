@@ -3,7 +3,9 @@ import React from 'react'
 function SeasonalSection() {
     return (
         <div>
-            <h1>Seasonal Services Section</h1>
+            <div id='seasonal-services-banner' className='py-5'>
+                <span id='seasonal-services-header' className='display-3 fw-bold text-dark'>Seasonal Services</span>
+            </div>
         </div>
     )
 }

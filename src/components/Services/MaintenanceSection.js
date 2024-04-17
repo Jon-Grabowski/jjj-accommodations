@@ -3,7 +3,9 @@ import React from 'react'
 function MaintenanceSection() {
     return (
         <div>
-            <h1>Maintenance Section</h1>
+            <div id='maintenance-services-banner' className='py-5'>
+                <span id='maintenance-services-header' className='display-3 fw-bold'>Maintenance Services</span>
+            </div>
         </div>
     )
 }

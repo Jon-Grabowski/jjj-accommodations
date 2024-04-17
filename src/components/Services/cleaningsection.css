@@ -1,0 +1,29 @@
+#cleaning-services-banner {
+    background-image: url('./../../../public/images/services/cleaning-stock-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#maintenance-services-banner{
+    background-image: url('./../../../public/images/services/maintenance-stock-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#seasonal-services-banner{
+    background-image: url('./../../../public/images/services/seasonal-stock-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#cleaning-services-header{
+-webkit-text-stroke: white .5px;
+}
+
+#maintenance-services-header{
+    -webkit-text-stroke: black 1px;
+}
+
+#seasonal-services-header{
+    -webkit-text-stroke: white .5px;
+}
