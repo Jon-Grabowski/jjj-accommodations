@@ -5,6 +5,12 @@
     padding: 7rem 0rem;
 }
 
+#cleaning-checklist{
+    background-image: url('./../../../public/images/services/cleaning-stock-3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 #maintenance-services-banner{
     background-image: url('./../../../public/images/services/maintenance-stock-1.jpg');
     background-size: cover;
@@ -29,4 +35,10 @@
 
 #seasonal-services-header{
     -webkit-text-stroke: white .5px;
+}
+
+@media only screen and (max-width: 1199px) {
+    #cleaning-checklist{
+        width: 100%;
+    }
 }
