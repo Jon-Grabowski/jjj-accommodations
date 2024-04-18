@@ -6,7 +6,7 @@ function ServiceTopSection({cleaningRef, maintenanceRef, seasonalRef}) {
         <div id='service-top-section-wrapper' className=''>
             <div className='bg-black bg-opacity-75'>
                 <div className='m-auto py-2'>
-                        <p className='display-3 fw-bold fst-italic pt-3 border-bottom m-auto mb-2' style={{maxWidth:'17rem'}}>Services</p>
+                        <p className='display-3 fw-bold fst-italic pt-3 border-bottom m-sm-auto mb-2 mx-3' style={{maxWidth:'40rem'}}>Residential Services</p>
                         <div className=' m-auto d-flex flex-wrap justify-content-evenly gap-sm-4 fs-3' style={{maxWidth:'40rem'}}>
                             <span className='service-links' onClick={()=>{cleaningRef.current.scrollIntoView()}}>◊ Cleaning</span>
                             <span className='service-links' onClick={()=>{maintenanceRef.current.scrollIntoView()}}>◊ Maintenance</span>
