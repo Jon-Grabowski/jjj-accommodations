@@ -6,6 +6,9 @@ function SeasonalSection() {
             <div id='seasonal-services-banner'>
                 <span id='seasonal-services-header' className='display-3 fw-bold text-dark'>Seasonal Services</span>
             </div>
+            <div className='container-lg my-5 py-5'>
+                <h4 className='display-6 w-75 m-auto fst-italic'>"<span className='fw-bold display-5'>Seasonal Maintenance Made Simple:</span> Choose Our Expertise or Connect with Reliable Services for All Your Seasonal Needs!"</h4>
+            </div>
         </div>
     )
 }
