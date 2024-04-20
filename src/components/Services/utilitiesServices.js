@@ -1,6 +1,6 @@
 const maintenanceCardData = [
     {
-        title: 'Handyman',
+        title: 'Small Repairs',
         body:"Tackle those pesky household tasks with our Handyman Services, covering a range of smaller jobs to keep your property in top shape. Whether it's fixing a leaky faucet, repairing a squeaky door, or installing shelves, our skilled handyman is at your service!",
         details: {
             'Handyman Service': '$50/hour or quote per job',

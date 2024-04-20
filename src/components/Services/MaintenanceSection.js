@@ -11,7 +11,9 @@ function MaintenanceSection() {
     return (
         <div>
             <div id='maintenance-services-banner'>
-                <span id='maintenance-services-header' className='display-3 fw-bold'>Maintenance Services</span>
+                <div className='banner-background-dark'>
+                    <span id='maintenance-services-header' className='display-1 fw-bold'>Maintenance Services</span>
+                </div>
             </div>
             <div className='container-lg my-5 py-5'>
                 <h4 className='display-6 w-75 m-auto fst-italic'>"<span className='fw-bold display-5'>Keeping Your Property in Prime Condition:</span> Let Us Handle Maintenance or Connect You with Trusted Contractors for Hassle-Free Solutions!"</h4>
