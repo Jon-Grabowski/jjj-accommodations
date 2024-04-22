@@ -7,7 +7,7 @@ function CleaningSection() {
         <div>
             <div id='cleaning-services-banner'>
                 <div className='banner-background'>
-                    <span id='cleaning-services-header' className='display-1 fw-bold text-dark'>Cleaning Services</span>
+                    <span id='cleaning-services-header' className='display-1 fw-bold text-black'>Cleaning Services</span>
                 </div>
             </div>
             <div className='container-lg my-5 py-5'>

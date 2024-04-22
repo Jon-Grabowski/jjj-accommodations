@@ -23,4 +23,31 @@ const maintenanceCardData = [
     }
 ]
 
-export {maintenanceCardData}
+const seasonalData = [
+    {
+        title: 'Winter',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper sit amet risus nullam eget felis eget nunc.',
+        services: ['Snow Removal - Walkways & Driveways', 'De-Ice - Walkways, Stairs, & Decks', ],
+        img: '../images/services/winter-stock-1.jpg'
+    },
+    {
+        title: 'Spring',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper sit amet risus nullam eget felis eget nunc.',
+        services: ['Planting', 'Lawn Mowing', 'Property Clean-up'],
+        img: '../images/services/spring-stock-1.jpg'
+    },
+    {
+        title: 'Summer',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper sit amet risus nullam eget felis eget nunc.',
+        services: ['Lawn Care'],
+        img: '../images/services/summer-stock-1.jpg'
+    },
+    {
+        title: 'Fall',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper sit amet risus nullam eget felis eget nunc.',
+        services: ['Lawn Care', 'Leaf Removal'],
+        img: '../images/services/fall-stock-1.jpg'
+    },
+]
+
+export {maintenanceCardData, seasonalData}
