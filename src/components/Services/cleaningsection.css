@@ -1,0 +1,54 @@
+#cleaning-services-banner {
+    background-image: url('./../../../public/images/services/cleaning-stock-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-background{
+    background-color: rgba(234, 234, 230, 0.25);
+    padding: 5rem 0rem;
+}
+
+.banner-background-dark{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5rem 0rem;
+}
+
+#cleaning-checklist{
+    background-image: url('./../../../public/images/services/cleaning-stock-3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#maintenance-services-banner{
+    background-image: url('./../../../public/images/services/maintenance-stock-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#seasonal-services-banner{
+    background-image: url('./../../../public/images/services/seasonal-stock-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#cleaning-services-header{
+    font-family: Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman, sans-serif; 
+    text-shadow: 3px 0px .75px rgb(118, 162, 213);
+}
+
+#maintenance-services-header{
+    font-family: Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman, sans-serif; 
+    text-shadow: 4px 0px .75px rgb(13, 36, 64);
+}
+
+#seasonal-services-header{
+    font-family: Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman, sans-serif; 
+    text-shadow: 3px 0px .75px rgb(118, 162, 213);
+}
+
+@media only screen and (max-width: 1199px) {
+    #cleaning-checklist{
+        width: 100%;
+    }
+}

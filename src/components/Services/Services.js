@@ -12,6 +12,12 @@ function Services() {
     return (
         <div>
             <ServiceTopSection cleaningRef={cleaningRef} maintenanceRef={maintenanceRef} seasonalRef={seasonalRef}/>
+            {/* <div className='bg-light bg-opacity-25'>
+                <div className='container-lg py-5 w-75'>
+                    <span className='display-6 py-5 my-5'>We turn property care into a breeze!</span>
+                    <p className='mt-2'>From sparkling cleanings to proactive maintenance and seasonal spruce-ups, we've got all your needs covered.</p>
+                </div>
+            </div> */}
             <div ref={cleaningRef}>
                 <CleaningSection />
             </div>
