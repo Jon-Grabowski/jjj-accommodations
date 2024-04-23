@@ -3,7 +3,7 @@ import './contacttopsection.css'
 
 function ContactTopSection() {
     return (
-        <div id='contact-top-section-wrapper' className='mb-5'>
+        <div id='contact-top-section-wrapper' className=''>
             <div className='bg-black bg-opacity-50 rounded py-2'>
                 <div className=' m-auto'>
                     <div className='py-4'>
