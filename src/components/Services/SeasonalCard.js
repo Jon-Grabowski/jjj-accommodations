@@ -12,7 +12,7 @@ function SeasonalCard({season}) {
     }
 
     const serviceList = services.map(service => {
-        return <li className='list-group-item fw-bold'>{service}</li>
+        return <li key={service} className='list-group-item fw-bold'>{service}</li>
     })
     return (
         <div className="card border-0 mb-4" style={{maxWidth: "20rem"}}>
