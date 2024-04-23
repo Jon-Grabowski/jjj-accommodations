@@ -8,12 +8,24 @@ function Email() {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
 
-    function sendEmail(e){
+    const templateParams = {name, email, message}
+    // TODO: Display success or error message near form, not in alert
+    async function sendEmail(e){
         e.preventDefault()
-        console.log(name, email, message)
-        setName('')
-        setEmail('')
-        setMessage('')
+        await emailjs.send('service_hwy13fw', 'template_cdrvpyi', templateParams, 'RaYdwBlnDnbHbf2yS').then(
+            (response) => {
+                console.log(response)
+                alert('MESSAGE SENT! We recieved your message and will get back to you soon!');
+                setName('')
+                setEmail('')
+                setMessage('')
+            },
+            (error) => {
+                console.log(error)
+                alert('MESSAGE FAILED TO SEND! Please email us using the address listed.');
+            }
+        );
+
     }
     return (
         <div className='mt-5'>
