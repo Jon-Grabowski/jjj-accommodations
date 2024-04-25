@@ -4,7 +4,7 @@ import './contactinfo.css'
 
 function ContactInfo() {
     return (
-        <div className='d-flex flex-column gap-5 fs-5 text-start mb-4'>
+        <div className='d-flex flex-column gap-5 fs-5 text-start mb-5'>
             <div className='d-flex flex-wrap justify-content-start align-items-center' id='email-contact' onClick={() => window.location = 'mailto:jjjaccommodations@gmail.com'}>
                 <Mail className='me-3' size={48}/><span className='m-auto'>JJJAccommodations@gmail.com</span>
             </div>
