@@ -37,7 +37,7 @@ function Email() {
     return (
         <div className=''>
             
-            <h1 className='display-5'><Mails size={40} className='my-5'/> Send Us a Message</h1>
+            <h1 className='display-5 fw-bold fst-italic mb-5'><Mails size={40} className=''/> Send Us a Message</h1>
             <form onSubmit={sendEmail} className='d-flex flex-column text-start m-auto' style={{maxWidth:'25rem'}}>
                 
                     <label htmlFor='name' className='fs-5 mb-1'>Full Name: </label>
