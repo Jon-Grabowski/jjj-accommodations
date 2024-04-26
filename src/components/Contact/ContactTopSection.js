@@ -4,7 +4,7 @@ import './contacttopsection.css'
 function ContactTopSection() {
     return (
         <div id='contact-top-section-wrapper' className='border-bottom'>
-            <div className='bg-black bg-opacity-50 rounded py-2'>
+            <div className='bg-black bg-opacity-50 py-2'>
                 <div className=' m-auto'>
                     <div className='py-4'>
                         <h1 className='d-inline display-3 border-bottom fw-bold px-4'>Contact Us</h1>
