@@ -11,6 +11,9 @@ import './rentals.css'
 function Rentals() {
     const [featureRental, setFeatureRental] = useState(rentalProperties[0])
     const featuredRef = useRef()
+    const managementRef = useRef()
+    const listingRef = useRef()
+
     const cardStyle = {
         maxWidth: '15rem',
     }
@@ -32,11 +35,11 @@ function Rentals() {
 
     return (
         <div>
-            <RentalTopSection />
-            <div className='mt-3 container-lg'>
+            <RentalTopSection listingRef={listingRef} managementRef={managementRef}/>
+            <div ref ={managementRef} className='mt-3 container-lg'>
                 <RentalManagement data={rentalManagementData} />
                 
-                <h1 className='display-2 fw-bold'>Current Listings</h1>
+                <h1 ref={listingRef} className='display-2 fw-bold'>Current Listings</h1>
                 <FeaturedRental rental={featureRental} featuredRef={featuredRef}/>
 
                 <div>
