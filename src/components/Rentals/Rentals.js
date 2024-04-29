@@ -36,6 +36,9 @@ function Rentals() {
     return (
         <div>
             <RentalTopSection listingRef={listingRef} managementRef={managementRef}/>
+            <div className='container-xl'>
+                <h3>"Explore our Rental Property Management services tailored to property owners, as well as our Current Vacation Rental Listings for those seeking their next short-term getaway. Whether you're looking to list your property or find the perfect vacation spot, we've got you covered."</h3>
+            </div>
             <div ref ={managementRef} className='mt-3 container-lg'>
                 <RentalManagement data={rentalManagementData} />
                 

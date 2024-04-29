@@ -27,7 +27,7 @@ function FeaturedRental({rental, featuredRef}) {
             <div className='row align-items-center m-auto'>
                 <div className='col-lg-6'>  
                     <div className="text-center m-auto" style={{maxWidth:'40rem'}}>
-                        <RentalCarousel images={images} />
+                        <RentalCarousel images={images}/>
                         <div className="card-footer text-body-secondary">
                         </div>
                     </div>

@@ -4,8 +4,13 @@ import './rentalcarousel.css'
 import { ArrowBigLeft, ArrowBigRight } from 'lucide-react';
 
 function RentalCarousel({images}) {
+    
+    
     const [imgIndex, setImageIndex] = useState(0)
-
+    useEffect(() => {
+        setImageIndex(0)
+    },[images]);
+    
     function handleClick(interval){
         if (interval > 0) {
             if (imgIndex === images.length - 1) setImageIndex(0)
