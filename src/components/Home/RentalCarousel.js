@@ -5,7 +5,6 @@ import { ArrowBigLeft, ArrowBigRight } from 'lucide-react';
 
 function RentalCarousel({images}) {
     
-    
     const [imgIndex, setImageIndex] = useState(0)
     useEffect(() => {
         setImageIndex(0)

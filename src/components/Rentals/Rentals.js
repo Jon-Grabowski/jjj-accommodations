@@ -36,8 +36,9 @@ function Rentals() {
     return (
         <div>
             <RentalTopSection listingRef={listingRef} managementRef={managementRef}/>
-            <div className='container-xl'>
-                <h3>"Explore our Rental Property Management services tailored to property owners, as well as our Current Vacation Rental Listings for those seeking their next short-term getaway. Whether you're looking to list your property or find the perfect vacation spot, we've got you covered."</h3>
+            <div className='container-xl d-flex flex-wrap justify-content-center align-items-center mt-2 gap-2 mt-lg-5'>
+                <h3 className='display-5 px-1 px-lg-5 fst-italic' style={{maxWidth:'50rem'}}>"Explore our rental property management services or browse our current rental listings for your next happy getaway!"</h3>
+                <img src='../images/stock-images/hands-holding-house.jpg' alt='hands holding house' className='rounded-circle'/>
             </div>
             <div ref ={managementRef} className='mt-3 container-lg'>
                 <RentalManagement data={rentalManagementData} />
