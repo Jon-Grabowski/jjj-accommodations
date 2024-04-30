@@ -40,24 +40,20 @@ function Rentals() {
                 <h3 className='display-5 px-1 px-lg-5 fst-italic' style={{maxWidth:'50rem'}}>"Explore our rental property management services or browse our current rental listings for your next happy getaway!"</h3>
                 <img src='../images/stock-images/hands-holding-house.jpg' alt='hands holding house' className='rounded-circle'/>
             </div>
-            <div ref ={managementRef} className='mt-3 container-lg'>
+            <div ref ={managementRef} className='mt-5 bg-white bg-opacity-25'>
                 <RentalManagement data={rentalManagementData} />
-                
-                <h1 ref={listingRef} className='display-2 fw-bold'>Current Listings</h1>
-                <FeaturedRental rental={featureRental} featuredRef={featuredRef}/>
-
-                <div>
-                    <h3 className='text-start mt-5'>Explore Our Properties:</h3>
-                    <div id='rental-cards-wrapper'className='w-full d-flex gap-2 overflow-auto my-3'>
-                        {rentalCards}
-                    </div>
-                </div>
-
-                <div className='d-flex justify-content-center gap-3'>
-                    
-                </div>
-
             </div>
+                
+            <h1 ref={listingRef} className='display-2 fw-bold'>Current Listings</h1>
+            <FeaturedRental rental={featureRental} featuredRef={featuredRef}/>
+
+            <div>
+                <h3 className='text-start mt-5'>Explore Our Properties:</h3>
+                <div id='rental-cards-wrapper'className='w-full d-flex gap-2 overflow-auto my-3'>
+                    {rentalCards}
+                </div>
+            </div>
+            
         </div>
     )
 }
