@@ -11,16 +11,16 @@ function ManagementServiceCard({service}) {
     };
 
     return (
-        <div className=" flip-card text-center mb-2" style={{maxWidth: '20rem'}}>
-            <div className={`flip-card-inner ${cardFlip ? null : 'card-flipped'}`}>
+        <div className="flip-card text-center mb-2" style={{maxWidth: '20rem'}}>
+            <div className={`flip-card-inner border rounded ${cardFlip ? null : 'card-flipped'}`}>
                 <div className='flip-card-front'>
-                    <div className="card-header text-light d-flex justify-content-center align-items-center" style={{height:'6rem'}}>
-                        <h3>{title}</h3>
+                    <div className="card-header text-light d-flex justify-content-center align-items-center rounded-top border-bottom" style={{height:'6rem'}}>
+                        <h3 className='px-3'>{title}</h3>
                     </div>
-                    <div className="card-body">
+                    <div className=" py-3 bg-light text-black">
                         <p className="card-text">{body}</p>
                     </div>
-                    <div className="card-footer text-body-secondary">
+                    <div className="bg-secondary py-3">
                         <button onClick={handleClick}>Learn More</button>
                     </div>
                 </div>
