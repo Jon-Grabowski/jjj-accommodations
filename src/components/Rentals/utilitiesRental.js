@@ -2,14 +2,34 @@ const rentalManagementData = {
     title:'Rental Properties',
     body: "Let us take the stress out of managing your rental property with our comprehensive services. Sit back, relax, and let us handle the details while you enjoy the benefits of hassle-free property management",
     imageURL: '../images/stock-images/superhost-logo.jpg',
-    serviceObj:{
-        'Manage AirBnb Listings': 'Description Goes Here',
-        'Use of Superhost Status': 'Description Goes Here',
-        'Guest Communications': 'Description Goes Here',
-        'Cleaning & Maintenance': 'Description Goes Here',
-        'Décor & Aesthetic': 'Description Goes Here'
-    }
-}
+    serviceArray:[
+        {
+            title: 'Manage Airbnb Listings',
+            body:"Managing your Airbnb listing is a breeze with us. We'll handle everything including taking and updating captivating photos to ensure your property shines and attracts guests.",
+            link:''
+        },
+        {
+            title: 'Use of Superhost Status',
+            body:"Gain the competitive edge with our Airbnb Superhost status. As trusted hosts, we ensure exceptional guest experiences, leading to higher bookings and increased rental income for your property.",
+            link:''
+        },
+        {
+            title: 'Guest Communications',
+            body:"Leave guest communications to us, around the clock. Our dedicated team ensures prompt and professional responses, guaranteeing a seamless experience for your guests, day or night.",
+            link:''
+        },
+        {
+            title: 'Cleaning & Maintenance',
+            body:"We handle all cleaning tasks and can also provide maintenance services, ensuring your property stays in top condition without lifting a finger.",
+            link:''
+        },
+        {
+            title: 'Décor & Aesthetic Services',
+            body:"From bedding to towels, art, and pillows, we'll spruce up your property to create a welcoming and stylish atmosphere that guests will love.",
+            link:''
+        }
+    ]
+};
 
 const rentalProperties = [
     {

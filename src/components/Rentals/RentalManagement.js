@@ -1,30 +1,35 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ManagementServiceCard from './ManagementServiceCard';
 import MoreDetails from './MoreDetails';
 import './rentalmanagement.css'
 
 function RentalManagement({data}) {
     const [moreDetails, setMoreDetails] = useState(false)
-    const { title, body, imageURL, serviceObj} = data
+    const { title, body, imageURL, serviceArray} = data
 
     function handleClick(){
         setMoreDetails(!moreDetails)
     };
 
-    const services = [];
-    const servicesDescriptions = [];
-    for (const key in serviceObj){
-        services.push(
-            <span key={key} className='fs-5 mx-3 mb-1 fw-bold'>{`◊ ${key}`}</span>
-        );
-        servicesDescriptions.push(
-            <div key={key}>
-                <h5 className='text-decoration-underline'>{key}</h5>
-                <p>{serviceObj[key]}</p>
-            </div>
-        )
-    };
+    const services = serviceArray.map(service => {
+        return  <ManagementServiceCard key={service.title} service={service}/>
+    })
+
+    // const services = [];
+    // const servicesDescriptions = [];
+    // for (const key in serviceObj){
+    //     services.push(
+    //         <span key={key} className='fs-5 mx-3 mb-1 fw-bold'>{`◊ ${key}`}</span>
+    //     );
+    //     servicesDescriptions.push(
+    //         <div key={key}>
+    //             <h5 className='text-decoration-underline'>{key}</h5>
+    //             <p>{serviceObj[key]}</p>
+    //         </div>
+    //     )
+    // };
 
     return (
         <div>
@@ -46,8 +51,11 @@ function RentalManagement({data}) {
                     </div>
                 </div>
             </div>
-            <div className='mt-4'>
-                    <h3>Explore Our Property Management Services:</h3>
+            <div className='mt-4 container-xl'>
+                    <h2>Explore Our Property Management Services:</h2>
+                    <div className='d-flex flex-wrap justify-content-center gap-2 py-5'>
+                        {services}
+                    </div>
             </div>
             {/* <div className='pt-4 mt-5 d-flex gap-5 flex-wrap justify-content-evenly align-items-center text-black' style={{marginBottom: '11rem'}}>
                 <div className='border bg-white bg-opacity-75 p-3 rounded'>

@@ -11,3 +11,7 @@
 #rental-cards-wrapper{
     padding-bottom: 5px;
 }
+
+.card-header{
+    background-color: rgb(9, 9, 39);
+}
