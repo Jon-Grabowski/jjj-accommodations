@@ -52,8 +52,8 @@ function RentalManagement({data}) {
                 </div>
             </div>
             <div className='mt-4 container-xl'>
-                    <h2>Explore Our Property Management Services:</h2>
-                    <div className='d-flex flex-wrap justify-content-center gap-2 py-5'>
+                    <h2 className='fw-bold'>Explore Our Property Management Services:</h2>
+                    <div className='d-flex flex-wrap justify-content-center gap-2 py-3'>
                         {services}
                     </div>
             </div>
