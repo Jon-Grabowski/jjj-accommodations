@@ -1,6 +1,6 @@
 const rentalManagementData = {
     title:'Rental Properties',
-    body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem et tortor consequat id porta nibh venenatis cras sed. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Ut etiam sit amet nisl purus in mollis nunc sed. Erat pellentesque adipiscing commodo elit at.',
+    body: "Let us take the stress out of managing your rental property with our comprehensive services. Sit back, relax, and let us handle the details while you enjoy the benefits of hassle-free property management",
     imageURL: '../images/stock-images/superhost-logo.jpg',
     serviceObj:{
         'Manage AirBnb Listings': 'Description Goes Here',
