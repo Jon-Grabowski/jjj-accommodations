@@ -11,7 +11,7 @@ function ManagementServiceCard({service}) {
     };
 
     return (
-        <div className="flip-card text-center mb-2" style={{maxWidth: '20rem'}}>
+        <div className="flip-card text-center mb-2" style={{maxWidth: '20rem', height:'20rem'}}>
             <div className={`flip-card-inner border rounded ${cardFlip ? null : 'card-flipped'}`}>
                 <div className='flip-card-front'>
                     <div className="card-header text-light d-flex justify-content-center align-items-center rounded-top border-bottom" style={{height:'6rem'}}>

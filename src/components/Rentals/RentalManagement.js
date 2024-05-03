@@ -53,7 +53,7 @@ function RentalManagement({data}) {
             </div>
             <div className='mt-4 container-xl'>
                     <h2 className='fw-bold'>Explore Our Property Management Services:</h2>
-                    <div className='d-flex flex-wrap justify-content-center gap-2 py-3'>
+                    <div className='position-relative d-flex flex-wrap justify-content-center gap-2 py-3'>
                         {services}
                     </div>
             </div>
