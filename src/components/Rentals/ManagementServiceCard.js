@@ -4,23 +4,26 @@ import './managementservicecard.css'
 
 function ManagementServiceCard({service}) {
     const [cardFlip, setCardFlip] = useState(true)
-    const {title, body, link} = service
+    const {title, body, img, link} = service
 
     function handleClick(){
         setCardFlip(!cardFlip)
     };
 
     return (
-        <div className="flip-card text-center mb-2" style={{maxWidth: '20rem', height:'20rem'}}>
-            <div className={`flip-card-inner border rounded ${cardFlip ? null : 'card-flipped'}`}>
+        <div className="flip-card text-center mb-2" style={{maxWidth: '23rem', height:'20rem'}}>
+            <div className={`flip-card-inner rounded shadow ${cardFlip ? null : 'card-flipped'}`}>
                 <div className='flip-card-front'>
-                    <div className="card-header text-light d-flex justify-content-center align-items-center rounded-top border-bottom" style={{height:'6rem'}}>
-                        <h3 className='px-3'>{title}</h3>
+                    <div className="card-header d-flex flex-column justify-content-evenly align-items-center rounded-top" style={{height:'5rem'}}>
+                        <h2 className=' px-3'>{title}</h2>
                     </div>
-                    <div className=" py-3 bg-light text-black">
+                    <div className='h-50 bg-white'>
+                        <img src={img} alt={title}  className='h-100' />
+                    </div>
+                    {/* <div className=" py-3 bg-light text-black">
                         <p className="card-text">{body}</p>
-                    </div>
-                    <div className="bg-secondary py-3">
+                    </div> */}
+                    <div className="card-header d-flex justify-content-center align-items-center rounded-bottom" style={{height:'4.9rem'}}>
                         <button onClick={handleClick}>Learn More</button>
                     </div>
                 </div>
