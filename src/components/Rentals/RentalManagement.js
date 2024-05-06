@@ -34,20 +34,18 @@ function RentalManagement({data}) {
     return (
         <div>
             <div id='rental-management-banner' className=''>
-                <div className='bg-black bg-opacity-25 py-5'>
+                <div className='bg-black bg-opacity-25 pt-4 pb-5'>
                     <div>
                         <span id='rental-management-header' className='display-1 fw-bold'>Rental Property Management</span>
                     </div>
                     <div className='container-lg'>
-                        <div className='d-flex flex-wrap justify-content-center gap-3 align-items-center mt-4'>
-                            <div className='d-flex flex-column' style={{maxWidth:'40rem'}}>
-                                <span id='management-header-body' className='fw-bold fs-4 fst-italic mb-3'>{body}</span>
-                                <Link to='/contact'><button>Contact Us </button></Link>
+                            <div className='d-flex flex-column mt-3 ms-xl-5 ps-xl-5' style={{maxWidth:'40rem'}}>
+                                <span id='management-header-body' className='fw-bold fs-4 fst-italic'>{body}</span>
+                                <Link to='/contact' style={{width:'15rem'}} className='m-auto px-4 py-2 mt-5 btn-bg-blue border fw-bold text-light rounded-pill fs-4 text-decoration-none'>Contact Us</Link>
                             </div>
-                            <div className='rounded-circle border border-black border-3 overflow-hidden' style={{maxWidth: '250px', maxHeight:'250px'}}>
+                            {/* <div className='rounded-circle border border-black border-3 overflow-hidden' style={{maxWidth: '250px', maxHeight:'250px'}}>
                                 <img src={imageURL} alt={title} className='h-100 w-100'/>
-                            </div>
-                        </div>
+                            </div> */}
                     </div>
                 </div>
             </div>

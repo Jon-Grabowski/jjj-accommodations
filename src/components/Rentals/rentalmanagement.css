@@ -1,7 +1,8 @@
 #rental-management-banner{
-    background-image: url('./../../../public/images/stock-images/nature-stock-1.jpg');
+    background-image: url('./../../../public/images/stock-images/rental-stock-2.jpg');
+    transform: rotateY('180');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 #rental-management-header{
