@@ -13,7 +13,7 @@ function FeaturedRental({rental, featuredRef}) {
 
     //TODO: ADD PLAY/PAUSE BUTTON TO IMAGE CAROUSEL
     return (
-        <div className='feature-rental-wrapper' ref={featuredRef}>
+        <div className='feature-rental-wrapper container-lg' ref={featuredRef}>
             <div className='feature-title rounded my-5' style={{backgroundImage: `url(${images[0]})`}}>
                     <p className='display-5 fw-bold bg-black bg-opacity-50 pt-3 mb-0 rounded-top border-top' style={{fontStyle: 'oblique'}}>{name}</p>
                     <div className="mb-4 text-white  bg-black bg-opacity-50 pb-4 rounded-bottom border-bottom">

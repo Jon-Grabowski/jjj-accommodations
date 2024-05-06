@@ -1,7 +1,5 @@
 const rentalManagementData = {
-    title:'Rental Properties',
     body: "Let us take the stress out of managing your rental property with our comprehensive services. Sit back, relax, and let us handle the details while you enjoy the benefits of hassle-free property management",
-    imageURL: '../images/stock-images/superhost-logo.jpg',
     serviceArray:[
         {
             title: 'Create & Manage Airbnb Listings',

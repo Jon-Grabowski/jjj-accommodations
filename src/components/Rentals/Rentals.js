@@ -37,16 +37,27 @@ function Rentals() {
         <div>
             <RentalTopSection listingRef={listingRef} managementRef={managementRef}/>
             <div className='container-xl d-flex flex-wrap justify-content-center align-items-center mt-2 gap-2 mt-lg-5'>
-                <h3 className='display-6 px-1 px-lg-5 fst-italic fw-bold' style={{maxWidth:'70rem'}}>"Explore our rental property management services or browse our current rental listings for your next happy getaway!"</h3>
+                <h3 className='display-6 px-1 px-lg-5 fst-italic fw-bold' style={{maxWidth:'60rem'}}>"Explore our rental property management services or browse our current rental listings for your next happy getaway!"</h3>
             </div>
             <div ref ={managementRef} className='mt-5 bg-white bg-opacity-25'>
                 <RentalManagement data={rentalManagementData} />
             </div>
-                
-            <h1 ref={listingRef} className='display-2 fw-bold'>Current Listings</h1>
+            
+            <div ref={listingRef} id='rental-listings-banner' className=''>
+                <div className='bg-black bg-opacity-25 pt-4 pb-5'>
+                    <div>
+                        <span id='rental-listings-header' className='display-1 fw-bold'>Rental Listings</span>
+                    </div>
+                    <div className='container-lg d-flex justify-content-center'>
+                            <div className='mt-2' style={{maxWidth:'40rem'}}>
+                                <span id='management-header-body' className='fw-bold fs-3 fst-italic'>Explore our current listing of rental properties and plan your relaxing vacation in the beautiful Catskill Mountains!</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
             <FeaturedRental rental={featureRental} featuredRef={featuredRef}/>
 
-            <div>
+            <div className='container-lg'>
                 <h3 className='text-start mt-5'>Explore Our Properties:</h3>
                 <div id='rental-cards-wrapper'className='w-full d-flex gap-2 overflow-auto my-3'>
                     {rentalCards}
