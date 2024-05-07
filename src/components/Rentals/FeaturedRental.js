@@ -11,9 +11,9 @@ function FeaturedRental({rental, featuredRef}) {
         else return <span key={index} className='ms-1 fst-italic'>{`${detail} •`}</span>
     })
 
-    //TODO: ADD PLAY/PAUSE BUTTON TO IMAGE CAROUSEL & CROP IMAGES TO BE SAME SIZE.
+    //TODO: ADD PLAY/PAUSE BUTTON TO IMAGE CAROUSEL
     return (
-        <div className='feature-rental-wrapper' ref={featuredRef}>
+        <div className='feature-rental-wrapper container-lg' ref={featuredRef}>
             <div className='feature-title rounded my-5' style={{backgroundImage: `url(${images[0]})`}}>
                     <p className='display-5 fw-bold bg-black bg-opacity-50 pt-3 mb-0 rounded-top border-top' style={{fontStyle: 'oblique'}}>{name}</p>
                     <div className="mb-4 text-white  bg-black bg-opacity-50 pb-4 rounded-bottom border-bottom">
@@ -27,7 +27,7 @@ function FeaturedRental({rental, featuredRef}) {
             <div className='row align-items-center m-auto'>
                 <div className='col-lg-6'>  
                     <div className="text-center m-auto" style={{maxWidth:'40rem'}}>
-                        <RentalCarousel images={images} />
+                        <RentalCarousel images={images}/>
                         <div className="card-footer text-body-secondary">
                         </div>
                     </div>

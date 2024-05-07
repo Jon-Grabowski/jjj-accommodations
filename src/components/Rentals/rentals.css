@@ -4,10 +4,25 @@
     background-repeat: none;
     
 }
+#rental-listings-banner{
+    background-image: url('./../../../public/images/rentals/zen2/zen2-7.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+#rental-listings-header{
+    text-shadow: 4px 0px .75px rgb(13, 36, 64);
+    -webkit-text-stroke: black 1px;
+}
+
 .feature-rental-wrapper{
     scroll-margin-top: 65px;
 }
 
 #rental-cards-wrapper{
     padding-bottom: 5px;
+}
+
+.card-header{
+    background-color: rgb(9, 9, 39);
 }

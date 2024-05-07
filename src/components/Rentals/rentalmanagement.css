@@ -1,0 +1,16 @@
+#rental-management-banner{
+    background-image: url('./../../../public/images/stock-images/rental-stock-2.jpg');
+    transform: rotateY('180');
+    background-size: cover;
+    background-position: bottom;
+}
+
+#rental-management-header{
+    text-shadow: 4px 0px .75px rgb(13, 36, 64);
+    -webkit-text-stroke: black 1px;
+}
+
+#management-header-body{
+    text-shadow: 3px 0px .75px rgb(13, 36, 64);
+    -webkit-text-stroke: black .5px;
+}

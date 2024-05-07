@@ -18,3 +18,11 @@
   background-color: rgb(86, 82, 82);
   border-radius: 100vw;
 }
+
+.btn-bg-blue{
+  background-color: rgb(9, 9, 39);
+}
+.btn-bg-blue:hover{
+  background-color: rgb(29, 29, 113);
+}
+  

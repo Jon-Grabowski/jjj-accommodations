@@ -1,15 +1,53 @@
 const rentalManagementData = {
-    title:'Rental Properties',
-    body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem et tortor consequat id porta nibh venenatis cras sed. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Ut etiam sit amet nisl purus in mollis nunc sed. Erat pellentesque adipiscing commodo elit at.',
-    imageURL: '../images/stock-images/superhost-logo.jpg',
-    serviceObj:{
-        'Manage AirBnb Listings': 'Description Goes Here',
-        'Use of Superhost Status': 'Description Goes Here',
-        'Guest Communications': 'Description Goes Here',
-        'Cleaning & Maintenance': 'Description Goes Here',
-        'Décor & Aesthetic': 'Description Goes Here'
-    }
-}
+    body: "Let us take the stress out of managing your rental property with our comprehensive services. Sit back, relax, and let us handle the details while you enjoy the benefits of hassle-free property management",
+    serviceArray:[
+        {
+            title: 'Create & Manage Airbnb Listings',
+            text: {
+                header: 'Managing your Airbnb listing is a breeze with us!',
+                body: "We'll handle creating and maintaining your Airbnb listing including taking and updating captivating photos to ensure your property shines and attracts guests."
+            },
+            img: '../images/social icons/airbnb-logo.png',
+            link:''
+        },
+        {
+            title: 'Use of Superhost Status',
+            text:{
+                header: 'Gain the competitive edge with our Airbnb Superhost status!',
+                body: "As trusted hosts, we ensure exceptional guest experiences, leading to higher bookings and increased rental income for your property."
+            },
+            img: '../images/stock-images/superhost-logo-cropped.jpg',
+            link:''
+        },
+        {
+            title: 'Guest Communications',
+            text:{
+                header: 'Leave all guest communications to us!',
+                body: "Our dedicated team ensures prompt and professional responses 24/7, guaranteeing a seamless experience for your guests, day or night."
+            },
+            img: '../images/stock-images/guest-communications-1.png',
+            link:''
+        },
+        {
+            title: 'Cleaning & Maintenance',
+            text:{
+                header: 'We handle all cleaning and maintenance services!',
+                body: "Thorough cleanings are provided after each guest, ensuring your property stays in top condition without lifting a finger."
+            },
+            img: '../images/stock-images/cleaning-card.png',
+            link:''
+        },
+        {
+            title: 'Décor & Aesthetic Services',
+            text:{
+                header: 'Let us freshen up your property!',
+                body: "From bedding to towels, art, and pillows, we'll spruce up your property to create a welcoming and stylish atmosphere that guests will love."
+            },
+            img: '../images/stock-images/decor-card.png',
+            link:''
+        }
+    ]
+};
 
 const rentalProperties = [
     {

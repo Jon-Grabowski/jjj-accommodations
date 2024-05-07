@@ -41,13 +41,13 @@ function Email() {
             <form onSubmit={sendEmail} className='d-flex flex-column text-start m-auto' style={{maxWidth:'25rem'}}>
                 
                     <label htmlFor='name' className='fs-5 mb-1'>Full Name: </label>
-                    <input type='text' name='name' className='mb-2 form-control' value={name} onChange={(e)=>setName(e.target.value)} required></input>
+                    <input type='text' name='name' className='mb-2 form-control shadow' value={name} onChange={(e)=>setName(e.target.value)} required></input>
 
                     <label htmlFor='email' className='fs-5 mb-1'>E-mail:</label>
-                    <input type='email' name='email' className='mb-2 form-control' value={email} onChange={(e)=>setEmail(e.target.value)} required></input>
+                    <input type='email' name='email' className='mb-2 form-control shadow' value={email} onChange={(e)=>setEmail(e.target.value)} required></input>
                 
                     <label htmlFor='message' className='fs-5 mb-1'>Message:</label>
-                    <textarea type='text' rows='7' name='message' className='mb-2 form-control' value={message} onChange={(e)=>setMessage(e.target.value)} required/>
+                    <textarea type='text' rows='7' name='message' className='mb-2 form-control shadow' value={message} onChange={(e)=>setMessage(e.target.value)} required/>
                 
             <button className='btn btn-dark w-50 m-auto fs-5 mt-3' type='submit'>
             <Send size={20}/>  Send

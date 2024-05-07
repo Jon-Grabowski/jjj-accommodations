@@ -7,7 +7,7 @@ function NavBar() {
     const [navExpanded, setNavExpanded] = useState(false)
     const location = useLocation()
 
-    const links = ['rental management', 'services', 'about', 'contact']
+    const links = ['rentals', 'residential', 'about', 'contact']
 
     const listLinks = links.map((link)=>{
         let path = '/' + link.replace(/\s+/g, '')
