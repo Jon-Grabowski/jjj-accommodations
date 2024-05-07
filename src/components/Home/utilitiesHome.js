@@ -9,7 +9,7 @@ const serviceCardData = [
     {
         name:'Residential Services',
         headline: 'Residential Services',
-        body: 'Find the service that\'s right for you and choose from our detailed lists for a Routine Clean, Deep Clean or Move-In / Move-Out.',
+        body: 'Experience the convenience of our residential services designed to keep your home pristine and well-maintained. Our comprehensive cleaning and maintenance services ensure every corner shines while taking care of any repairs and upkeep. With us, you can relax knowing that your home is in good hands.',
         image:'../images/services/services-card-image-1.jpg',
         link: '/residential'
     },
