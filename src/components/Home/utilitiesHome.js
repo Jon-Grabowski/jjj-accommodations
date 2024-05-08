@@ -7,14 +7,14 @@ const serviceCardData = [
     //     link: '/propertymanagement'
     // },
     {
-        name:'Residential Services',
+        btnText:'Learn More',
         headline: 'Residential Services',
-        body: 'Experience the convenience of our residential services designed to keep your home pristine and well-maintained. Our comprehensive cleaning and maintenance services ensure every corner shines while taking care of any repairs and upkeep. With us, you can relax knowing that your home is in good hands.',
+        body: 'Keep your home pristine and well-maintained with our cleaning and handyman services. With us, you can relax knowing that your home is in good hands.',
         image:'../images/services/services-card-image-1.jpg',
         link: '/residential'
     },
     {
-        name:'Contact Us',
+        btnText:'Contact Us',
         headline: 'Additional Services',
         body: 'We cater to all of our clients needs. Contact us now to discuss how we can make your life more relaxed and enjoyable!',
         image:'../images/services/add-services-card-image-1.jpg',

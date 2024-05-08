@@ -36,10 +36,11 @@ function Rentals() {
     return (
         <div>
             <RentalTopSection listingRef={listingRef} managementRef={managementRef}/>
-            <div className='container-xl d-flex flex-wrap justify-content-center align-items-center mt-2 gap-2 mt-lg-5'>
-                <h3 className='display-6 px-1 px-lg-5 fst-italic fw-bold' style={{maxWidth:'60rem'}}>"Explore our rental property management services or browse our current rental listings for your next happy getaway!"</h3>
+            <div className='container-xl d-flex flex-wrap justify-content-center align-items-center gap-2 my-4 my-lg-5'>
+                <img src='../images/services/namaste-sign.jpeg' alt='nameste' className='my-2'/>
+                <h3 className='display-6 mx-1 mx-lg-5 mb-0 fst-italic fw-bold' style={{maxWidth:'40rem'}}>"Explore our rental property management services or browse our current rental listings for your next happy getaway!"</h3>
             </div>
-            <div ref ={managementRef} className='mt-5 bg-white bg-opacity-25'>
+            <div ref ={managementRef} className='bg-white bg-opacity-25'>
                 <RentalManagement data={rentalManagementData} />
             </div>
             

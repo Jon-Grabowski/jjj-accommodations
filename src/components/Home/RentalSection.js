@@ -15,7 +15,7 @@ function RentalSection() {
 
     return (    
         <div id='rental-section-wrapper' >
-                <h1 className='display-2 fw-bold fst-italic mb-5 py-4 px-2 bg-black bg-opacity-25'>Rental Property Management</h1>
+                <h1 className='display-2 fw-bold fst-italic mb-5 py-4 px-2 bg-black bg-opacity-25 border-bottom'>Rental Property Management</h1>
                 <div className='container-lg row m-auto align-items-center'>
                     <div className='col-lg-7 d-flex'>
                         <div id='rentals-text' className='m-auto mb-3 mb-lg-0 d-flex flex-column justify-content-center gap-3 align-items-center'>
