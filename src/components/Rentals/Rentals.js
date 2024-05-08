@@ -32,7 +32,7 @@ function Rentals() {
         else return <RentalCard key={index} rental={rental} index={index} style={cardStyle} handleClick={handleRentalCardClick}/> 
         
     })
-    // transmission fluid flush, fuel injection service
+
     return (
         <div>
             <RentalTopSection listingRef={listingRef} managementRef={managementRef}/>
