@@ -8,7 +8,6 @@ function ContactTopSection() {
                 <div className=' m-auto'>
                     <div className='py-4'>
                         <h1 className='d-inline display-3 border-bottom fw-bold fst-italic px-4'>Contact Us</h1>
-                        {/* <p className='text-wrap fs-5 m-auto py-2' style={{maxWidth:'30rem'}}>Whether you're looking for Short Term Rental Management or Residential Property Management, we've got you covered!</p> */}
                         <p className='fs-6 fst-italic pt-3' >We'd love to hear from you!</p>
                     </div>
                 </div>

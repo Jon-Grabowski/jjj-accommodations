@@ -11,7 +11,6 @@ function Contact() {
             <div id='contact-content-wrapper' className='row'>
                 <div className='d-flex flex-column align-items-center justify-content-center col-md-5 py-5'>               
                     <ContactInfo />
-                    {/* <img src='../images/JJJ-LOGO.png' className='mt-5' style={{maxWidth:'25rem'}}/> */}
                 </div>
                 <div className='col-md-7 bg-white bg-opacity-25 py-5'>
                     <Email />
