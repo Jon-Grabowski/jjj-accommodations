@@ -48,17 +48,16 @@ function CleaningSection() {
                             </p>
                         </div>
                     </div>
-                    {/* <img src='../images/services/cleaning-stock-3.jpg' alt='cleaning sink' className='rounded overflow-hidden' style={{maxWidth: '25rem'}}/> */}
                     <div id='cleaning-checklist' className='d-flex flex-column justify-content-center gap-4' style={{minHeight:'30rem', maxWidth:'40rem'}}>
                         <div className='py-5 bg-black bg-opacity-75'>
                             <h2 className='display-5 px-sm-3'>Cleaning Checklist</h2>
                             <small className='fst-italic'>See a full list of services included in each cleaning package</small>
                             <div className='mt-3'>
                                 <span className=''>
-                                    <Link to='../pdfs/JJJ-Accomodations-Cleaning-Checklist.pdf' target='_blank' className='btn btn-outline-light me-2'>View</Link>
+                                    <Link to='../pdfs/JJJ-Accomodations-Cleaning-Checklist.pdf' target='_blank' className='btn btn-outline-light me-2 fs-4'>View</Link>
                                 </span>
                                 <span>
-                                    <a href='../pdfs/JJJ-Accomodations-Cleaning-Checklist.pdf' download={'JJJ Accomodations Cleaning Checklist'} className='btn btn-outline-light'>Download</a>
+                                    <a href='../pdfs/JJJ-Accomodations-Cleaning-Checklist.pdf' download={'JJJ Accomodations Cleaning Checklist'} className='btn btn-outline-light fs-4'>Download</a>
                                 </span>
                             </div>
                         </div>
