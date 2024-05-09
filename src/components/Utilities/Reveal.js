@@ -12,7 +12,7 @@ function Reveal({children}) {
         if (isInView) {
             mainControls.start('visable')
         }
-    }, [isInView])
+    }, [isInView, mainControls])
 
     return (
         <div ref={ref} className='position-relative'>
