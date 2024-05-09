@@ -7,8 +7,7 @@ const rentalManagementData = {
                 header: 'Managing your Airbnb listing is a breeze with us!',
                 body: "We'll handle creating and maintaining your Airbnb listing including taking and updating captivating photos to ensure your property shines and attracts guests."
             },
-            img: '../images/social icons/airbnb-logo.png',
-            link:''
+            img: '../images/social icons/airbnb-logo.png'
         },
         {
             title: 'Use of Superhost Status',
@@ -16,8 +15,7 @@ const rentalManagementData = {
                 header: 'Gain the competitive edge with our Airbnb Superhost status!',
                 body: "As trusted hosts, we ensure exceptional guest experiences, leading to higher bookings and increased rental income for your property."
             },
-            img: '../images/stock-images/superhost-logo-cropped.jpg',
-            link:''
+            img: '../images/stock-images/superhost-logo-cropped.jpg'
         },
         {
             title: 'Guest Communications',
@@ -25,8 +23,7 @@ const rentalManagementData = {
                 header: 'Leave all guest communications to us!',
                 body: "Our dedicated team ensures prompt and professional responses 24/7, guaranteeing a seamless experience for your guests, day or night."
             },
-            img: '../images/stock-images/guest-communications-1.png',
-            link:''
+            img: '../images/stock-images/guest-communications-1.png'
         },
         {
             title: 'Cleaning & Maintenance',
@@ -34,8 +31,7 @@ const rentalManagementData = {
                 header: 'We handle all cleaning and maintenance services!',
                 body: "Thorough cleanings are provided after each guest, ensuring your property stays in top condition without lifting a finger."
             },
-            img: '../images/stock-images/cleaning-card.png',
-            link:''
+            img: '../images/stock-images/cleaning-card.png'
         },
         {
             title: 'Décor & Aesthetic Services',
@@ -43,8 +39,7 @@ const rentalManagementData = {
                 header: 'Let us freshen up your property!',
                 body: "From bedding to towels, art, and pillows, we'll spruce up your property to create a welcoming and stylish atmosphere that guests will love."
             },
-            img: '../images/stock-images/decor-card.png',
-            link:''
+            img: '../images/stock-images/decor-card.png'
         }
     ]
 };
@@ -120,7 +115,6 @@ const rentalProperties = [
         images: ['../images/rentals/zen3/zen3-1.webp', '../images/rentals/zen3/zen3-2.webp', '../images/rentals/zen3/zen3-3.webp', '../images/rentals/zen3/zen3-4.webp', '../images/rentals/zen3/zen3-5.jpg', '../images/rentals/zen3/zen3-6.jpg', '../images/rentals/zen3/zen3-7.webp', '../images/rentals/zen3/zen3-8.jpg'],
         bnbLink: 'https://www.airbnb.com/rooms/53499116?source_impression_id=p3_1711748975_TnLuqLnmqr3NRQW0'
     }
-    //TODO:KEEP ADDING RENTAL DATA
 ]
 
 export {rentalManagementData, rentalProperties}

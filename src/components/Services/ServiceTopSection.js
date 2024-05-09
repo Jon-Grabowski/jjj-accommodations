@@ -12,7 +12,6 @@ function ServiceTopSection({cleaningRef, maintenanceRef, seasonalRef}) {
                             <span className='service-links' onClick={()=>{maintenanceRef.current.scrollIntoView()}}>◊ Maintenance</span>
                             <span className='service-links' onClick={()=>{seasonalRef.current.scrollIntoView()}}>◊ Seasonal</span>
                         </div>
-                        {/* <p className='text-wrap fs-5 m-auto py-2' style={{maxWidth:'30rem'}}>We cater to all of our client's needs. Contact us now to discuss how we can make your life more relaxed and enjoyable!</p> */}
                         <p className='fs-6 fst-italic pt-3' >We cater to all of our client's needs. Contact us now to discuss how we can make your life more relaxed and enjoyable!</p>
                 </div>
             </div>

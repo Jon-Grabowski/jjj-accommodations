@@ -33,19 +33,16 @@
 }
 
 #cleaning-services-header{
-    /* font-family: Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman, sans-serif;  */
     text-shadow: 3px 0px .75px rgb(118, 162, 213);
     -webkit-text-stroke: white 1px;
 }
 
 #maintenance-services-header{
-    /* font-family: Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman, sans-serif;  */
     text-shadow: 4px 0px .75px rgb(13, 36, 64);
     -webkit-text-stroke: black 1px;
 }
 
 #seasonal-services-header{
-    /* font-family: Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman, sans-serif;  */
     text-shadow: 3px 0px .75px rgb(118, 162, 213);
     -webkit-text-stroke: white 1px;
 }

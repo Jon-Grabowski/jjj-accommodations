@@ -1,17 +1,10 @@
 import React from 'react'
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ManagementServiceCard from './ManagementServiceCard';
-import MoreDetails from './MoreDetails';
 import './rentalmanagement.css'
 
 function RentalManagement({data}) {
-    const [moreDetails, setMoreDetails] = useState(false)
     const {body, serviceArray} = data
-
-    function handleClick(){
-        setMoreDetails(!moreDetails)
-    };
 
     const services = serviceArray.map(service => {
         return  <ManagementServiceCard key={service.title} service={service}/>
