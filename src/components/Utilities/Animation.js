@@ -18,7 +18,7 @@ function Animation({children, variant, duration}) {
         },
         'slideLeft':{
             hidden:{opacity:0,x:250},
-            visable:{opacity:1, x:0}
+            visable:{opacity:[0,.5,1], x:[150,150,0], scale:[.90,.90,1]}
         }
     }
 
