@@ -2,7 +2,7 @@ import React from 'react'
 import './servicecardsection.css'
 import ServiceCard from './ServiceCard'
 import { serviceCardData } from './utilitiesHome';
-import Reveal from '../Utilities/Reveal';
+
 
 function ServiceCardSection() {
 

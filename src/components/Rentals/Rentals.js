@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 import RentalTopSection from './RentalTopSection';
 import RentalManagement from './RentalManagement';
 import FeaturedRental from './FeaturedRental';
-import Reveal from '../Utilities/Reveal';
+import Animation from '../Utilities/Animation';
 import { rentalManagementData, rentalProperties } from './utilitiesRental';
 import RentalCard from './RentalCard';
 import './rentals.css'
@@ -37,12 +37,14 @@ function Rentals() {
     return (
         <div>
             <RentalTopSection listingRef={listingRef} managementRef={managementRef}/>
-            <Reveal>
                 <div className='container-xl d-flex flex-wrap justify-content-center align-items-center gap-2 my-4 my-lg-5'>
-                    <img src='../images/services/namaste-sign.jpeg' alt='nameste' className='my-2'/>
-                    <h3 className='display-6 mx-1 mx-lg-5 mb-0 fst-italic fw-bold' style={{maxWidth:'40rem'}}>"Explore our rental property management services or browse our current rental listings for your next happy getaway!"</h3>
+                    <Animation variant='fadeIn' duration={1.5}>
+                        <img src='../images/services/namaste-sign.jpeg' alt='nameste' className='my-2' style={{width:'13rem'}}/>
+                    </Animation>
+                    <Animation variant='slideLeft' duration={.8}>
+                        <h3 className='display-6 mx-1 mx-lg-5 mb-0 fst-italic fw-bold' style={{maxWidth:'40rem'}}>"Explore our rental property management services or browse our current rental listings for your next happy getaway!"</h3>
+                    </Animation>
                 </div>
-            </Reveal>
             <div ref ={managementRef} className='bg-white bg-opacity-25'>
                 <RentalManagement data={rentalManagementData} />
             </div>

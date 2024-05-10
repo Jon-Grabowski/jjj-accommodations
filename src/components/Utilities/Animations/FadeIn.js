@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation } from 'framer-motion'
 
-function Reveal({children}) {
+function FadeIn({children}) {
     const ref = useRef(null);
     const isInView = useInView(ref, {once:true})
     const mainControls = useAnimation()
@@ -17,15 +17,15 @@ function Reveal({children}) {
         <div ref={ref} className='position-relative'>
             <motion.div
                 variants={{
-                    hidden:{opacity:0,y:150},
-                    visable:{opacity:1, y:0}
+                    hidden:{opacity:0},
+                    visable:{opacity:1}
                 }}
                 initial='hidden'
                 animate={mainControls}
-                transition={{duration: 1.5}}
+                transition={{duration: 3}}
             >{children}</motion.div>
         </div>
     )
 }
 
-export default Reveal
+export default FadeIn
