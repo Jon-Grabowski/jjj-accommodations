@@ -1,8 +1,8 @@
 import React from 'react'
 import { useEffect, useRef } from 'react'
-import { motion, useInView, useAnimation } from 'framer-motion'
+import { motion, useInView, useAnimation, transform } from 'framer-motion'
 
-function Animation({children, variant, duration}) {
+function Animation({children, variant, duration, delay=0}) {
     const ref = useRef(null);
     const isInView = useInView(ref, {once:true})
     const mainControls = useAnimation()
@@ -23,6 +23,10 @@ function Animation({children, variant, duration}) {
         'slideLeftStagger':{
             hidden:{opacity:0,x:250},
             visable:{opacity:[0,.5,1], x:[150,150,0], scale:[.90,.90,1]}
+        },
+        'flipGrow':{
+            hidden:{rotateY: 90, scale:.75},
+            visable:{rotateY: 0, scale:1}
         }
     }
 
@@ -38,7 +42,7 @@ function Animation({children, variant, duration}) {
                 variants={variantObj[variant]}
                 initial='hidden'
                 animate={mainControls}
-                transition={{duration}}
+                transition={{duration, delay}}
             >{children}</motion.div>
         </div>
     )

@@ -1,18 +1,20 @@
 import React from 'react'
+import Animation from '../Utilities/Animation'
 import { useState } from 'react'
 import { ArrowRight, ArrowLeft } from 'lucide-react'
 import './managementservicecard.css'
 
-function ManagementServiceCard({service}) {
+function ManagementServiceCard({service, index}) {
     const [cardFlip, setCardFlip] = useState(true)
     const {title, text, img} = service
 
     function handleClick(){
         setCardFlip(!cardFlip)
     };
-
+    //TODO: added card flip animation, seems laggy. try to fix.
     return (
         <div className="flip-card text-center mb-2" style={{maxWidth: '23rem', height:'20rem'}}>
+            <Animation variant='flipGrow' duration={1.5} delay={.2*index}>
             <div className={`flip-card-inner rounded shadow ${cardFlip ? null : 'card-flipped'}`}>
 
                 {/* FRONT OF CARD */}
@@ -20,7 +22,7 @@ function ManagementServiceCard({service}) {
                     <div className="card-header d-flex flex-column justify-content-evenly align-items-center rounded-top" style={{height:'5rem'}}>
                         <h2 className=' px-3'>{title}</h2>
                     </div>
-                    <div className='h-50 bg-white'>
+                    <div className='bg-white' style={{height:'10rem'}}>
                         <img src={img} alt={title}  className='h-100' />
                     </div>
                     <div className="card-header d-flex justify-content-center align-items-center rounded-bottom" style={{height:'4.9rem'}}>
@@ -41,6 +43,7 @@ function ManagementServiceCard({service}) {
                     </div>
                 </div>
             </div>
+            </Animation>
         </div>
     )
 }
