@@ -49,18 +49,17 @@ function Rentals() {
                 <RentalManagement data={rentalManagementData} />
             </div>
             
-            <div ref={listingRef} id='rental-listings-banner' className=''>
-                <div className='bg-black bg-opacity-50 pt-4 pb-5'>
-                    <div>
+                <div ref={listingRef} id='rental-listings-banner' className=''>
+                    <div className='bg-black bg-opacity-50 pt-4 pb-5'>
                         <span id='rental-listings-header' className='display-1 fw-bold fst-italic'>Rental Listings</span>
-                    </div>
-                    <div className='container-lg d-flex justify-content-center'>
-                            <div className='mt-2' style={{maxWidth:'50rem'}}>
-                                <span id='management-header-body' className='fw-bold fs-2 fst-italic'>Explore our current listing of rental properties and plan your relaxing vacation in the beautiful Catskill Mountains!</span>
-                            </div>
+                        <div className='container-lg d-flex justify-content-center'>
+                                <div className='mt-2' style={{maxWidth:'50rem'}}>
+                                    <span id='management-header-body' className='fw-bold fs-2 fst-italic'>Explore our current listing of rental properties and plan your relaxing vacation in the beautiful Catskill Mountains!</span>
+                                </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            
             <FeaturedRental rental={featureRental} featuredRef={featuredRef}/>
 
             <div className='container-lg mb-5'>

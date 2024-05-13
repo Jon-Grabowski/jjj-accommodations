@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation } from 'framer-motion'
-//TODO: REPLACE ANY OTHER ANIMATIONS WITH THIS COMPONENT AND DELETE OTHER ANIMATION FILES
+
 function Animation({children, variant, duration}) {
     const ref = useRef(null);
     const isInView = useInView(ref, {once:true})
@@ -17,8 +17,8 @@ function Animation({children, variant, duration}) {
             visable:{opacity:1}
         },
         'slideLeft':{
-            hidden:{opacity:0,x:250, scale:.5},
-            visable:{opacity:100, x:0, scale:1}            
+            hidden:{opacity:0,x:300},
+            visable:{opacity:100, x:0}            
         },
         'slideLeftStagger':{
             hidden:{opacity:0,x:250},
