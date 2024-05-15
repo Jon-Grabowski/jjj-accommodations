@@ -13,7 +13,7 @@ function RentalManagement({data}) {
 
     return (
         <div>
-            <Animation variant='fadeIn' duration={1}>
+            <Animation variant='slideUp' duration={1}>
                 <div id='rental-management-banner' className=''>
                     <div className='bg-black bg-opacity-25 pt-4 pb-5'>
                         <div>
@@ -28,11 +28,13 @@ function RentalManagement({data}) {
                     </div>
                 </div>
             </Animation>
-            <div className='mt-4 container-lg pb-4'>
-                    <h1 className='fw-bold py-3 text-start'>Explore Our Property Management Services:</h1>
-                    <div className='position-relative d-flex flex-wrap justify-content-evenly gap-2 py-3'>
-                            {services}
-                    </div>
+            <div className='bg-white bg-opacity-25 py-y'>
+                <div className='container-lg '>
+                        <h1 className='fw-bold py-3 text-start'>Explore Our Property Management Services:</h1>
+                        <div className='position-relative d-flex flex-wrap justify-content-evenly gap-2 py-3'>
+                                {services}
+                        </div>
+                </div>
             </div>
         </div>
     )

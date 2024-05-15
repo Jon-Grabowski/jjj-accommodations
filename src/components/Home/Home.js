@@ -9,10 +9,12 @@ import './home.css';
 function Home() {
     return (
         <div id='home-page-wrapper m-auto'>
-            <HomeSection1 />
+            <Animation variant='fadeIn' duration={2}>
+                <HomeSection1 />
+            </Animation>
             <RentalSection />
             <ServiceCardSection />
-            <Animation variant='fadeIn' duration={2.5}>
+            <Animation variant='fadeIn' duration={1.5}>
                 <div id='home-res-banner' className='my-5 d-flex flex-column justify-content-center'>
                     <h1 id='home-res-banner-text' className='display-2 mb-3'>Plan a stay with us today.</h1>
                     <Link 

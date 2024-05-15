@@ -21,8 +21,8 @@ function Animation({children, variant, duration, delay=0}) {
             visable:{opacity:100, x:0}            
         },
         'slideLeftStagger':{
-            hidden:{opacity:0,x:250},
-            visable:{opacity:[0,.5,1], x:[150,150,0], scale:[.90,.90,1]}
+            hidden:{opacity:0,x:250, scale:.5},
+            visable:{opacity:[0,.5,1], x:[150,75,0], scale:[.70,.90,1]}
         },
         'flipGrow':{
             hidden:{rotateY: 90, scale:.75},

@@ -41,11 +41,11 @@ function Rentals() {
                     <Animation variant='fadeIn' duration={2} delay={.5}>
                         <img src='../images/services/namaste-sign.jpeg' alt='nameste' className='my-2' style={{width:'13rem'}}/>
                     </Animation>
-                    <Animation variant='slideLeftStagger' duration={1.2}>
+                    <Animation variant='slideLeft' duration={1.2}>
                         <h3 className='display-6 mx-1 mx-lg-5 mb-0 fst-italic fw-bold' style={{maxWidth:'40rem'}}>"Explore our rental property management services or browse our current rental listings for your next happy getaway!"</h3>
                     </Animation>
                 </div>
-            <div ref ={managementRef} className='bg-white bg-opacity-25'>
+            <div ref ={managementRef}>
                 <RentalManagement data={rentalManagementData} />
             </div>
             
