@@ -38,7 +38,7 @@ function Rentals() {
         <div>
             <RentalTopSection listingRef={listingRef} managementRef={managementRef}/>
                 <div className='container-xl d-flex flex-wrap justify-content-center align-items-center gap-2 my-4 my-lg-5'>
-                    <Animation variant='fadeIn' duration={2.5}>
+                    <Animation variant='fadeIn' duration={2} delay={.5}>
                         <img src='../images/services/namaste-sign.jpeg' alt='nameste' className='my-2' style={{width:'13rem'}}/>
                     </Animation>
                     <Animation variant='slideLeftStagger' duration={1.2}>
