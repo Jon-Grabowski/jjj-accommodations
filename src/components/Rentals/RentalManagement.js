@@ -1,4 +1,6 @@
 import React from 'react'
+import { useRef } from 'react';
+import { useInView } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ManagementServiceCard from './ManagementServiceCard';
 import Animation from '../Utilities/Animation';
@@ -6,14 +8,16 @@ import './rentalmanagement.css'
 
 function RentalManagement({data}) {
     const {body, serviceArray} = data
+    const cardSectionRef = useRef(null)
+    const parentInView = useInView(cardSectionRef, {once:true})
 
     const services = serviceArray.map((service, index) => {
-        return  <ManagementServiceCard key={service.title} service={service} index={index}/>
+        return  <ManagementServiceCard key={service.title} service={service} index={index} parentInView={parentInView}/>
     });
 
     return (
         <div>
-            <Animation variant='slideUp' duration={1}>
+            <Animation variant='fadeIn' duration={1}>
                 <div id='rental-management-banner' className=''>
                     <div className='bg-black bg-opacity-25 pt-4 pb-5'>
                         <div>
@@ -31,7 +35,7 @@ function RentalManagement({data}) {
             <div className='bg-white bg-opacity-25 py-y'>
                 <div className='container-lg '>
                         <h1 className='fw-bold py-3 text-start'>Explore Our Property Management Services:</h1>
-                        <div className='position-relative d-flex flex-wrap justify-content-evenly gap-2 py-3'>
+                        <div ref={cardSectionRef} className='position-relative d-flex flex-wrap justify-content-evenly gap-2 py-3'>
                                 {services}
                         </div>
                 </div>

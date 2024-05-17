@@ -1,8 +1,8 @@
 import React from 'react'
 import { useEffect, useRef } from 'react'
-import { motion, useInView, useAnimation, transform } from 'framer-motion'
+import { motion, useInView, useAnimation } from 'framer-motion'
 
-function Animation({children, variant, duration, delay=0}) {
+function Animation({children, variant, duration, delay=0, parentInView=null}) {
     const ref = useRef(null);
     const isInView = useInView(ref, {once:true})
     const mainControls = useAnimation()
@@ -20,6 +20,10 @@ function Animation({children, variant, duration, delay=0}) {
             hidden:{opacity:0,x:300},
             visable:{opacity:100, x:0}            
         },
+        'slideRight':{
+            hidden:{opacity:0,x:-300},
+            visable:{opacity:100, x:0}  
+        },
         'slideLeftStagger':{
             hidden:{opacity:0,x:250, scale:.5},
             visable:{opacity:[0,.5,1], x:[150,75,0], scale:[.70,.90,1]}
@@ -31,10 +35,10 @@ function Animation({children, variant, duration, delay=0}) {
     }
 
     useEffect(()=>{
-        if (isInView) {
+        if (parentInView ? parentInView : isInView) {
             mainControls.start('visable')
         }
-    }, [isInView, mainControls])
+    }, [isInView, parentInView, mainControls])
 
     return (
         <div ref={ref} className='position-relative'>

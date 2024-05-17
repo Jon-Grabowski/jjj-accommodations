@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { ArrowRight, ArrowLeft } from 'lucide-react'
 import './managementservicecard.css'
 
-function ManagementServiceCard({service, index}) {
+function ManagementServiceCard({service, index, parentInView}) {
     const [cardFlip, setCardFlip] = useState(true)
     const {title, text, img} = service
 
@@ -14,7 +14,7 @@ function ManagementServiceCard({service, index}) {
     //TODO: added card flip animation, seems laggy. try to fix.
     return (
         <div className="flip-card text-center mb-2" style={{maxWidth: '23rem', height:'20rem'}}>
-            <Animation variant='slideUp' duration={1.5} delay={.2*index}>
+            <Animation variant='slideUp' duration={1} delay={.2*index} parentInView={parentInView}>
             <div className={`flip-card-inner rounded shadow ${cardFlip ? null : 'card-flipped'}`}>
 
                 {/* FRONT OF CARD */}
