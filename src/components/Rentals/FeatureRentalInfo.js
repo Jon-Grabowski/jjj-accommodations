@@ -7,11 +7,6 @@ function FeatureRentalInfo({rental}) {
     const amenitiesListLeft = []
     const amenitiesListRight = []
 
-    // amenities.forEach((amenity, index)=>{
-    //     if (index%2 !== 0) amenitiesListLeft.push(<li key={index} className='ms-4'>{amenity}</li>)
-    //     else amenitiesListRight.push(<li key={index} className='ms-4'>{amenity}</li>)
-    // })
-
     amenities.forEach((amenity, index)=>{
         if (index%2 !== 0) amenitiesListLeft.push(<span key={index} className=''>• {amenity}</span>)
         else amenitiesListRight.push(<span key={index} className=''>• {amenity}</span>)
