@@ -13,6 +13,9 @@ function Services() {
     return (
         <div>
             <ServiceTopSection cleaningRef={cleaningRef} maintenanceRef={maintenanceRef} seasonalRef={seasonalRef}/>
+            <div className='py-5 my-5 m-auto' style={{maxWidth:'50rem'}}>
+                <h1 className='display-6 fw-bold fst-italic'>We cater to all of our client's needs! Contact us now to discuss how we can make your life more relaxed and enjoyable.</h1>
+            </div>
             <div ref={cleaningRef}>
                 <CleaningSection />
             </div>

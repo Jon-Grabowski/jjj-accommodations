@@ -2,8 +2,16 @@
     background-position: center;
     background-size: 100%;
     background-repeat: none;
-    
 }
+.feature-title-header{
+    text-shadow: 4px 0px .75px rgb(13, 36, 64);
+    -webkit-text-stroke: black 1px;
+}
+
+.feature-title-body{
+    text-shadow: 1.5px .5px .75px rgb(0, 0, 0);
+}
+
 #rental-listings-banner{
     background-image: url('./../../../public/images/rentals/zen2/zen2-7.webp');
     background-size: cover;
@@ -25,4 +33,8 @@
 
 .card-header{
     background-color: rgb(9, 9, 39);
+}
+
+.rental-card{
+    text-shadow: 1.5px 1.5px .25px rgb(0, 0, 0);
 }
