@@ -9,7 +9,7 @@ function Contact() {
         <div >
             <ContactTopSection />
             <div id='contact-content-wrapper' className='row'>
-                <div className='d-flex flex-column align-items-center justify-content-center col-md-5 py-5'>               
+                <div className='d-flex flex-column align-items-center justify-content-center col-md-5 py-5 overflow-hidden'>               
                     <ContactInfo />
                 </div>
                 <div className='col-md-7 bg-white bg-opacity-25 py-5'>

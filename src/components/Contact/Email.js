@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import Animation from '../Utilities/Animation'
 import emailjs from '@emailjs/browser'
 import { Mails, Send } from 'lucide-react'
 
@@ -36,23 +37,24 @@ function Email() {
     }
     return (
         <div className='m-auto'>
-            
-            <h1 className='display-5 fw-bold fst-italic mb-5'><Mails size={40} className=''/> Send Us a Message</h1>
-            <form onSubmit={sendEmail} className='d-flex flex-column text-start m-auto' style={{maxWidth:'25rem'}}>
-                
-                <label htmlFor='name' className='fs-5 mb-1'>Full Name: </label>
-                <input type='text' name='name' className='mb-2 form-control shadow' value={name} onChange={(e)=>setName(e.target.value)} required></input>
+            <Animation variant='fadeIn' duration={2}>
+                <h1 className='display-5 fw-bold fst-italic mb-5'><Mails size={40} className=''/> Send Us a Message</h1>
+                <form onSubmit={sendEmail} className='d-flex flex-column text-start m-auto' style={{maxWidth:'25rem'}}>
+                    
+                    <label htmlFor='name' className='fs-5 mb-1'>Full Name: </label>
+                    <input type='text' name='name' className='mb-2 form-control shadow' value={name} onChange={(e)=>setName(e.target.value)} required></input>
 
-                <label htmlFor='email' className='fs-5 mb-1'>E-mail:</label>
-                <input type='email' name='email' className='mb-2 form-control shadow' value={email} onChange={(e)=>setEmail(e.target.value)} required></input>
-            
-                <label htmlFor='message' className='fs-5 mb-1'>Message:</label>
-                <textarea type='text' rows='7' name='message' className='mb-2 form-control shadow' value={message} onChange={(e)=>setMessage(e.target.value)} required/>
+                    <label htmlFor='email' className='fs-5 mb-1'>E-mail:</label>
+                    <input type='email' name='email' className='mb-2 form-control shadow' value={email} onChange={(e)=>setEmail(e.target.value)} required></input>
                 
-                <button className='btn btn-dark w-50 m-auto fs-5 mt-3' type='submit'>
-                    <Send size={20}/> Send
-                </button>
-            </form>
+                    <label htmlFor='message' className='fs-5 mb-1'>Message:</label>
+                    <textarea type='text' rows='7' name='message' className='mb-2 form-control shadow' value={message} onChange={(e)=>setMessage(e.target.value)} required/>
+                    
+                    <button className='btn btn-dark w-50 m-auto fs-5 mt-3' type='submit'>
+                        <Send size={20}/> Send
+                    </button>
+                </form>
+            </Animation>
         </div>
     )
 }

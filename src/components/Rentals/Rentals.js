@@ -3,6 +3,7 @@ import { useState, useRef } from 'react';
 import RentalTopSection from './RentalTopSection';
 import RentalManagement from './RentalManagement';
 import FeaturedRental from './FeaturedRental';
+import Animation from '../Utilities/Animation';
 import { rentalManagementData, rentalProperties } from './utilitiesRental';
 import RentalCard from './RentalCard';
 import './rentals.css'
@@ -34,28 +35,32 @@ function Rentals() {
     })
 
     return (
-        <div>
+        <div className='overflow-hidden'>
             <RentalTopSection listingRef={listingRef} managementRef={managementRef}/>
-            <div className='container-xl d-flex flex-wrap justify-content-center align-items-center gap-2 my-4 my-lg-5'>
-                <img src='../images/services/namaste-sign.jpeg' alt='nameste' className='my-2'/>
-                <h3 className='display-6 mx-1 mx-lg-5 mb-0 fst-italic fw-bold' style={{maxWidth:'40rem'}}>"Explore our rental property management services or browse our current rental listings for your next happy getaway!"</h3>
-            </div>
-            <div ref ={managementRef} className='bg-white bg-opacity-25'>
+                <div className='container-xl d-flex flex-wrap justify-content-center align-items-center gap-2 my-4 my-lg-5'>
+                    <Animation variant='fadeIn' duration={2} delay={.5}>
+                        <img src='../images/services/namaste-sign.jpeg' alt='nameste' className='my-2' style={{width:'13rem'}}/>
+                    </Animation>
+                    <Animation variant='slideLeft' duration={1.2}>
+                        <h3 className='display-6 mx-1 mx-lg-5 mb-0 fst-italic fw-bold' style={{maxWidth:'40rem'}}>"Explore our rental property management services or browse our current rental listings for your next happy getaway!"</h3>
+                    </Animation>
+                </div>
+            <div ref ={managementRef}>
                 <RentalManagement data={rentalManagementData} />
             </div>
-            
-            <div ref={listingRef} id='rental-listings-banner' className=''>
-                <div className='bg-black bg-opacity-50 pt-4 pb-5'>
-                    <div>
-                        <span id='rental-listings-header' className='display-1 fw-bold fst-italic'>Rental Listings</span>
-                    </div>
-                    <div className='container-lg d-flex justify-content-center'>
-                            <div className='mt-2' style={{maxWidth:'50rem'}}>
-                                <span id='management-header-body' className='fw-bold fs-2 fst-italic'>Explore our current listing of rental properties and plan your relaxing vacation in the beautiful Catskill Mountains!</span>
+                <Animation variant='fadeIn' duration={1.5}>
+                    <div ref={listingRef} id='rental-listings-banner' className=''>
+                        <div className='bg-black bg-opacity-50 pt-4 pb-5'>
+                            <span id='rental-listings-header' className='display-1 fw-bold fst-italic'>Rental Listings</span>
+                            <div className='container-lg d-flex justify-content-center'>
+                                    <div className='mt-2' style={{maxWidth:'50rem'}}>
+                                        <span id='management-header-body' className='fw-bold fs-2 fst-italic'>Explore our current listing of rental properties and plan your relaxing vacation in the beautiful Catskill Mountains!</span>
+                                    </div>
                             </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </Animation>
+            
             <FeaturedRental rental={featureRental} featuredRef={featuredRef}/>
 
             <div className='container-lg mb-5'>
