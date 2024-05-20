@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useRef } from 'react';
 import RentalTopSection from './RentalTopSection';
+import ReviewCarousel from './ReviewCarousel';
 import RentalManagement from './RentalManagement';
 import FeaturedRental from './FeaturedRental';
 import Animation from '../Utilities/Animation';
@@ -48,12 +49,12 @@ function Rentals() {
             <div ref ={managementRef}>
                 <RentalManagement data={rentalManagementData} />
             </div>
-            <div className='container-xl d-flex flex-wrap justify-content-center align-items-center gap-2 my-4 my-lg-5'>
+            <div className='container-xl d-flex flex-wrap justify-content-evenly align-items-center gap-2 my-4 my-lg-5'>
                     <Animation variant='fadeIn' duration={2} delay={.5}>
-                        <img src='../images/services/namaste-sign.jpeg' alt='nameste' className='my-2' style={{width:'13rem'}}/>
+                        <img src='../images/services/namaste-sign.jpeg' alt='nameste' className='my-2' style={{width:'14rem'}}/>
                     </Animation>
                     <Animation variant='slideLeft' duration={1.2}>
-                        <h3 className='display-6 mx-1 mx-lg-5 mb-0 fst-italic fw-bold' style={{maxWidth:'40rem'}}>"Explore our rental property management services or browse our current rental listings for your next happy getaway!"</h3>
+                        <ReviewCarousel />
                     </Animation>
                 </div>
                 <Animation variant='fadeIn' duration={1.5}>
