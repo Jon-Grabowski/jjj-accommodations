@@ -36,7 +36,7 @@ function ManagementServiceCard({service, index, parentInView}) {
                         <h4 className='p-2'>{text.header}</h4>
                     </div>
                     <div className='d-flex justify-content-center align-items-center bg-body text-dark' style={{height:'10rem'}}>
-                        <p className='py-2 px-4' style={{fontSize: '17px'}}>{text.body}</p>
+                        <p className='py-2 px-4 fw-bold' style={{fontSize: '17px'}}>{text.body}</p>
                     </div>
                     <div className="card-header d-flex justify-content-center align-items-center rounded-bottom" style={{height:'5rem'}}>
                         <button className='btn btn-primary rounded-pill border fw-bold' onClick={handleClick}><ArrowLeft/> Back</button>
