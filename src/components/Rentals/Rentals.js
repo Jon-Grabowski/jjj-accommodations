@@ -34,7 +34,7 @@ function Rentals() {
         else return <RentalCard key={index} rental={rental} index={index} style={cardStyle} handleClick={handleRentalCardClick}/> 
         
     })
-
+    // TODO: CHECK REFS BEFORE DELETING RENTAL TOP SECTION.
     return (
         <div className='overflow-hidden'>
             {/* <RentalTopSection listingRef={listingRef} managementRef={managementRef}/>
@@ -49,7 +49,7 @@ function Rentals() {
             <div ref ={managementRef}>
                 <RentalManagement data={rentalManagementData} />
             </div>
-            <div className='container-xl d-flex flex-wrap justify-content-evenly align-items-center gap-2 my-4 my-lg-5'>
+            <div className='container-xl d-flex flex-wrap justify-content-center align-items-center gap-5 my-4 my-lg-5'>
                     <Animation variant='fadeIn' duration={2} delay={.5}>
                         <img src='../images/services/namaste-sign.jpeg' alt='nameste' className='my-2' style={{width:'14rem'}}/>
                     </Animation>
@@ -58,8 +58,8 @@ function Rentals() {
                     </Animation>
                 </div>
                 <Animation variant='fadeIn' duration={1.5}>
-                    <div ref={listingRef} id='rental-listings-banner' className=''>
-                        <div className='bg-black bg-opacity-50 pt-4 pb-5'>
+                    <div ref={listingRef} className=' bg-white bg-opacity-25 d-flex flex-column'>
+                        <div className='pt-4 pb-2'>
                             <span id='rental-listings-header' className='display-1 fw-bold fst-italic'>Rental Listings</span>
                             <div className='container-lg d-flex justify-content-center'>
                                     <div className='mt-2' style={{maxWidth:'50rem'}}>
@@ -67,17 +67,22 @@ function Rentals() {
                                     </div>
                             </div>
                         </div>
+                        <div className=''>
+                            <div id='rental-cards-wrapper'className='container-lg w-full d-flex gap-2 overflow-auto my-3'>
+                                {rentalCards}
+                            </div>
+                        </div>
                     </div>
                 </Animation>
-            
-            <FeaturedRental rental={featureRental} featuredRef={featuredRef}/>
-
-            <div className='container-lg mb-5'>
+            {/* <div className='container-lg mb-5'>
                 <h3 className='text-start mt-5'>Explore Our Properties:</h3>
                 <div id='rental-cards-wrapper'className='w-full d-flex gap-2 overflow-auto my-3'>
                     {rentalCards}
                 </div>
-            </div>
+            </div> */}
+            
+            <FeaturedRental rental={featureRental} featuredRef={featuredRef}/>
+
             
         </div>
     )

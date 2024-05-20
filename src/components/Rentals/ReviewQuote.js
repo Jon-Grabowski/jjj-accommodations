@@ -9,7 +9,7 @@ function ReviewQuote({review}) {
             <Animation variant='slideLeft' duration={1.5}>
                 <figure className="text-end">
                     <blockquote className="blockquote">
-                        <p>{body}</p>
+                        <p className='fs-4'>{body}</p>
                     </blockquote>
                     <figcaption className="blockquote-footer">
                         {author}, <cite title="Source Title">{title}</cite>
