@@ -4,10 +4,11 @@ import { useInView } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ManagementServiceCard from './ManagementServiceCard';
 import Animation from '../Utilities/Animation';
+import { rentalManagementData } from './utilitiesRental';
 import './rentalmanagement.css'
 
-function RentalManagement({data}) {
-    const {body, serviceArray} = data
+function RentalManagement() {
+    const {body, serviceArray} = rentalManagementData
     const cardSectionRef = useRef(null)
     const parentInView = useInView(cardSectionRef, {once:true})
 
