@@ -38,9 +38,9 @@ function RentalManagement() {
             <div className='bg-white bg-opacity-25 py-y'>
                 <div className='container-lg '>
                     <Animation variant='fadeIn' duration={2}>
-                        <h1 className='fw-bold py-3 text-start'>Explore Our Property Management Services:</h1>
+                        <h1 className='fw-bold py-5 text-start'>Explore Our Property Management Services:</h1>
                     </Animation>
-                        <div ref={cardSectionRef} className='position-relative d-flex flex-wrap justify-content-evenly gap-2 py-3'>
+                        <div ref={cardSectionRef} className='position-relative d-flex flex-wrap justify-content-evenly gap-3 py-3 overflow-hidden'>
                                 {services}
                         </div>
                 </div>

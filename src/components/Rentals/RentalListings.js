@@ -4,6 +4,7 @@ import FeaturedRental from './FeaturedRental'
 import RentalCard from './RentalCard'
 import Animation from '../Utilities/Animation'
 import { rentalProperties } from './utilitiesRental';
+import { Scale } from 'lucide-react'
 
 function RentalListings() {
     const [featureRental, setFeatureRental] = useState(rentalProperties[0])
@@ -21,7 +22,8 @@ function RentalListings() {
 
     const rentalCards = rentalProperties.map((rental, index) => {
         if (rental === featureRental) {
-            const selectedStyle = {...cardStyle, borderColor: 'white'}
+            // const selectedStyle = {...cardStyle, borderColor: 'white', borderSize: '5px'}
+            const selectedStyle = {...cardStyle, border: '4px solid rgba(255,255,255)'}
             return <RentalCard key={index} rental={rental} index={index} style={selectedStyle} handleClick={handleRentalCardClick}/>
         }
         else return <RentalCard key={index} rental={rental} index={index} style={cardStyle} handleClick={handleRentalCardClick}/> 
