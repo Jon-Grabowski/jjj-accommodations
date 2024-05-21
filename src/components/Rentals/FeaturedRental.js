@@ -15,7 +15,7 @@ function FeaturedRental({rental, featuredRef}) {
     return (
         <div className='feature-rental-wrapper' ref={featuredRef}>
             <Animation variant='slideRight' duration={1.5}>
-                <div className='feature-title rounded mb-5' style={{backgroundImage: `url(${images[0]})`}}>
+                <div className='feature-title rounded mb-1' style={{backgroundImage: `url(${images[0]})`}}>
                     <div className='py-5 bg-black bg-opacity-25'>
                         <p className='feature-title-header display-3 fw-bold pt-3 mb-0' style={{fontStyle: 'oblique'}}>{name}</p>
                         <div className="feature-title-body mb-4 text-white pb-4">
@@ -28,9 +28,9 @@ function FeaturedRental({rental, featuredRef}) {
                 </div>
             </Animation>
         
-            <div className='container-lg row align-items-center m-auto'>
+            <div className='container-lg row align-items-center m-auto mb-5'>
                 <div className='col-lg-6'>  
-                    <div className="m-auto pb-0 pb-md-5" style={{maxWidth:'40rem'}}>
+                    <div className="m-auto pb-3 pb-sm-0" style={{maxWidth:'40rem'}}>
                         <RentalCarousel images={images}/>
                     </div>
                 </div>
