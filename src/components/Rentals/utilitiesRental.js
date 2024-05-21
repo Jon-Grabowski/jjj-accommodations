@@ -117,4 +117,22 @@ const rentalProperties = [
     }
 ]
 
-export {rentalManagementData, rentalProperties}
+const reviewQuotesData = [
+    {
+        body:'"Review 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra diam sit amet nisl suscipit adipiscing."',
+        author:'Somebody',
+        title: 'homeowner'
+    },
+    {
+        body:'"Review 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra diam sit amet nisl suscipit adipiscing."',
+        author:'Somebody Else',
+        title:'homeowner'
+    },
+    {
+        body:'"Review 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra diam sit amet nisl suscipit adipiscing."',
+        author:'Somebody Else',
+        title:'homeowner'
+    }
+]
+
+export {rentalManagementData, rentalProperties, reviewQuotesData}

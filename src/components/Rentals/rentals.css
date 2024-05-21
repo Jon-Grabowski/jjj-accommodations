@@ -1,6 +1,6 @@
 .feature-title{
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: none;
 }
 .feature-title-header{
@@ -9,7 +9,7 @@
 }
 
 .feature-title-body{
-    text-shadow: 1.5px .5px .75px rgb(0, 0, 0);
+    text-shadow: 2px 1px .75px rgb(0, 0, 0);
 }
 
 #rental-listings-banner{
@@ -31,10 +31,19 @@
     padding-bottom: 5px;
 }
 
+#rental-cards-wrapper::-webkit-scrollbar-thumb{
+    background-color: rgb(7, 7, 8);
+    border-radius: 100vw;
+}
+
 .card-header{
     background-color: rgb(9, 9, 39);
 }
 
 .rental-card{
     text-shadow: 1.5px 1.5px .25px rgb(0, 0, 0);
+}
+
+.rental-card:hover{
+    cursor: pointer;
 }

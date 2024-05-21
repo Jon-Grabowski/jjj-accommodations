@@ -15,8 +15,8 @@ function FeatureRentalInfo({rental}) {
 
     return (
         <div className='col-lg-6 d-flex flex-column pt-0 pt-sm-3' style={{height:'100%'}}>
-            <p className="feature-description card-text text-start text-wrap">{description}</p>
-            <div className=''>
+            <p className="feature-description card-text text-start text-wrap fs-5">{description}</p>
+            <div >
                 <h3 className='d-inline border-bottom px-3 fs-4'>Amenities</h3>
                 <div className='d-flex justify-content-center gap-3 m-auto mt-4'>
                     <div className='text-start d-flex flex-column mb-0 ps-1 ps-sm-5'>
@@ -30,7 +30,7 @@ function FeatureRentalInfo({rental}) {
                         to={bnbLink}
                         target="_blank"
                         type="button"
-                        className='btn btn-dark fs-5 border w-50 m-auto mt-4' 
+                        className='btn btn-dark fs-5 border w-50 m-auto mt-5' 
                         style={{backgroundColor:'#FF5A5F'}}
                     >Book on<img style={{width:'80px'}} className='ms-2 pb-1' src='../images/social icons/airbnb-2-logo-white.png'
                     alt='AirBnB Logo'/></Link>
