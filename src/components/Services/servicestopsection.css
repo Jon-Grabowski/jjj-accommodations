@@ -4,11 +4,26 @@
     background-position: center;
 }
 
+.banner-padding{
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+}
+
 #res-services-header-body{
-    text-shadow: 2px 0px .75px rgb(0, 0, 0);
-    -webkit-text-stroke: black 1px;
+    text-shadow: 3px 1px .5px rgb(9, 9, 39);
+    -webkit-text-stroke: black 1.25px;
 }
 
 .service-links{
     cursor: pointer;
+}
+
+@media screen and (max-width: 890px) {
+    .banner-padding{
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+    #res-services-header-body{
+        padding-bottom: 3rem;
+    }
 }
