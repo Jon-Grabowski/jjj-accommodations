@@ -1,7 +1,12 @@
 #service-top-section-wrapper{
-    background-image: url('./../../../public/images/stock-images/nature-stock-2.webp');
+    background-image: url('./../../../public/images/stock-images/res-services-banner-stock.jpg');
     background-size: cover;
     background-position: center;
+}
+
+#res-services-header-body{
+    text-shadow: 2px 0px .75px rgb(0, 0, 0);
+    -webkit-text-stroke: black 1px;
 }
 
 .service-links{

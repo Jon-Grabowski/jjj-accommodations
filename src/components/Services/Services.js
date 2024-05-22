@@ -14,7 +14,7 @@ function Services() {
     return (
         <div className='overflow-hidden'>
             <ServiceTopSection cleaningRef={cleaningRef} maintenanceRef={maintenanceRef} seasonalRef={seasonalRef}/>
-            <div className='d-flex justify-content-center align-items-center gap-2 py-5 my-5 m-auto' >
+            <div className='d-flex flex-wrap justify-content-center align-items-center gap-2 py-5 my-5 m-auto' >
                 <Animation variant='fadeIn' duration={2} delay={.5}>
                     <img src='../images/stock-images/hands-holding-house.jpg' alt='nameste' className='my-2 rounded-circle' style={{width:'20rem'}}/>
                 </Animation>
