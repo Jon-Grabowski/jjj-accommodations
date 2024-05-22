@@ -29,7 +29,8 @@ function ServiceTopSection({cleaningRef, maintenanceRef, seasonalRef}) {
                 <span id='rental-management-header' className='display-1 fw-bold fst-italic'>Residential Property Services</span>
                 <div className='container-lg d-flex flex-wrap justify-content-center align-items-center mt-5'>
                         <div id='res-services-header-body' className='m-auto text-start d-flex flex-column ms-xl-5 ps-xl-5' style={{maxWidth:'42rem'}}>
-                            <span className='display-5 fw-bold'>Keep your home pristine  <Sparkles size={40}/></span>
+                            <span className='display-4 fw-bold'>Keep Your Home</span>
+                            <span className='display-2 fst-italic fw-bold'>Pristine  <Sparkles size={40}/></span>
                             <span  className='fw-bold fs-2 fst-italic mb-3'>with our full range of residential services.</span>
                         </div>
                         <div className='m-auto d-flex flex-wrap flex-column justify-content-center align-items-center fs-3' style={{maxWidth:'40rem'}}>
