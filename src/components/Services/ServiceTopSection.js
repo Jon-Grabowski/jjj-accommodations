@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Animation from '../Utilities/Animation'
+import { Sparkles } from 'lucide-react'
 import './servicestopsection.css'
 
 function ServiceTopSection({cleaningRef, maintenanceRef, seasonalRef}) {
@@ -18,15 +19,12 @@ function ServiceTopSection({cleaningRef, maintenanceRef, seasonalRef}) {
                 </div>
             </div> */}
             <div className='bg-black bg-opacity-50 pt-5 pb-5'>
-                <Animation variant='slideLeft' duration={1.5}>
                     <span id='rental-management-header' className='display-1 fw-bold fst-italic'>Residential Property Services</span>
-                </Animation>
-                <div className='container-lg d-flex flex-wrap'>
-                        <div className='d-flex flex-column mt-5 ms-xl-5 ps-xl-5' style={{maxWidth:'40rem'}}>
-                            <Animation variant='slideRight' duration={1.5}>
-                                <span id='res-services-header-body' className='fw-bold fs-4 fst-italic'>We cater to all of our client's needs. Contact us now to discuss how we can make your life more relaxed and enjoyable!</span>
-                            </Animation>
-                            <Link to='/contact' style={{width:'15rem'}} className='m-auto px-4 py-2 mt-5 btn-bg-blue border fw-bold text-light rounded-pill fs-4 text-decoration-none'>Contact Us</Link>
+                <div className='container-lg d-flex flex-wrap align-items-center mt-5'>
+                        <div id='res-services-header-body' className='text-start d-flex flex-column ms-xl-5 ps-xl-5' style={{maxWidth:'42rem'}}>
+                            <span className='display-5 fw-bold'>Keep your home pristine  <Sparkles size={40}/></span>
+                            <span  className='fw-bold fs-2 fst-italic mb-4'>with our full range of residential services.</span>
+                            <span  className='fw-bold fs-4 fst-italic'>We offer expert cleaning, maintenance, repairs, and seasonal care to meet all your home needs.</span>
                         </div>
                         <div className='m-auto d-flex flex-wrap flex-column justify-content-evenly align-items-start gap-sm-4 fs-3' style={{maxWidth:'40rem'}}>
                             <span className='service-links' onClick={()=>{cleaningRef.current.scrollIntoView()}}>◊ Cleaning</span>
