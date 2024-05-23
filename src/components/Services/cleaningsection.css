@@ -6,12 +6,12 @@
 
 .banner-background{
     background-color: rgba(234, 234, 230, 0.25);
-    padding: 5rem 0rem;
+    padding: 3rem 0rem;
 }
 
 .banner-background-dark{
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 5rem 0rem;
+    padding: 3rem 0rem;
 }
 
 #cleaning-checklist{
@@ -33,18 +33,21 @@
 }
 
 #cleaning-services-header{
-    text-shadow: 3px 0px .75px rgb(118, 162, 213);
+    text-shadow: 2px 0px .75px rgb(255, 255, 255);
     -webkit-text-stroke: white 1px;
+    font-size: 10vw;
 }
 
 #maintenance-services-header{
-    text-shadow: 4px 0px .75px rgb(13, 36, 64);
+    text-shadow: 3px 0px .75px rgb(0, 0, 0);
     -webkit-text-stroke: black 1px;
+    font-size: 8vw;
 }
 
 #seasonal-services-header{
-    text-shadow: 3px 0px .75px rgb(118, 162, 213);
+    text-shadow: 2px 0px .75px rgb(255, 255, 255);
     -webkit-text-stroke: white 1px;
+    font-size: 10vw;
 }
 
 @media only screen and (max-width: 1199px) {
