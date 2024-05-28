@@ -14,9 +14,8 @@ function CleaningSection() {
         <div className='overflow-hidden'>
             <Animation variant='fadeIn' duration={1.5}>
                 <div id='cleaning-services-banner'>
-                    <div id='cleaning-services-header' className='banner-background d-flex gap-4 justify-content-center'>
-                        <span className='fw-bold text-black'>Cleaning</span>
-                        <span className='fw-bold text-black'>Services</span>
+                    <div id='cleaning-services-header' className='banner-background'>
+                        <span className='fw-bold text-black'>Cleaning Services</span>
                     </div>
                 </div>
             </Animation>
