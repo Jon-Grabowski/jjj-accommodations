@@ -33,6 +33,18 @@
     z-index: 1;
 }
 
+.visable{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity .5s linear;
+}
+
 @media only screen and (max-width: 850px) {
     #cleaning-services-header{
         font-size: 9vw;

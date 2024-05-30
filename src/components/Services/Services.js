@@ -1,5 +1,5 @@
 import React from 'react'
-import { useRef, useEffect } from 'react'
+import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { Mail } from 'lucide-react'
 import { useInView } from 'framer-motion'
@@ -47,14 +47,9 @@ function Services() {
             </div>
 
             {/* Floating Contact Us Button */}
-            {topInView || buttonInView ? 
-                null : 
-                <div id='residential-contact-btn-bottom'>
-                    <Animation variant='fadeIn' duration={1.5}>
-                        <Link  to='/contact'  className='m-auto p-3 pb-4 btn-bg-blue border border-3 fw-bold text-light rounded-circle fs-4 text-decoration-none'><Mail size={35}/></Link>
-                    </Animation>
-                </div>
-            }
+            <div id='residential-contact-btn-bottom' className={topInView || buttonInView ? 'hidden' : 'visable'}>
+                    <Link  to='/contact'  className='m-auto p-3 pb-4 btn-bg-blue border border-3 fw-bold text-light rounded-circle fs-4 text-decoration-none'><Mail size={35}/></Link>
+            </div>
         </div>
     )
 }
