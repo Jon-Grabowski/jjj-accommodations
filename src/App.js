@@ -7,7 +7,7 @@ import Rentals from './components/Rentals/Rentals';
 import Services from './components/Services/Services';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
