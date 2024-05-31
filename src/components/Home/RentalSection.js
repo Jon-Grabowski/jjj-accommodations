@@ -17,13 +17,13 @@ function RentalSection() {
     return (
             <div id='rental-section-wrapper' className='overflow-hidden'>
                 <Animation variant='fadeIn' duration={2.5}>
-                    <div className='mb-4 py-4 px-2 bg-black bg-opacity-25 border-bottom'>
+                    <div className='mb-4 py-4 px-2 bg-black bg-opacity-25'>
                         <Animation variant="slideLeft" duration={1.5}>
                             <h1 className='display-2 fw-bold fst-italic'>Rental Property Management</h1>
                         </Animation>
                     </div>
                     <Animation variant="fadeIn" duration={1.5}>
-                        <div className='d-flex flex-column mb-4'>
+                        <div className='container-lg d-flex flex-column mb-4 text-start px-4'>
                             <span className='display-5 fw-bold'>Looking to maximize your rental income?</span>
                             <span className='display-5 fst-italic'>We've got you covered!</span>
                         </div>
