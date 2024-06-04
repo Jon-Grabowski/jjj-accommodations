@@ -1,7 +1,10 @@
 import React from 'react'
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { useInView } from 'framer-motion';
 import Animation from '../Utilities/Animation';
+import FacebookLogo from '../Utilities/FacebookLogo';
+import InstagramLogo from '../Utilities/InstagramLogo';
 import { Mail, Mailbox, PhoneCall } from 'lucide-react';
 import './contactinfo.css' 
 
@@ -33,6 +36,18 @@ function ContactInfo() {
                         <span className='fs-5'>PO Box 357</span>
                         <span className='fs-5'>Mongaup Valley, NY 12762</span>
                     </div>
+                </div>
+            </Animation>
+            <Animation variant='slideRight' duration={.75} delay={.6} parentInView={parentInView}>
+                <div className='d-flex justify-content-start gap-5'>
+                        <Link to='https://www.facebook.com/profile.php?id=100089946661281&locale=en_GB' target='_blank' className='d-flex flex-column justify-content-center align-items-center text-decoration-none'>
+                            <FacebookLogo size={60}/>
+                            <h5 className='text-white'>Facebook</h5>
+                        </Link>
+                        <Link to='https://www.instagram.com/jjjaccommodations/' target='_blank' className='d-flex flex-column justify-content-center align-items-center text-decoration-none'>
+                            <InstagramLogo size={60}/>
+                            <h5 className='text-white'>Instagram</h5>
+                        </Link>
                 </div>
             </Animation>
         </div>

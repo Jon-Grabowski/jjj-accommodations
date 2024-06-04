@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { ReactComponent as FacebookIcon } from './svgs/facebook-svgrepo-com.svg';
-import { ReactComponent as InstagramIcon } from './svgs/instagram-svgrepo-com.svg';
+import FacebookLogo from '../Utilities/FacebookLogo'
+import InstagramLogo from '../Utilities/InstagramLogo'
 import './footer.css'
 
 function Footer() {
@@ -11,8 +11,8 @@ function Footer() {
             <div id='footer-img-wrapper' className='mx-5'>
                 <Link to='/'><img src='../images/JJJ-LOGO.png' alt='logo' className='w-100'/></Link>
                 <div className='d-flex justify-content-evenly mt-3'>
-                    <Link to='https://www.facebook.com/profile.php?id=100089946661281&locale=en_GB' target='_blank'><FacebookIcon /></Link>
-                    <Link to='https://www.instagram.com/jjjaccommodations/' target='_blank'><InstagramIcon /></Link>
+                    <Link to='https://www.facebook.com/profile.php?id=100089946661281&locale=en_GB' target='_blank'><FacebookLogo size={48}/></Link>
+                    <Link to='https://www.instagram.com/jjjaccommodations/' target='_blank'><InstagramLogo size={48}/></Link>
                 </div>
             </div>
             <div id='footer-contact-wrapper' className='my-3 mx-5 text-start'>
