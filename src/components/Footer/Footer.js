@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { ReactComponent as FacebookIcon } from './facebook-svgrepo-com.svg';
-import { ReactComponent as InstagramIcon } from './instagram-svgrepo-com.svg';
+import { ReactComponent as FacebookIcon } from './svgs/facebook-svgrepo-com.svg';
+import { ReactComponent as InstagramIcon } from './svgs/instagram-svgrepo-com.svg';
 import './footer.css'
 
 function Footer() {

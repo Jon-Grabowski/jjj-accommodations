@@ -14,19 +14,25 @@ function ContactInfo() {
             <Animation variant='slideRight' duration={.75} parentInView={parentInView}>
                 <div className='d-flex flex-column flex-wrap justify-content-start align-items-start' id='email-contact' onClick={() => window.location = 'mailto:jjjaccommodations@gmail.com'}>
                     <div className='d-flex align-items-end fst-italic mb-2'><Mail className='me-3' size={48}/><span className='fs-3'>E-mail:</span></div>
-                    <span className='m-auto fs-4'>JJJAccommodations@gmail.com</span>
+                    <span className='m-auto fs-5'>JJJAccommodations@gmail.com</span>
                 </div>
             </Animation>
             <Animation variant='slideRight' duration={.75} delay={.2} parentInView={parentInView}>
                 <div className='d-flex flex-wrap flex-column justify-content-start align-items-start'>
                     <div className='d-flex align-items-end fst-italic mb-2'><PhoneCall className='me-3' size={48}/><span className='fs-3'>Phone:</span></div>
-                    <div className='d-flex flex-column'><span>Main: +1 (845) 807-1601</span><span>Alt: +1 (845) 701-1087</span></div>
+                    <div className='d-flex flex-column'>
+                        <span className='fs-5'>Main: +1 (845) 807-1601</span>
+                        <span className='fs-5'>Alt: +1 (845) 701-1087</span>
+                    </div>
                 </div>
             </Animation>
             <Animation variant='slideRight' duration={.75} delay={.4} parentInView={parentInView}>
                 <div className='d-flex flex-wrap flex-column justify-content-start align-items-start'>
                     <div className='d-flex align-items-end fst-italic mb-2'><Mailbox className='me-3' size={48}/><span className='fs-3'>Address:</span></div>
-                    <div className='d-flex flex-column'><span>PO Box 357</span><span>Mongaup Valley, NY 12762</span></div>
+                    <div className='d-flex flex-column'>
+                        <span className='fs-5'>PO Box 357</span>
+                        <span className='fs-5'>Mongaup Valley, NY 12762</span>
+                    </div>
                 </div>
             </Animation>
         </div>

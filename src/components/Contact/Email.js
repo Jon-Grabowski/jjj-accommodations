@@ -39,7 +39,7 @@ function Email() {
         <div className='m-auto'>
             <Animation variant='fadeIn' duration={2}>
                 <h1 className='display-5 fw-bold fst-italic mb-5'><Mails size={40} className=''/> Send Us a Message</h1>
-                <form onSubmit={sendEmail} className='d-flex flex-column text-start m-auto' style={{maxWidth:'25rem'}}>
+                <form onSubmit={sendEmail} className='d-flex flex-column text-start m-auto px-3 px-lg-0' style={{maxWidth:'27rem'}}>
                     
                     <label htmlFor='name' className='fs-5 mb-1'>Full Name: </label>
                     <input type='text' name='name' className='mb-2 form-control shadow' value={name} onChange={(e)=>setName(e.target.value)} required></input>
