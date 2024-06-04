@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import AirBnbLogo from '../Utilities/AirBnbLogo'
 import FacebookLogo from '../Utilities/FacebookLogo'
 import InstagramLogo from '../Utilities/InstagramLogo'
 import './footer.css'
@@ -10,7 +11,10 @@ function Footer() {
         <div id='footer-wrapper' className='border-top d-flex flex-wrap justify-content-center align-items-center'>
             <div id='footer-img-wrapper' className='mx-5'>
                 <Link to='/'><img src='../images/JJJ-LOGO.png' alt='logo' className='w-100'/></Link>
-                <div className='d-flex justify-content-evenly mt-3'>
+                <div className='d-flex justify-content-evenly align-items-center mt-3'>
+                    <Link to='https://www.airbnb.com/users/show/192864989' target='_blank'>
+                        <AirBnbLogo size={40}/>
+                    </Link>
                     <Link to='https://www.facebook.com/profile.php?id=100089946661281&locale=en_GB' target='_blank'><FacebookLogo size={48}/></Link>
                     <Link to='https://www.instagram.com/jjjaccommodations/' target='_blank'><InstagramLogo size={48}/></Link>
                 </div>

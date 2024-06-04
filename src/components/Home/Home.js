@@ -15,7 +15,7 @@ function Home() {
             <RentalSection />
             <ServiceCardSection />
             <Animation variant='fadeIn' duration={1.5}>
-                <div id='home-res-banner' className='my-5 d-flex flex-column justify-content-center gap-2'>
+                <div id='home-res-banner' className='my-5 d-flex flex-column justify-content-center gap-4'>
                     <h1 id='home-res-banner-text' className='display-2'>Plan a stay with us today.</h1>
                     <Link 
                         to='https://www.airbnb.com/users/show/192864989'
