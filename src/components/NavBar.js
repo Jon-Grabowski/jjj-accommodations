@@ -28,7 +28,7 @@ function NavBar() {
     }
     
     return (
-        <nav className='navbar navbar-expand-md sticky-top border-bottom '>
+        <nav className='navbar navbar-expand-lg sticky-top border-bottom '>
             <div id='nav-wrapper' className='container-fluid'>
                 <div id='logo-wrapper' className='text-start'>
                     <Link to='/'>
@@ -48,8 +48,10 @@ function NavBar() {
                             target="_blank"
                             type="button" 
                             onClick={()=>{setNavExpanded(false)}}
-                            className='btn btn-sm btn-dark btn-outline-light p-2 reservation-btn'
-                            >Reservation
+                            className='btn btn-dark fs-6 m-auto' 
+                            style={{backgroundColor:'#FF5A5F'}}
+                            >Reservations<img style={{width:'20px'}} className='ms-2 pb-1' src='../images/social icons/airbnb-2-logo-white-no-text.png'
+                            alt='AirBnB Logo'/>
                         </Link>
                     </div>
                 </div>
