@@ -119,19 +119,24 @@ const rentalProperties = [
 
 const reviewQuotesData = [
     {
-        body:'"Review 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra diam sit amet nisl suscipit adipiscing."',
-        author:'Somebody',
-        title: 'homeowner'
+        body:'"Jen is a great host, who provided us with a well-equipped and clean place to stay. Definitely recommended!"',
+        author:'Yaroslav',
+        title: 'Zen Crystal Cove Guest'
     },
     {
-        body:'"Review 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra diam sit amet nisl suscipit adipiscing."',
-        author:'Somebody Else',
-        title:'homeowner'
+        body:'"Jen and Jacob were very accommodating during our stay. Their place is very charming and I will absolutely be recommending to friends."',
+        author:'Frank',
+        title:'Good Vibes Studio Guest'
     },
     {
-        body:'"Review 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra diam sit amet nisl suscipit adipiscing."',
-        author:'Somebody Else',
-        title:'homeowner'
+        body:'"Easy check in, clean space, great hosts!"',
+        author:'Hudson',
+        title:'Zen Crystal Cove Guest'
+    },
+    {
+        body:'"What a relaxing and peaceful weekend! Jen and Jacob were very attentive to our needs and very down to earth. Their place was exactly as they described it! We would definitely stay again and highly recommend them! We give this stay 5+ stars!"',
+        author:'Edward',
+        title:'Zen Terrarium Guest'
     }
 ]
 
