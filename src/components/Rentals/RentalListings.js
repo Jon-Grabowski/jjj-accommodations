@@ -30,17 +30,17 @@ function RentalListings() {
     return (
         <div>
             <Animation variant='fadeIn' duration={1.5}>
-                <div className=' bg-white bg-opacity-25 d-flex flex-column'>
+                <div className='d-flex flex-column'>
                     <div className='pt-4 pb-2'>
-                        <span id='rental-listings-header' className='display-1 fw-bold fst-italic'>Rental Listings</span>
-                        <div className='container-lg d-flex justify-content-center'>
+                        <span className='display-1 fw-bold fst-italics'>Rental Listings</span>
+                        <div className='container-lg d-flex justify-content-center my-4'>
                                 <div className='mt-2' style={{maxWidth:'50rem'}}>
                                     <span id='management-header-body' className='fw-bold fs-2 fst-italic'>Explore our current listing of rental properties and plan your relaxing vacation in the beautiful Catskill Mountains!</span>
                                 </div>
                         </div>
                     </div>
-                    <div className=''>
-                        <div id='rental-cards-wrapper'className='container-lg w-full d-flex gap-2 overflow-auto my-3'>
+                    <div className='mb-5'>
+                        <div id='rental-cards-wrapper'className='container-lg w-full d-flex gap-2 overflow-auto my-3 pb-3'>
                             {rentalCards}
                         </div>
                     </div>
