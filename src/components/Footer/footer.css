@@ -4,11 +4,15 @@
     flex-wrap: wrap;
 }
 
+#footer-site-map-wrapper{
+    width: 15rem;   
+}
 #footer-img-wrapper{
     max-width: 20rem;
+    font-size: 13px;
 }
 
 #footer-contact-wrapper{
-    width: 20rem;
+    width: 15rem;
     font-size: 13px;
 }
