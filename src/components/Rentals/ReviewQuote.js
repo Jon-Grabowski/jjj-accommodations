@@ -5,7 +5,7 @@ function ReviewQuote({review}) {
     const {body, author, title} = review
 
     return (
-        <div style={{maxWidth:'32rem'}}>
+        <div style={{maxWidth:'32rem', height:'14rem'}}>
             <Animation variant='slideLeft' duration={1.5}>
                 <figure className="text-end">
                     <blockquote className="blockquote">
