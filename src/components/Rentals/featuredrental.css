@@ -1,0 +1,28 @@
+.feature-rental-wrapper{
+    scroll-margin-top: 65px;
+}
+
+.feature-title{
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.feature-title-header{
+    text-shadow: 4px 0px .75px rgb(13, 36, 64);
+    -webkit-text-stroke: black 1px;
+}
+
+.feature-title-body{
+    text-shadow: 2px 1px .75px rgb(0, 0, 0);
+}
+
+#feature-rental-detail-list{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 500px) {
+    #feature-rental-detail-list{
+        font-size: 20px;
+    }
+}

@@ -21,7 +21,7 @@ function Home() {
                         to='https://www.airbnb.com/users/show/192864989'
                         target="_blank"
                         type="button" 
-                        className='d-flex align-items-center btn btn-dark fs-4 mx-auto  fw-bold' 
+                        className='d-flex align-items-center btn text-white fs-4 mx-auto shadow' 
                         style={{backgroundColor:'#FF5A5F'}}
                         >Reservations<img style={{width:'30px'}} className='ms-2 pb-1' src='../images/social icons/airbnb-2-logo-white-no-text.png'
                         alt='AirBnB Logo'/>
