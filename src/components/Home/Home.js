@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import HomeSection1 from './HomeSection1'
 import ServiceCardSection from './ServiceCardSection'
 import RentalSection from './RentalSection';
+import ResidentialSection from './ResidentialSection';
 import Animation from '../Utilities/Animation';
 import './home.css';
 
@@ -13,7 +14,8 @@ function Home() {
                 <HomeSection1 />
             </Animation>
             <RentalSection />
-            <ServiceCardSection />
+            <ResidentialSection />
+            {/* <ServiceCardSection /> */}
             <Animation variant='fadeIn' duration={1.5}>
                 <div id='home-res-banner' className='my-5 d-flex flex-column justify-content-center gap-4'>
                     <h1 id='home-res-banner-text' className='display-2'>Plan a stay with us today.</h1>
