@@ -2,6 +2,7 @@ import React from 'react'
 import ContactInfo from './ContactInfo';
 import ContactTopSection from './ContactTopSection';
 import Email from './Email';
+import FacebookLogo from '../Utilities/FacebookLogo';
 import './contact.css'
 
 function Contact() {

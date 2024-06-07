@@ -1,6 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
+import FacebookLogo from './Utilities/FacebookLogo';
+import InstagramLogo from './Utilities/InstagramLogo';
+import AirBnbLogo from './Utilities/AirBnbLogo';
 import './navbar.css'
 
 function NavBar() {
@@ -39,17 +42,18 @@ function NavBar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div id="nav-links-wrapper" className={`navbar-collapse ${navExpanded ? 'show' :'collapse' }`} >
-                    <ul className="navbar-nav d-flex align-items-center me-auto mb-2 mb-lg-0">
+                    <ul className="navbar-nav d-flex align-items-center me-auto">
                         {listLinks}
                     </ul>
-                    <div>
-                        <Link 
-                            to='https://www.airbnb.com/users/show/192864989'
-                            target="_blank"
-                            type="button" 
-                            onClick={()=>{setNavExpanded(false)}}
-                            className='btn btn-sm btn-dark btn-outline-light p-2 reservation-btn'
-                            >Reservation
+                    <div id='nav-social-links' className='d-flex gap-2 justify-content-center'>
+                        <Link to='https://www.airbnb.com/users/show/192864989' target='_blank' className='d-flex flex-column justify-content-center align-items-center text-decoration-none'>
+                            <AirBnbLogo size={26}/>
+                        </Link>
+                        <Link to='https://www.facebook.com/profile.php?id=100089946661281&locale=en_GB' target='_blank' className='d-flex flex-column justify-content-center align-items-center text-decoration-none'>
+                            <FacebookLogo size={30}/>
+                        </Link>
+                        <Link to='https://www.instagram.com/jjjaccommodations/' target='_blank' className='d-flex flex-column justify-content-center align-items-center text-decoration-none'>
+                            <InstagramLogo size={30}/>
                         </Link>
                     </div>
                 </div>

@@ -1,38 +1,9 @@
-.feature-title{
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
-}
-.feature-title-header{
-    text-shadow: 4px 0px .75px rgb(13, 36, 64);
-    -webkit-text-stroke: black 1px;
-}
-
-.feature-title-body{
-    text-shadow: 2px 1px .75px rgb(0, 0, 0);
-}
-
-#rental-listings-banner{
-    background-image: url('./../../../public/images/rentals/zen2/zen2-7.webp');
-    background-size: cover;
-    background-position: center;
-}
-
-#rental-listings-header{
-    text-shadow: 4px 0px .75px rgb(13, 36, 64);
-    -webkit-text-stroke: black 1px;
-}
-
-.feature-rental-wrapper{
-    scroll-margin-top: 65px;
-}
-
 #rental-cards-wrapper{
     padding-bottom: 5px;
 }
 
 #rental-cards-wrapper::-webkit-scrollbar-thumb{
-    background-color: rgb(7, 7, 8);
+    background-color: rgb(125, 125, 139);
     border-radius: 100vw;
 }
 

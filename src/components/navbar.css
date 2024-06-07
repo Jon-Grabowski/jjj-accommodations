@@ -32,13 +32,13 @@ nav {
         opacity: 100%;
     }
 }
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
     #logo-wrapper {
         max-width: 220px;
     }
-
-    .reservation-btn {
+}
+@media screen and (max-width: 767px) {
+    #nav-social-links {
         margin-bottom: 10px;
     }
 }

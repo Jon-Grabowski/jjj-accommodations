@@ -2,6 +2,7 @@ import React from 'react'
 import RentalCarousel from '../Home/RentalCarousel'
 import FeatureRentalInfo from './FeatureRentalInfo'
 import Animation from '../Utilities/Animation'
+import './featuredrental.css'
 
 
 function FeaturedRental({rental, featuredRef}) {
@@ -15,12 +16,12 @@ function FeaturedRental({rental, featuredRef}) {
     return (
         <div className='feature-rental-wrapper' ref={featuredRef}>
             <Animation variant='slideRight' duration={1.5}>
-                <div className='feature-title rounded mb-1' style={{backgroundImage: `url(${images[0]})`}}>
+                <div className='feature-title mb-3' style={{backgroundImage: `url(${images[0]})`}}>
                     <div className='py-5 bg-black bg-opacity-25'>
                         <p className='feature-title-header display-3 fw-bold pt-3 mb-0' style={{fontStyle: 'oblique'}}>{name}</p>
                         <div className="feature-title-body mb-4 text-white pb-4">
                             <p className='fst-italic fs-3 mb-0'>{location} - {type}</p>
-                            <div className='d-flex fs-4  justify-content-center' style={{fontSize: '16px'}}>
+                            <div id='feature-rental-detail-list' className='d-flex justify-content-center'>
                                 {detailsList}
                             </div>
                         </div>
