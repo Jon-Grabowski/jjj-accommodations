@@ -6,8 +6,8 @@ import { serviceCardData } from './utilitiesHome';
 
 function ServiceCardSection() {
 
-    const cards = serviceCardData.map((service)=>{
-        return <ServiceCard key={service.name} service={service}/>
+    const cards = serviceCardData.map((service, index)=>{
+        return <ServiceCard key={index} service={service}/>
     })
 
     return (
