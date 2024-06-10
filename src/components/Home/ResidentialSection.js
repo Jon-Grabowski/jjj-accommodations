@@ -8,7 +8,7 @@ function ResidentialSection() {
     const {btnText, headline, body, image, link} = serviceCardData[0]
     return (
         <div className='bg-white bg-opacity-25'>
-            <div className='mb-4 py-4 px-2 bg-black bg-opacity-25'>
+            <div className='mb-4 py-4 px-2 bg-black bg-opacity-25 overflow-hidden'>
                 <Animation variant="slideLeft" duration={1.5}>
                     <h1 className='display-2 fw-bold fst-italic'>{headline}</h1>
                 </Animation>

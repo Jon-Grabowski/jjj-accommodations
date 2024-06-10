@@ -13,6 +13,9 @@ function Home() {
             <Animation variant='fadeIn' duration={2}>
                 <HomeSection1 />
             </Animation>
+            <div className='d-flex justify-content-center my-3 p-3'>
+                <span className='display-5 fw-bold fst-italic mb-3' style={{maxWidth:'50rem'}}>"Let us handle the details while you enjoy the benefits of hassle-free property management!"</span>
+            </div>
             <RentalSection />
             <ResidentialSection />
             {/* <ServiceCardSection /> */}
