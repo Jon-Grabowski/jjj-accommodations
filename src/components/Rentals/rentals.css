@@ -7,10 +7,6 @@
     border-radius: 100vw;
 }
 
-.card-header{
-    background-color: rgb(9, 9, 39);
-}
-
 .rental-card{
     text-shadow: 1.5px 1.5px .25px rgb(0, 0, 0);
 }

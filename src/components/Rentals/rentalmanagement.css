@@ -14,3 +14,7 @@
     text-shadow: 3px 0px .75px rgb(13, 36, 64);
     -webkit-text-stroke: black .5px;
 }
+
+#rental-services-wrapper{
+    background-image: radial-gradient(rgb(45, 45, 51), rgb(4, 4, 14))
+}
