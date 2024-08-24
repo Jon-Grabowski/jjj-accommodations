@@ -14,8 +14,8 @@ function ResidentialSection() {
             </div>
             <div className='container-lg'>
                 <Animation variant="fadeIn" duration={1.5}>
-                    <div className='container-lg d-flex flex-column mb-3 text-end p-4'>
-                        <span className='display-4 fw-bold mb-2 ps-3'>Expert Residential Services to Keep Your Home in Top Shape!</span>
+                    <div className='container-lg d-flex justify-content-end mb-3 text-end p-4'>
+                        <span className='display-5 fw-bold mb-2 ps-3' style={{'maxWidth': "75%"}}>Expert Residential Services to Keep Your Home in Top Shape!</span>
                     </div>
                 </Animation>
                 <div className='row pb-4'>

@@ -2,7 +2,7 @@
 
 #rental-section-wrapper{
     gap: 5rem;
-    background-color: rgba(255, 255, 255, 0.20);
+    /* background-color: rgba(255, 255, 255, 0.20); */
     margin-top: 10rem;
     padding-bottom: 2rem;
 }
