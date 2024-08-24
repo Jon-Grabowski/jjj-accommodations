@@ -19,26 +19,26 @@ function ManagementServiceCard({service, index, parentInView}) {
 
                 {/* FRONT OF CARD */}
                 <div className='flip-card-front'>
-                    <div className="card-header d-flex flex-column justify-content-evenly align-items-center rounded-top" style={{height:'5rem'}}>
+                    <div className="card-header border border-2 border-bottom-0 d-flex flex-column justify-content-evenly align-items-center rounded-top" style={{height:'6rem'}}>
                         <h2 className=' px-3'>{title}</h2>
                     </div>
                     <div className='bg-white' style={{height:'10rem'}}>
                         <img src={img} alt={title}  className='h-100' />
                     </div>
-                    <div className="card-header d-flex justify-content-center align-items-center rounded-bottom" style={{height:'4.9rem'}}>
+                    <div className="card-header border border-2 border-top-0 d-flex justify-content-center align-items-center rounded-bottom" style={{height:'4.9rem'}}>
                         <button className='btn btn-primary rounded-pill border fw-bold' onClick={handleClick}>Learn More <ArrowRight/></button>
                     </div>
                 </div>
 
                 {/* BACK OF CARD */}
                 <div className='flip-card-back'>
-                    <div className='card-header d-flex justify-content-center align-items-center rounded-top' style={{height:'5rem'}}>
+                    <div className='card-header border border-2 border-bottom-0 d-flex justify-content-center align-items-center rounded-top' style={{height:'6rem'}}>
                         <h4 className='p-2'>{text.header}</h4>
                     </div>
                     <div className='d-flex justify-content-center align-items-center bg-body text-dark' style={{height:'10rem'}}>
                         <p className='py-2 px-4 fw-bold' style={{fontSize: '17px'}}>{text.body}</p>
                     </div>
-                    <div className="card-header d-flex justify-content-center align-items-center rounded-bottom" style={{height:'5rem'}}>
+                    <div className="card-header border border-2 border-top-0 d-flex justify-content-center align-items-center rounded-bottom" style={{height:'5rem'}}>
                         <button className='btn btn-primary rounded-pill border fw-bold' onClick={handleClick}><ArrowLeft/> Back</button>
                     </div>
                 </div>

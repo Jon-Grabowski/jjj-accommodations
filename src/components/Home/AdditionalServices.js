@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function AdditionalServices() {
     return (
-        <div id='addition-services-section' className='d-flex flex-xl-row-reverse row align-items-center'>
+        <div id='addition-services-section' className='d-flex flex-xl-row-reverse row align-items-center w-100 m-auto'>
             <div className='col-xl-6'>
                 <div className='float-xl-start'>
                     <div className='mx-auto' style={{maxWidth:'40rem'}}>

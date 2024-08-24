@@ -35,12 +35,15 @@ function RentalManagement() {
                     </div>
                 </div>
             </Animation>
-            <div className='bg-white bg-opacity-25 py-y'>
+            <div id="rental-services-wrapper" className='py-4'>
                 <div className='container-lg '>
+                    <div>
+                        <h1>SPACE FOR BRIEF DESCRIBTION AND RENTAL CLEANING CHECKLIST</h1>
+                    </div>
                     <Animation variant='fadeIn' duration={2}>
-                        <h1 className='fw-bold py-5 text-start'>Explore Our Property Management Services:</h1>
+                        <h1 className='display-5 fw-bold py-5'>Explore Our Property Management Services</h1>
                     </Animation>
-                        <div ref={cardSectionRef} className='position-relative d-flex flex-wrap justify-content-evenly gap-3 py-3 overflow-hidden'>
+                        <div ref={cardSectionRef} className='position-relative d-flex flex-wrap justify-content-evenly gap-4 py-3 pb-3 overflow-hidden'>
                                 {services}
                         </div>
                 </div>

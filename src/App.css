@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  background-color: rgb(9, 9, 39);
+  background-image: radial-gradient(rgb(20, 20, 98), rgb(3, 3, 14))
+  /* background-color: rgb(9, 9, 39); */
+  
 }
 
 ::-webkit-scrollbar {
