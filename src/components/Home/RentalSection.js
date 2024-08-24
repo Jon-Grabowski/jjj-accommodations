@@ -22,14 +22,16 @@ function RentalSection() {
                             <h1 className='display-2 fw-bold fst-italic'>Rental Property Management</h1>
                         </Animation>
                     </div> */}
-                    <div className='py-2 px-2 bg-black bg-opacity-50 border-bottom border-white'>
+                    <div className='pt-2 bg-black bg-opacity-50 border-bottom border-white'>
                         <Animation variant="slideLeft" duration={1.5}>
-                            <h1 className='display-1 fw-bold fst-italic'>Rental Property Management</h1>
+                            <div className="container-lg">
+                                <h1 className='display-3 fw-bolder text-start mb-0 section-titles py-5'>RENTAL PROPERTY MANAGEMENT</h1>
+                            </div>
                         </Animation>
                     </div>
                     <Animation variant="fadeIn" duration={1.5}>
                         <div className="bg-black bg-opacity-50 pb-4">
-                            <div className='container-lg d-flex flex-column text-end pe-5 '>
+                            <div className='container-lg d-flex flex-column text-end pe-5 pt-2'>
                                 <span className='display-5 fw-bold mb-2'>Looking to maximize your rental income?</span>
                                 <span className='display-6 fst-italic'>We've got you covered!</span>
                             </div>
