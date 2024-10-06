@@ -17,13 +17,14 @@
 }
 
 .section-titles{
+    text-shadow: 0px 0px 5px rgb(220, 213, 222);
     font-family: "Aboreto", system-ui;
     font-weight: 400;
     font-style: normal;
     /* display:inline-block; */
-    -webkit-transform:scale(1,2); /* Safari and Chrome */
-    -moz-transform:scale(1,2); /* Firefox */
-    -ms-transform:scale(1,2); /* IE 9 */
-    -o-transform:scale(1,2); /* Opera */
-    transform:scale(1,2); /* W3C */
+    -webkit-transform:scale(1,1.75); /* Safari and Chrome */
+    -moz-transform:scale(1,1.75); /* Firefox */
+    -ms-transform:scale(1,1.75); /* IE 9 */
+    -o-transform:scale(1,1.75); /* Opera */
+    transform:scale(1,1.75); /* W3C */
 }
