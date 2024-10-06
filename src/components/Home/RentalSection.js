@@ -29,7 +29,7 @@ function RentalSection() {
                             </div>
                         </Animation>
                     </div>
-                    <Animation variant="fadeIn" duration={1.5}>
+                    <Animation variant="slideRight" duration={1.5}>
                         <div className="bg-black bg-opacity-50 pb-4 border-bottom border-white">
                             <div className='container-lg d-flex flex-column text-center pe-5'>
                                 <span className='display-6 mb-2'>Looking to maximize your rental income?</span>
