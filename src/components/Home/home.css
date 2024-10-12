@@ -28,3 +28,17 @@
     -o-transform:scale(1,1.75); /* Opera */
     transform:scale(1,1.75); /* W3C */
 }
+
+.section-header{
+    /* text-shadow: 0px 0px 5px rgb(220, 213, 222); */
+    font-family: "Aboreto", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.section-list{
+    /* text-shadow: 0px 0px 5px rgb(220, 213, 222); */
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
