@@ -1,7 +1,7 @@
 import React from 'react'
 import Animation from '../Utilities/Animation'
 import { useState } from 'react'
-import { ArrowRight, ArrowLeft } from 'lucide-react'
+// import { ArrowRight, ArrowLeft } from 'lucide-react'
 import './managementservicecard.css'
 
 function ManagementServiceCard({service, index, parentInView}) {
@@ -44,7 +44,7 @@ function ManagementServiceCard({service, index, parentInView}) {
                 </div> */}
             {/* </div> */}
             <div class="card text-center">
-                <div class="card-header text-light fs-2 fw-bold">
+                <div class="card-header text-light fs-2 fw-bold bg-black">
                     {title}
                 </div>
                 <div class="card-body">

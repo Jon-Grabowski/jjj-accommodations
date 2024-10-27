@@ -36,7 +36,7 @@ function RentalManagement() {
                 </div>
             </Animation>
             <div id="rental-services-wrapper" className='py-4'>
-                <div className='container-lg '>
+                <div className='container-lg'>
                     <div>
                         <h1>SPACE FOR BRIEF DESCRIBTION AND RENTAL CLEANING CHECKLIST</h1>
                     </div>
