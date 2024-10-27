@@ -49,6 +49,7 @@ function RentalSection() {
                                             <li>Cleanings</li>
                                             <li>Maintenance</li>
                                             <li>Decor</li>
+                                            <li>Seasonal Services</li>
                                         </ul>
                                         <p className='fs-5 fst-italic '>Plus, browse our current rental listings to find your next happy getaway!</p>
                                     </div>

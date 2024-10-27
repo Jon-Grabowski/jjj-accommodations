@@ -35,9 +35,13 @@ function ResidentialSection() {
                                             <h2 className='text-start fs-3 mb-4 section-header' style={{"maxWidth":"43rem"}}>Keep your home pristine and well-maintained with our comprehensive residential services:</h2>
                                             <ul className='text-start fs-4 mb-4 section-list'>
                                                 <li>Cleaning Packages</li>
+                                                <ul>
+                                                    <li className="fs-5">Routine Cleanings</li>
+                                                    <li className="fs-5">Deep Cleanings</li>
+                                                    <li className="fs-5">Move-In/Move-Out Cleanings</li>
+                                                </ul>
                                                 <li>Handyman Services</li>
                                                 <li>Contractor Connections</li>
-                                                <li>Seasonal Services</li>
                                             </ul>
                                         </div>
                                         <Link to='/residential'><button className='btn-bg-blue px-4 py-2 border fw-bold text-light rounded-pill fs-6 section-header'>Learn More <ArrowRight size={35}/></button></Link>

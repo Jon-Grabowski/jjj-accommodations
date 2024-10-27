@@ -42,9 +42,9 @@ function Services() {
             <div ref={maintenanceRef}>
                 <MaintenanceSection />
             </div>
-            <div ref={seasonalRef}>
+            {/* <div ref={seasonalRef}>
                 <SeasonalSection />
-            </div>
+            </div> */}
 
             {/* Floating Contact Us Button */}
             <div id='residential-contact-btn-bottom' className={topInView || buttonInView ? 'hidden' : 'visable'}>

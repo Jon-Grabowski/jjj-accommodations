@@ -40,6 +40,14 @@ const rentalManagementData = {
                 body: "From bedding to towels, art, and pillows, we'll spruce up your property to create a welcoming and stylish atmosphere that guests will love."
             },
             img: '../images/stock-images/decor-card.png'
+        },
+        {
+            title: 'Seasonal Services',
+            text:{
+                header: 'Keeping Your Airbnb Ready Year-Round!',
+                body: "From snow removal to lawn care and spring planting, we handle all seasonal maintenance for your Airbnb, keeping your property guest-ready."
+            },
+            img: '../images/stock-images/decor-card.png'
         }
     ]
 };
