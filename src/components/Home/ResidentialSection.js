@@ -8,10 +8,10 @@ function ResidentialSection() {
     return (
         <div className='pb-2 overflow-hidden'>
             <Animation variant='fadeIn' duration={1.5}>
-                <div className='pt-2 bg-black bg-opacity-50 border-top border-white'>
+                <div className='pt-4 bg-black bg-opacity-50 border-top border-white'>
                     <Animation variant="slideRight" duration={1.5}>
                         <div className="container-lg">
-                            <h1 className='display-4 fw-bolder text-center mb-0 section-titles py-5'>Residential Property Services</h1>
+                            <h1 className='display-4 fw-bold text-center mb-0 section-titles py-4'>Residential Property Services</h1>
                         </div>
                     </Animation>
                 </div>
@@ -19,13 +19,13 @@ function ResidentialSection() {
                     <Animation variant="slideLeft" duration={1.5}>
                         <div className='d-flex justify-content-center '>
                             <div className="px-2" style={{"maxWidth":"35rem"}}>
-                                <span className='fs-4 mb-2 ps-3 section-list' style={{'maxWidth': "75%"}}>Expert Residential Services to Keep Your Home in Top Shape!</span>
+                                <span className='fs-4 mb-2 ps-3 fst-italic fs-4 section-subheader' style={{'maxWidth': "75%"}}>Expert Residential Services to Keep Your Home in Top Shape!</span>
                             </div>
                         </div>
                     </Animation>
                 </div>
                 <Animation variant='slideUp' duration={1.5}>
-                    <div className='container-xxl d-flex row m-auto align-items-center mt-4 pt-2 pb-5'>
+                    <div className='container-xxl d-flex row m-auto align-items-center mt-4 pt-5 pb-5 mb-5'>
                             <div className='col-xl-6 m-4 mx-auto'>
                                 <img src='../images/services/services-card-image-1.jpg' alt='cleaning' className='rounded w-100'  />
                             </div>

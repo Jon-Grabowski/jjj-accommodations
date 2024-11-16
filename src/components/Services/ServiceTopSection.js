@@ -4,12 +4,12 @@ import { Sparkles } from 'lucide-react'
 import './servicestopsection.css'
 
 function ServiceTopSection({cleaningRef, maintenanceRef, seasonalRef}) {
-    const serviceTypes = ['cleaning', 'maintenance', 'seasonal']
+    const serviceTypes = ['cleaning', 'maintenance']
 
     function handleClick(service){
         if (service === 'cleaning') cleaningRef.current.scrollIntoView()
         else if (service === 'maintenance') maintenanceRef.current.scrollIntoView()
-        else if (service === 'seasonal') seasonalRef.current.scrollIntoView()
+        // else if (service === 'seasonal') seasonalRef.current.scrollIntoView()
     }
     const serviceBtns = serviceTypes.map((service, index)=>{
         return(
@@ -33,7 +33,7 @@ function ServiceTopSection({cleaningRef, maintenanceRef, seasonalRef}) {
                             <span className='display-2 fst-italic fw-bold'>Pristine  <Sparkles size={40}/></span>
                             <span  className='fw-bold fs-2 fst-italic mb-3'>with our full range of residential services.</span>
                         </div>
-                        <div className='d-flex flex-wrap flex-column justify-content-center align-items-center fs-3' style={{maxWidth:'40rem'}}>
+                        <div className='d-flex flex-wrap flex-column justify-content-center align-items-center gap-2 fs-3' style={{maxWidth:'40rem'}}>
                             {serviceBtns}
                         </div>
                 </div>

@@ -12,8 +12,8 @@ function Home() {
             <HomeSection1 />
             <RentalSection />
             <ResidentialSection />
-            <AdditionalServices />
             <ReservationsBanner />
+            <AdditionalServices />
         </div>
     )
 }
