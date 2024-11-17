@@ -37,8 +37,8 @@ function RentalManagement() {
             </Animation>
             <div id="rental-services-wrapper" className='py-4'>
                 <div className='container-lg'>
-                    <div>
-                        <h1>SPACE FOR BRIEF DESCRIBTION AND RENTAL CLEANING CHECKLIST</h1>
+                    <div className='d-flex justify-content-center'>
+                        <p className='w-75 fs-4'>Welcome to JJJ Accommodations, your expert partner in Airbnb rental management. We handle every aspect of your short-term rental, from listing optimization and guest communication to cleaning and maintenance. Our goal is to maximize your rental income while ensuring a seamless and stress-free experience for both you and your guests. Let us take care of the details, so you can enjoy the benefits of hassle-free Airbnb hosting.</p>
                     </div>
                     <Animation variant='fadeIn' duration={2}>
                         <h1 className='display-5 fw-bold py-5'>Explore Our Property Management Services</h1>

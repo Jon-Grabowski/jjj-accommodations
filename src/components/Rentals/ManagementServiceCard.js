@@ -43,15 +43,16 @@ function ManagementServiceCard({service, index, parentInView}) {
                     </div>
                 </div> */}
             {/* </div> */}
-            <div class="card text-center">
-                <div class="card-header text-light fs-2 fw-bold bg-black">
+            <div className="card text-center">
+                <div className="card-header text-light fs-2 fw-bold bg-black d-flex justify-content-center align-items-center" style={{"height": "8rem"}}>
                     {title}
                 </div>
-                <div class="card-body">
+                <div className="card-body d-flex flex-column justify-content-between align-items-center gap-3" style={{"height": "22rem"}}>
+                    <div></div>
                     <img src={img} alt={title} className='w-75'/>
-                    <h5 class="card-title">{text.header}</h5>
+                    <h5 className="card-title">{text.header}</h5>
                 </div>
-                <div class="card-footer text-body-secondary">
+                <div className="card-footer text-body-secondary d-flex justify-content-center align-items-center" style={{"height": "7rem"}}>
                     {text.body}
                 </div>
             </div>

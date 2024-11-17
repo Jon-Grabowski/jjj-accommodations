@@ -1,5 +1,5 @@
 const rentalManagementData = {
-    body: "Let us take the stress out of managing your rental property with our comprehensive services. Sit back, relax, and let us handle the details while you enjoy the benefits of hassle-free property management",
+    body: "Let us Take the Stress Out of Managing Your Rental Property with Our Comprehensive Services",
     serviceArray:[
         {
             title: 'Create & Manage Airbnb Listings',
@@ -47,7 +47,7 @@ const rentalManagementData = {
                 header: 'Keeping Your Airbnb Ready Year-Round!',
                 body: "From snow removal to lawn care and spring planting, we handle all seasonal maintenance for your Airbnb, keeping your property guest-ready."
             },
-            img: '../images/stock-images/decor-card.png'
+            img: '../images/stock-images/seasonal-services-stock-photo1.png'
         }
     ]
 };
